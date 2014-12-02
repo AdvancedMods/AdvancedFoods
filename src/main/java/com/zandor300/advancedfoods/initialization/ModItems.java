@@ -2,6 +2,7 @@ package com.zandor300.advancedfoods.initialization;
 
 import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
+import com.zandor300.advancedfoods.items.food.Chilli;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.minerals.Butter;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -15,7 +16,8 @@ public class ModItems {
 	// Foods
 	public static Item cheese = new Cheese(4000, 5, false);
 	public static Item cherry = new Cherry(4001, 4, false);
-	public static Item strawberry = new Strawberry(4002, 6, false);
+	public static Item chilli = new Chilli(4002, 3, false);
+	public static Item strawberry = new Strawberry(4003, 6, false);
 
 	// Minerals
 	public static Item butter = new Butter(5000);
@@ -24,6 +26,7 @@ public class ModItems {
 		// Foods
 		GameRegistry.registerItem(cheese, "Cheese");
 		GameRegistry.registerItem(cherry, "Cherry");
+		GameRegistry.registerItem(chilli, "Chilli");
 		GameRegistry.registerItem(strawberry, "Strawberry");
 
 		// Minerals
