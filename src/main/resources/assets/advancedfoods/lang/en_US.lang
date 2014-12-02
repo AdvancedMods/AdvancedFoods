@@ -1,0 +1,8 @@
+// Items
+// Foods
+item.advancedfoods:Cherry.name=Cherry
+item.advancedfoods:Strawberry.name=Strawberry
+
+// Minerals
+item.advancedfoods:Butter.name=Butter
+item.advancedfoods:Sugar.name=Sugar
