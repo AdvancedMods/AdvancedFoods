@@ -1,0 +1,16 @@
+[
+{
+  "modid": "advancedfoods",
+  "name": "Advanced Foods",
+  "description": "Add more food to the game.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Zandor300", "Dennisbonke"],
+  "credits": "...",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
