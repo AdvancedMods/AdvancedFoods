@@ -18,7 +18,19 @@ public class AFCreativeTab {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return Reference.MOD_NAME;
+			return "Foods";
+		}
+	};
+
+	public static final CreativeTabs minerals = new CreativeTabs(Reference.MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.sugar;
+		}
+
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Minerals";
 		}
 	};
 }
