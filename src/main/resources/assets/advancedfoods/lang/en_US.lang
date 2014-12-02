@@ -1,5 +1,6 @@
 // Items
 // Foods
+item.advancedfoods:Cheese.name=Cheese
 item.advancedfoods:Cherry.name=Cherry
 item.advancedfoods:Strawberry.name=Strawberry
 

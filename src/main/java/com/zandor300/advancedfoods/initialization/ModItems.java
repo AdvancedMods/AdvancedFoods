@@ -1,5 +1,6 @@
 package com.zandor300.advancedfoods.initialization;
 
+import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.minerals.Butter;
@@ -13,8 +14,9 @@ import net.minecraft.item.Item;
 public class ModItems {
 
 	// Foods
-	public static Item cherry = new Cherry(4000, 4, false);
-	public static Item strawberry = new Strawberry(4001, 6, false);
+	public static Item cheese = new Cheese(4000, 5, false);
+	public static Item cherry = new Cherry(4001, 4, false);
+	public static Item strawberry = new Strawberry(4002, 6, false);
 
 	// Minerals
 	public static Item butter = new Butter(5000);
@@ -22,6 +24,7 @@ public class ModItems {
 
 	public static void init() {
 		// Foods
+		GameRegistry.registerItem(cheese, "Cheese");
 		GameRegistry.registerItem(cherry, "Cherry");
 		GameRegistry.registerItem(strawberry, "Strawberry");
 
