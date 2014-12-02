@@ -4,7 +4,6 @@ import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.minerals.Butter;
-import com.zandor300.advancedfoods.items.minerals.Sugar;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -20,7 +19,6 @@ public class ModItems {
 
 	// Minerals
 	public static Item butter = new Butter(5000);
-	public static Item sugar = new Sugar(5001);
 
 	public static void init() {
 		// Foods
@@ -30,7 +28,6 @@ public class ModItems {
 
 		// Minerals
 		GameRegistry.registerItem(butter,"Butter");
-		GameRegistry.registerItem(sugar, "Sugar");
 	}
 
 }
