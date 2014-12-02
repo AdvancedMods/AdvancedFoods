@@ -1,9 +1,9 @@
 package com.zandor300.advancedfoods.generic;
 
+import com.zandor300.advancedfoods.initialization.ModItems;
+import com.zandor300.advancedfoods.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import com.zandor300.advancedfoods.reference.Reference;
-import com.zandor300.advancedfoods.initialization.ModItems;
 
 /**
  * Created by Smith on 2-12-2014.

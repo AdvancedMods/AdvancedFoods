@@ -5,7 +5,7 @@ package com.zandor300.advancedfoods.proxy;
  */
 public class ServerProxy {
 
-    public void registerRenderInfo() {
+	public void registerRenderInfo() {
 
-    }
+	}
 }
