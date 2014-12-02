@@ -5,6 +5,7 @@ import com.zandor300.advancedfoods.items.food.Cherry;
 import com.zandor300.advancedfoods.items.food.Chilli;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.food.Butter;
+import com.zandor300.advancedfoods.items.seeds.ChilliSeeds;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -13,11 +14,14 @@ import net.minecraft.item.Item;
  */
 public class ModItems {
 
-	public static Item butter = new Butter(5000, 1, false);
-	public static Item cheese = new Cheese(4000, 5, false);
-	public static Item cherry = new Cherry(4001, 4, false);
-	public static Item chilli = new Chilli(4002, 3, false);
+	public static Item butter = new Butter(4000, 1, false);
+	public static Item cheese = new Cheese(4001, 5, false);
+	public static Item cherry = new Cherry(4002, 4, false);
+	public static Item chilli = new Chilli(4003, 3, false);
 	public static Item strawberry = new Strawberry(4003, 6, false);
+
+	// Seeds
+	public static Item chilliSeeds = new ChilliSeeds();
 
 	public static void init() {
 		GameRegistry.registerItem(butter,"Butter");
@@ -25,6 +29,9 @@ public class ModItems {
 		GameRegistry.registerItem(cherry, "Cherry");
 		GameRegistry.registerItem(chilli, "Chilli");
 		GameRegistry.registerItem(strawberry, "Strawberry");
+
+		// Seeds
+		GameRegistry.registerItem(chilliSeeds, "Chilli Seeds");
 	}
 
 }

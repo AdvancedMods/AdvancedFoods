@@ -1,5 +1,6 @@
 package com.zandor300.advancedfoods;
 
+import com.zandor300.advancedfoods.initialization.ModBlocks;
 import com.zandor300.advancedfoods.initialization.ModItems;
 import com.zandor300.advancedfoods.proxy.ServerProxy;
 import com.zandor300.advancedfoods.reference.Reference;
@@ -22,6 +23,7 @@ public class AdvancedFoods {
 	@Mod.EventHandler
 	public static void PreInit(FMLPostInitializationEvent event) {
 		ModItems.init();
+		ModBlocks.init();
 
 		LogHelper.info("Pre Initialization Complete!");
 	}
