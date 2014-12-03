@@ -3,6 +3,8 @@ package com.zandor300.advancedfoods.initialization;
 import com.zandor300.advancedfoods.items.drinks.lemonade.CherryLemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.Lemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.StrawberryLemonade;
+import com.zandor300.advancedfoods.items.drinks.smoothies.CherrySmoothy;
+import com.zandor300.advancedfoods.items.drinks.smoothies.StrawberrySmoothy;
 import com.zandor300.advancedfoods.items.food.*;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -24,9 +26,14 @@ public class ModItems {
 	public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
 
 	// Drinks
+	// Lemonade
 	public static Item lemonade = new Lemonade(5000, 4, false);
 	public static Item cherryLemonade = new CherryLemonade(5001, 5, false);
 	public static Item strawberryLemonade = new StrawberryLemonade(5002, 5, false);
+
+	// Smoothy
+	public static Item cherrySmoothy = new CherrySmoothy(5000, 6, false);
+	public static Item strawberrySmoothy = new StrawberrySmoothy(5000, 6, false);
 
 	// Misc
 	public static Item smoothyGlass = new SmoothyGlass();
@@ -43,9 +50,14 @@ public class ModItems {
 		GameRegistry.registerItem(tomatoSoup, tomatoSoup.getUnlocalizedName());
 
 		// Drinks
+		// Lemonade
 		GameRegistry.registerItem(lemonade, lemonade.getUnlocalizedName());
 		GameRegistry.registerItem(cherryLemonade, cherryLemonade.getUnlocalizedName());
 		GameRegistry.registerItem(strawberryLemonade, strawberryLemonade.getUnlocalizedName());
+
+		// Smoothy
+		GameRegistry.registerItem(cherrySmoothy, cherrySmoothy.getUnlocalizedName());
+		GameRegistry.registerItem(strawberrySmoothy, strawberrySmoothy.getUnlocalizedName());
 
 		// Misc
 		GameRegistry.registerItem(smoothyGlass, smoothyGlass.getUnlocalizedName());
