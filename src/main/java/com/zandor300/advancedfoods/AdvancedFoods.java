@@ -2,6 +2,7 @@ package com.zandor300.advancedfoods;
 
 import com.zandor300.advancedfoods.initialization.ModBlocks;
 import com.zandor300.advancedfoods.initialization.ModItems;
+import com.zandor300.advancedfoods.initialization.Recipes;
 import com.zandor300.advancedfoods.proxy.ServerProxy;
 import com.zandor300.advancedfoods.reference.Reference;
 import com.zandor300.advancedfoods.utilities.LogHelper;
@@ -30,6 +31,7 @@ public class AdvancedFoods {
 
 	@Mod.EventHandler
 	public static void Init(FMLInitializationEvent event) {
+		Recipes.init();
 		LogHelper.info("Initialization Complete!");
 	}
 

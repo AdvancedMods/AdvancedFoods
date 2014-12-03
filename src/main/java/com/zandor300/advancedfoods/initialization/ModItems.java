@@ -21,6 +21,7 @@ public class ModItems {
 	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
 	public static Item tomato = new Tomato();
+	public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
 
 	// Drinks
 	public static Item lemonade = new Lemonade(5000, 4, false);
@@ -39,6 +40,7 @@ public class ModItems {
 		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
+		GameRegistry.registerItem(tomatoSoup, tomatoSoup.getUnlocalizedName());
 
 		// Drinks
 		GameRegistry.registerItem(lemonade, lemonade.getUnlocalizedName());
