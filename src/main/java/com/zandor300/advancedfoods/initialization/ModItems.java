@@ -22,6 +22,7 @@ import com.zandor300.advancedfoods.items.food.Lemon;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.food.Tomato;
 import com.zandor300.advancedfoods.items.food.TomatoSoup;
+import com.zandor300.advancedfoods.items.misc.IceCubes;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -61,6 +62,7 @@ public class ModItems {
 	public static Item strawberrySmoothy = new StrawberrySmoothy(5000, 6, false);
 
 	// Misc
+	public static Item iceCubes = new IceCubes();
 	public static Item smoothyGlass = new SmoothyGlass();
 
 	public static void init() {
@@ -94,6 +96,7 @@ public class ModItems {
 		GameRegistry.registerItem(strawberrySmoothy, strawberrySmoothy.getUnlocalizedName());
 
 		// Misc
+		GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
 		GameRegistry.registerItem(smoothyGlass, smoothyGlass.getUnlocalizedName());
 	}
 
