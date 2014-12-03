@@ -1,4 +1,5 @@
 // Items
+// Food
 item.advancedfoods:Banana.name=Banana
 item.advancedfoods:Butter.name=Butter
 item.advancedfoods:Cheese.name=Cheese
@@ -26,5 +27,6 @@ item.advancedfoods:SmoothyGlass.name=Smoothy Glass
 
 // Crops
 tile.advancedfoods:ChilliPlant.name=Chilli Plant
+tile.advancedfoods:LemonPlant.name=Lemon Plant
 tile.advancedfoods:StrawberryPlant.name=Strawberry Plant
 tile.advancedfoods:TomatoPlant.name=Tomato Plant
