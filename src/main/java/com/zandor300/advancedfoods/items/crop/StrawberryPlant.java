@@ -15,6 +15,7 @@ import java.util.Random;
  * Created by Smith on 3-12-2014.
  */
 public class StrawberryPlant extends AFBlockCrop {
+
 	public StrawberryPlant() {
 		// Basic block setup
 		setBlockName("StrawberryPlant");

@@ -10,27 +10,27 @@ import net.minecraft.item.Item;
  */
 public class AFCreativeTab {
 
-    public static final CreativeTabs food = new CreativeTabs(Reference.MOD_ID) {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.strawberry;
-        }
+	public static final CreativeTabs food = new CreativeTabs(Reference.MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.strawberry;
+		}
 
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Foods";
-        }
-    };
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Foods";
+		}
+	};
 
-    public static final CreativeTabs objects = new CreativeTabs(Reference.MOD_ID) {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.smoothyGlass;
-        }
+	public static final CreativeTabs objects = new CreativeTabs(Reference.MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.smoothyGlass;
+		}
 
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Objects";
-        }
-    };
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Objects";
+		}
+	};
 }

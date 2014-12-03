@@ -7,9 +7,9 @@ import com.zandor300.advancedfoods.generic.AFItemFood;
  */
 public class BananaSmoothy extends AFItemFood {
 
-    public BananaSmoothy(int id, int heal, boolean b) {
-        super(id, b);
-        this.setUnlocalizedName("BananaSmoothy");
-    }
+	public BananaSmoothy(int id, int heal, boolean b) {
+		super(id, b);
+		this.setUnlocalizedName("BananaSmoothy");
+	}
 
 }

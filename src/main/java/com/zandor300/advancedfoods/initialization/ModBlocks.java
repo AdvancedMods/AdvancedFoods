@@ -1,6 +1,10 @@
 package com.zandor300.advancedfoods.initialization;
 
-import com.zandor300.advancedfoods.items.crop.*;
+import com.zandor300.advancedfoods.items.crop.BananaPlant;
+import com.zandor300.advancedfoods.items.crop.ChilliPlant;
+import com.zandor300.advancedfoods.items.crop.LemonPlant;
+import com.zandor300.advancedfoods.items.crop.StrawberryPlant;
+import com.zandor300.advancedfoods.items.crop.TomatoPlant;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 

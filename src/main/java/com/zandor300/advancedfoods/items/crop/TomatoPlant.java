@@ -15,6 +15,7 @@ import java.util.Random;
  * Created by Smith on 3-12-2014.
  */
 public class TomatoPlant extends AFBlockCrop {
+
 	public TomatoPlant() {
 		// Basic block setup
 		setBlockName("TomatoPlant");

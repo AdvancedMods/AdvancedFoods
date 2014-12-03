@@ -5,9 +5,19 @@ import com.zandor300.advancedfoods.items.drinks.lemonade.Lemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.StrawberryLemonade;
 import com.zandor300.advancedfoods.items.drinks.smoothies.BananaSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.CherrySmoothy;
+import com.zandor300.advancedfoods.items.drinks.smoothies.ChocolateSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.LemonSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.StrawberrySmoothy;
-import com.zandor300.advancedfoods.items.food.*;
+import com.zandor300.advancedfoods.items.food.Banana;
+import com.zandor300.advancedfoods.items.food.Butter;
+import com.zandor300.advancedfoods.items.food.Cheese;
+import com.zandor300.advancedfoods.items.food.Cherry;
+import com.zandor300.advancedfoods.items.food.Chilli;
+import com.zandor300.advancedfoods.items.food.Chocolate;
+import com.zandor300.advancedfoods.items.food.Lemon;
+import com.zandor300.advancedfoods.items.food.Strawberry;
+import com.zandor300.advancedfoods.items.food.Tomato;
+import com.zandor300.advancedfoods.items.food.TomatoSoup;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -18,11 +28,12 @@ import net.minecraft.item.Item;
 public class ModItems {
 
 	// Foods
-	public static Item banana = new Banana(4000, 5, false);
+	public static Item banana = new Banana();
 	public static Item butter = new Butter(4000, 1, false);
 	public static Item cheese = new Cheese(4001, 5, false);
 	public static Item cherry = new Cherry(4002, 4, false);
 	public static Item chilli = new Chilli();
+	public static Item chocolate = new Chocolate(4000, 4, false);
 	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
 	public static Item tomato = new Tomato();
@@ -37,6 +48,7 @@ public class ModItems {
 	// Smoothy
 	public static Item bananaSmoothy = new BananaSmoothy(5000, 6, false);
 	public static Item cherrySmoothy = new CherrySmoothy(5000, 6, false);
+	public static Item chocolateSmoothy = new ChocolateSmoothy(5000, 6, false);
 	public static Item lemonSmoothy = new LemonSmoothy(5000, 6, false);
 	public static Item strawberrySmoothy = new StrawberrySmoothy(5000, 6, false);
 
@@ -50,6 +62,7 @@ public class ModItems {
 		GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
 		GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
 		GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
+		GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
 		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
@@ -64,6 +77,7 @@ public class ModItems {
 		// Smoothy
 		GameRegistry.registerItem(bananaSmoothy, bananaSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(cherrySmoothy, cherrySmoothy.getUnlocalizedName());
+		GameRegistry.registerItem(chocolateSmoothy, chocolateSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(lemonSmoothy, lemonSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(strawberrySmoothy, strawberrySmoothy.getUnlocalizedName());
 
