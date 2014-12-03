@@ -5,6 +5,7 @@ import com.zandor300.advancedfoods.items.drinks.lemonade.Lemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.StrawberryLemonade;
 import com.zandor300.advancedfoods.items.drinks.smoothies.BananaSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.CherrySmoothy;
+import com.zandor300.advancedfoods.items.drinks.smoothies.LemonSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.StrawberrySmoothy;
 import com.zandor300.advancedfoods.items.food.*;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
@@ -36,6 +37,7 @@ public class ModItems {
 	// Smoothy
 	public static Item bananaSmoothy = new BananaSmoothy(5000, 6, false);
 	public static Item cherrySmoothy = new CherrySmoothy(5000, 6, false);
+	public static Item lemonSmoothy = new LemonSmoothy(5000, 6, false);
 	public static Item strawberrySmoothy = new StrawberrySmoothy(5000, 6, false);
 
 	// Misc
@@ -62,6 +64,7 @@ public class ModItems {
 		// Smoothy
 		GameRegistry.registerItem(bananaSmoothy, bananaSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(cherrySmoothy, cherrySmoothy.getUnlocalizedName());
+		GameRegistry.registerItem(lemonSmoothy, lemonSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(strawberrySmoothy, strawberrySmoothy.getUnlocalizedName());
 
 		// Misc
