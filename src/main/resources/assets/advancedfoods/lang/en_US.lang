@@ -6,4 +6,5 @@ item.advancedfoods:Chilli.name=Chilli
 item.advancedfoods:Strawberry.name=Strawberry
 
 // Crops
-tile.advancedfoods:ChilliCrop.name=Chilli Plant
+tile.advancedfoods:ChilliPlant.name=Chilli Plant
+tile.advancedfoods:StrawberryPlant.name=Strawberry Plant

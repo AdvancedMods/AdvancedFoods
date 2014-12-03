@@ -1,13 +1,17 @@
 package com.zandor300.advancedfoods.generic;
 
+import com.zandor300.advancedfoods.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
+import net.minecraft.block.BlockCrops;
 import net.minecraft.block.IGrowable;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
@@ -17,7 +21,7 @@ import java.util.Random;
 /**
  * Created by Zandor on 3-12-2014.
  */
-public class AFBlockCrop extends BlockBush implements IGrowable {
+public class AFBlockCrop extends BlockCrops implements IGrowable {
     protected int maxGrowthStage = 7;
 
 
@@ -33,6 +37,15 @@ public class AFBlockCrop extends BlockBush implements IGrowable {
         setHardness(0.0F);
         setStepSound(soundTypeGrass);
         disableStats();
+    }
+
+    @Override
+    public String getUnlocalizedName() {
+        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     /**

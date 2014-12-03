@@ -14,10 +14,10 @@ import java.util.Random;
 /**
  * Created by Zandor on 3-12-2014.
  */
-public class CropChilli extends AFBlockCrop {
-    public CropChilli() {
+public class ChilliPlant extends AFBlockCrop {
+    public ChilliPlant() {
         // Basic block setup
-        setBlockName("Chilli");
+        setBlockName("ChilliPlant");
         setBlockTextureName(Reference.MOD_ID + ":chilli_0");
     }
 

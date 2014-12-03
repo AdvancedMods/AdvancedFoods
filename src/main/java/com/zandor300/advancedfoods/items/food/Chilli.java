@@ -12,7 +12,7 @@ import net.minecraft.init.Blocks;
 public class Chilli  extends AFItemSeeds {
 
     public Chilli() {
-        super(1, 0.3F, ModBlocks.chilliCrop, Blocks.farmland);
+        super(1, 0.3F, ModBlocks.chilliPlant, Blocks.farmland);
         setUnlocalizedName("Chilli");
         setCreativeTab(AFCreativeTab.food);
     }
