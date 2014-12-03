@@ -1,4 +1,5 @@
 // Items
+item.advancedfoods:Banana.name=Banana
 item.advancedfoods:Butter.name=Butter
 item.advancedfoods:Cheese.name=Cheese
 item.advancedfoods:Cherry.name=Cherry
@@ -15,6 +16,7 @@ item.advancedfoods:CherryLemonade.name=Cherry Lemonade
 item.advancedfoods:StrawberryLemonade.name=Strawberry Lemonade
 
 // Smoothy
+item.advancedfoods:BananaSmoothy.name=Banana Smoothy
 item.advancedfoods:CherrySmoothy.name=Cherry Smoothy
 item.advancedfoods:StrawberrySmooty.name=Strawberry Smoothy
 
