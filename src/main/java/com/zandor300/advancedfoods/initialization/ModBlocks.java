@@ -2,6 +2,7 @@ package com.zandor300.advancedfoods.initialization;
 
 import com.zandor300.advancedfoods.items.crop.ChilliPlant;
 import com.zandor300.advancedfoods.items.crop.StrawberryPlant;
+import com.zandor300.advancedfoods.items.crop.TomatoPlant;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 
@@ -12,10 +13,12 @@ public class ModBlocks {
 
 	public static Block chilliPlant = new ChilliPlant();
 	public static Block strawberryPlant = new StrawberryPlant();
+	public static Block tomatoPlant = new TomatoPlant();
 
 	public static void init() {
 		GameRegistry.registerBlock(chilliPlant, chilliPlant.getUnlocalizedName());
 		GameRegistry.registerBlock(strawberryPlant, strawberryPlant.getUnlocalizedName());
+		GameRegistry.registerBlock(tomatoPlant, tomatoPlant.getUnlocalizedName());
 	}
 
 }

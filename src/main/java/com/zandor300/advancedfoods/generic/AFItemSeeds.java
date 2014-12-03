@@ -27,6 +27,19 @@ public class AFItemSeeds extends ItemFood implements IPlantable {
         theBlockPlant = parBlockPlant;
         soilId = parSoilBlock;
     }
+    @Override
+    public String getUnlocalizedName() {
+        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    @Override
+    public String getUnlocalizedName(ItemStack itemStack) {
+        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+    }
 
     @Override
     @SideOnly(Side.CLIENT)
