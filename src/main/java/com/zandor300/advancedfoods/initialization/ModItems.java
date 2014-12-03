@@ -3,12 +3,7 @@ package com.zandor300.advancedfoods.initialization;
 import com.zandor300.advancedfoods.items.drinks.lemonade.CherryLemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.Lemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.StrawberryLemonade;
-import com.zandor300.advancedfoods.items.food.Butter;
-import com.zandor300.advancedfoods.items.food.Cheese;
-import com.zandor300.advancedfoods.items.food.Cherry;
-import com.zandor300.advancedfoods.items.food.Chilli;
-import com.zandor300.advancedfoods.items.food.Strawberry;
-import com.zandor300.advancedfoods.items.food.Tomato;
+import com.zandor300.advancedfoods.items.food.*;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -23,6 +18,7 @@ public class ModItems {
 	public static Item cheese = new Cheese(4001, 5, false);
 	public static Item cherry = new Cherry(4002, 4, false);
 	public static Item chilli = new Chilli();
+	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
 	public static Item tomato = new Tomato();
 
@@ -40,6 +36,7 @@ public class ModItems {
 		GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
 		GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
 		GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
+		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
 
