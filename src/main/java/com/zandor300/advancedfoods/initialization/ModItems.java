@@ -10,10 +10,14 @@ import com.zandor300.advancedfoods.items.drinks.smoothies.LemonSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.StrawberrySmoothy;
 import com.zandor300.advancedfoods.items.food.Banana;
 import com.zandor300.advancedfoods.items.food.Butter;
+import com.zandor300.advancedfoods.items.food.Caramel;
 import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
 import com.zandor300.advancedfoods.items.food.Chilli;
 import com.zandor300.advancedfoods.items.food.Chocolate;
+import com.zandor300.advancedfoods.items.food.ChocolateCake;
+import com.zandor300.advancedfoods.items.food.ChocolateCupcake;
+import com.zandor300.advancedfoods.items.food.Cupcake;
 import com.zandor300.advancedfoods.items.food.Lemon;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.food.Tomato;
@@ -30,10 +34,14 @@ public class ModItems {
 	// Foods
 	public static Item banana = new Banana();
 	public static Item butter = new Butter(4000, 1, false);
+	public static Item caramel = new Caramel(4000, 1, false);
 	public static Item cheese = new Cheese(4001, 5, false);
 	public static Item cherry = new Cherry(4002, 4, false);
 	public static Item chilli = new Chilli();
 	public static Item chocolate = new Chocolate(4000, 4, false);
+	public static Item chocolateCake = new ChocolateCake(4000, 10, false);
+	public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
+	public static Item cupcake = new Cupcake(4000, 6, false);
 	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
 	public static Item tomato = new Tomato();
@@ -59,10 +67,14 @@ public class ModItems {
 		// Foods
 		GameRegistry.registerItem(banana, banana.getUnlocalizedName());
 		GameRegistry.registerItem(butter, butter.getUnlocalizedName());
+		GameRegistry.registerItem(caramel, caramel.getUnlocalizedName());
 		GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
 		GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
 		GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
 		GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
+		GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
+		GameRegistry.registerItem(chocolateCupcake, chocolateCupcake.getUnlocalizedName());
+		GameRegistry.registerItem(cupcake, cupcake.getUnlocalizedName());
 		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());

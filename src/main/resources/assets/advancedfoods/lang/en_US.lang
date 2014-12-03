@@ -2,10 +2,14 @@
 // Food
 item.advancedfoods:Banana.name=Banana
 item.advancedfoods:Butter.name=Butter
+item.advancedfoods:Caramel.name=Caramel
 item.advancedfoods:Cheese.name=Cheese
 item.advancedfoods:Cherry.name=Cherry
 item.advancedfoods:Chilli.name=Chilli
 item.advancedfoods:Chocolate.name=Chocolate
+item.advancedfoods:ChocolateCake.name=Chocolate Cake
+item.advancedfoods:ChocolateCupcake.name=Chocolate Cupcake
+item.advancedfoods:Cupcake.name=Cupcake
 item.advancedfoods:Lemon.name=Lemon
 item.advancedfoods:Strawberry.name=Strawberry
 item.advancedfoods:Tomato.name=Tomato
