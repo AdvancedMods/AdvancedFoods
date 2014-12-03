@@ -5,8 +5,5 @@ item.advancedfoods:Cherry.name=Cherry
 item.advancedfoods:Chilli.name=Chilli
 item.advancedfoods:Strawberry.name=Strawberry
 
-// Seeds
-item.advancedfoods:ChilliSeeds.name=Chilli Seeds
-
 // Crops
 tile.advancedfoods:ChilliCrop.name=Chilli Crop

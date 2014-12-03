@@ -1,6 +1,10 @@
 package com.zandor300.advancedfoods.generic;
 
+import com.zandor300.advancedfoods.reference.Reference;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -22,6 +26,12 @@ public class AFItemSeeds extends ItemFood implements IPlantable {
         super(parHealAmount, parSaturationModifier, false);
         theBlockPlant = parBlockPlant;
         soilId = parSoilBlock;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IIconRegister iconRegister) {
+        itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 
     @Override

@@ -17,11 +17,8 @@ public class ModItems {
 	public static Item butter = new Butter(4000, 1, false);
 	public static Item cheese = new Cheese(4001, 5, false);
 	public static Item cherry = new Cherry(4002, 4, false);
-	public static Item chilli = new Chilli(4003, 3, false);
+	public static Item chilli = new Chilli();
 	public static Item strawberry = new Strawberry(4003, 6, false);
-
-	// Seeds
-	public static Item chilliSeeds = new ChilliSeeds();
 
 	public static void init() {
 		GameRegistry.registerItem(butter,"Butter");
@@ -29,9 +26,6 @@ public class ModItems {
 		GameRegistry.registerItem(cherry, "Cherry");
 		GameRegistry.registerItem(chilli, "Chilli");
 		GameRegistry.registerItem(strawberry, "Strawberry");
-
-		// Seeds
-		GameRegistry.registerItem(chilliSeeds, "Chilli Seeds");
 	}
 
 }
