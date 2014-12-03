@@ -22,15 +22,15 @@ public class AFCreativeTab {
         }
     };
 
-    public static final CreativeTabs minerals = new CreativeTabs(Reference.MOD_ID) {
+    public static final CreativeTabs objects = new CreativeTabs(Reference.MOD_ID) {
         @Override
         public Item getTabIconItem() {
-            return ModItems.butter;
+            return ModItems.smoothyGlass;
         }
 
         @Override
         public String getTranslatedTabLabel() {
-            return "Minerals";
+            return "Objects";
         }
     };
 }
