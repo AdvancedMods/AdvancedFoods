@@ -1,6 +1,6 @@
 package com.zandor300.advancedfoods.initialization;
 
-import com.zandor300.advancedfoods.items.crop.CropChilli;
+import com.zandor300.advancedfoods.items.crop.ChilliPlant;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 
@@ -9,10 +9,10 @@ import net.minecraft.block.Block;
  */
 public class ModBlocks {
 
-    public static Block chilliCrop = new CropChilli();
+    public static Block chilliPlant = new ChilliPlant();
 
     public static void init() {
-        GameRegistry.registerBlock(chilliCrop, "Chilli Crop");
+        GameRegistry.registerBlock(chilliPlant, "Chilli Plant");
     }
 
 }
