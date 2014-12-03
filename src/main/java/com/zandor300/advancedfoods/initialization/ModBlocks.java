@@ -10,12 +10,12 @@ import net.minecraft.block.Block;
  */
 public class ModBlocks {
 
-    public static Block chilliPlant = new ChilliPlant();
-    public static Block strawberryPlant = new StrawberryPlant();
+	public static Block chilliPlant = new ChilliPlant();
+	public static Block strawberryPlant = new StrawberryPlant();
 
-    public static void init() {
-        GameRegistry.registerBlock(chilliPlant, "Chilli Plant");
-        GameRegistry.registerBlock(strawberryPlant, "Strawberry Plant");
-    }
+	public static void init() {
+		GameRegistry.registerBlock(chilliPlant, chilliPlant.getUnlocalizedName());
+		GameRegistry.registerBlock(strawberryPlant, strawberryPlant.getUnlocalizedName());
+	}
 
 }

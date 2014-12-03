@@ -1,10 +1,10 @@
 package com.zandor300.advancedfoods.initialization;
 
+import com.zandor300.advancedfoods.items.food.Butter;
 import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
 import com.zandor300.advancedfoods.items.food.Chilli;
 import com.zandor300.advancedfoods.items.food.Strawberry;
-import com.zandor300.advancedfoods.items.food.Butter;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -20,11 +20,11 @@ public class ModItems {
 	public static Item strawberry = new Strawberry();
 
 	public static void init() {
-		GameRegistry.registerItem(butter,"Butter");
-		GameRegistry.registerItem(cheese, "Cheese");
-		GameRegistry.registerItem(cherry, "Cherry");
-		GameRegistry.registerItem(chilli, "Chilli");
-		GameRegistry.registerItem(strawberry, "Strawberry");
+		GameRegistry.registerItem(butter, butter.getUnlocalizedName());
+		GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
+		GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
+		GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
+		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 	}
 
 }
