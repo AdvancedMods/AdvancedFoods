@@ -9,9 +9,14 @@ item.advancedfoods:Tomato.name=Tomato
 item.advancedfoods:TomatoSoup.name=Tomato Soup
 
 // Drinks
+// Lemonade
 item.advancedfoods:Lemonade.name=Lemonade
 item.advancedfoods:CherryLemonade.name=Cherry Lemonade
 item.advancedfoods:StrawberryLemonade.name=Strawberry Lemonade
+
+// Smoothy
+item.advancedfoods:CherrySmoothy.name=Cherry Smoothy
+item.advancedfoods:StrawberrySmooty.name=Strawberry Smoothy
 
 // Misc
 item.advancedfoods:SmoothyGlass.name=Smoothy Glass
