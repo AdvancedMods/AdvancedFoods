@@ -1,5 +1,7 @@
 package com.zandor300.advancedfoods.initialization;
 
+import com.zandor300.advancedfoods.items.drinks.lemonade.Lemonade;
+import com.zandor300.advancedfoods.items.drinks.lemonade.StrawberryLemonade;
 import com.zandor300.advancedfoods.items.food.Butter;
 import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
@@ -14,6 +16,7 @@ import net.minecraft.item.Item;
  */
 public class ModItems {
 
+	// Foods
 	public static Item butter = new Butter(4000, 1, false);
 	public static Item cheese = new Cheese(4001, 5, false);
 	public static Item cherry = new Cherry(4002, 4, false);
@@ -21,13 +24,22 @@ public class ModItems {
 	public static Item strawberry = new Strawberry();
 	public static Item tomato = new Tomato();
 
+	// Drinks
+	public static Item lemonade = new Lemonade(5000, 4, false);
+	public static Item strawberryLemonade = new StrawberryLemonade(5001, 5, false);
+
 	public static void init() {
+		// Foods
 		GameRegistry.registerItem(butter, butter.getUnlocalizedName());
 		GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
 		GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
 		GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
+
+		// Drinks
+		GameRegistry.registerItem(lemonade, lemonade.getUnlocalizedName());
+		GameRegistry.registerItem(strawberryLemonade, strawberryLemonade.getUnlocalizedName());
 	}
 
 }
