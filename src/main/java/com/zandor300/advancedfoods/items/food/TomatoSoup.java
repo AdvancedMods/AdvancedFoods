@@ -7,8 +7,8 @@ import com.zandor300.advancedfoods.generic.AFItemFood;
  */
 public class TomatoSoup extends AFItemFood {
 
-    public TomatoSoup(int id, int heal, boolean b) {
-        super(id, b);
-        this.setUnlocalizedName("TomatoSoup");
-    }
+	public TomatoSoup(int id, int heal, boolean b) {
+		super(id, b);
+		this.setUnlocalizedName("TomatoSoup");
+	}
 }

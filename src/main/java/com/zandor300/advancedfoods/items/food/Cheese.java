@@ -7,8 +7,8 @@ import com.zandor300.advancedfoods.generic.AFItemFood;
  */
 public class Cheese extends AFItemFood {
 
-    public Cheese(int id, int heal, boolean b) {
-        super(id, b);
-        this.setUnlocalizedName("Cheese");
-    }
+	public Cheese(int id, int heal, boolean b) {
+		super(id, b);
+		this.setUnlocalizedName("Cheese");
+	}
 }
