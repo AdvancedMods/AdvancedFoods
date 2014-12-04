@@ -18,6 +18,7 @@ import com.zandor300.advancedfoods.items.food.Chocolate;
 import com.zandor300.advancedfoods.items.food.ChocolateCake;
 import com.zandor300.advancedfoods.items.food.ChocolateCupcake;
 import com.zandor300.advancedfoods.items.food.Cupcake;
+import com.zandor300.advancedfoods.items.food.Kiwi;
 import com.zandor300.advancedfoods.items.food.Lemon;
 import com.zandor300.advancedfoods.items.food.Strawberry;
 import com.zandor300.advancedfoods.items.food.Tomato;
@@ -43,6 +44,7 @@ public class ModItems {
 	public static Item chocolateCake = new ChocolateCake(4000, 10, false);
 	public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
 	public static Item cupcake = new Cupcake(4000, 6, false);
+	public static Item kiwi = new Kiwi(4000, 4, false);
 	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
 	public static Item tomato = new Tomato();
@@ -77,6 +79,7 @@ public class ModItems {
 		GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
 		GameRegistry.registerItem(chocolateCupcake, chocolateCupcake.getUnlocalizedName());
 		GameRegistry.registerItem(cupcake, cupcake.getUnlocalizedName());
+		GameRegistry.registerItem(kiwi, kiwi.getUnlocalizedName());
 		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
