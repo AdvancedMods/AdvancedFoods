@@ -14,12 +14,12 @@ import java.util.Random;
 /**
  * Created by Zandor on 4-12-2014.
  */
-public class KiwiPlant extends AFBlockCrop {
+public class CherryPlant extends AFBlockCrop {
 
-	public KiwiPlant() {
+	public CherryPlant() {
 		super();
-		setBlockName("KiwiPlant");
-		setBlockTextureName(Reference.MOD_ID + ":kiwi_0");
+		setBlockName("CherryPlant");
+		setBlockTextureName(Reference.MOD_ID + ":cherry_0");
 	}
 
 	/**
@@ -32,21 +32,21 @@ public class KiwiPlant extends AFBlockCrop {
 
 	@Override
 	public Item getItemDropped(int parMetadata, Random parRand, int parFortune) {
-		return (ModItems.kiwi);
+		return (ModItems.cherry);
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister parIIconRegister) {
 		iIcon = new IIcon[maxGrowthStage + 1];
-		iIcon[0] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_0");
-		iIcon[1] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_0");
-		iIcon[2] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_1");
-		iIcon[3] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_1");
-		iIcon[4] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_2");
-		iIcon[5] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_2");
-		iIcon[6] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_3");
-		iIcon[7] = parIIconRegister.registerIcon(Reference.MOD_ID + ":kiwi_3");
+		iIcon[0] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_0");
+		iIcon[1] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_0");
+		iIcon[2] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_1");
+		iIcon[3] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_1");
+		iIcon[4] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_2");
+		iIcon[5] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_2");
+		iIcon[6] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_3");
+		iIcon[7] = parIIconRegister.registerIcon(Reference.MOD_ID + ":cherry_3");
 	}
 
 }

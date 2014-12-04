@@ -1,11 +1,13 @@
 package com.zandor300.advancedfoods.initialization;
 
 import com.zandor300.advancedfoods.items.drinks.lemonade.CherryLemonade;
+import com.zandor300.advancedfoods.items.drinks.lemonade.KiwiLemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.Lemonade;
 import com.zandor300.advancedfoods.items.drinks.lemonade.StrawberryLemonade;
 import com.zandor300.advancedfoods.items.drinks.smoothies.BananaSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.CherrySmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.ChocolateSmoothy;
+import com.zandor300.advancedfoods.items.drinks.smoothies.KiwiSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.LemonSmoothy;
 import com.zandor300.advancedfoods.items.drinks.smoothies.StrawberrySmoothy;
 import com.zandor300.advancedfoods.items.food.Banana;
@@ -54,12 +56,14 @@ public class ModItems {
 	// Lemonade
 	public static Item lemonade = new Lemonade(5000, 4, false);
 	public static Item cherryLemonade = new CherryLemonade(5001, 5, false);
+	public static Item kiwiLemonade = new KiwiLemonade(5002, 5, false);
 	public static Item strawberryLemonade = new StrawberryLemonade(5002, 5, false);
 
 	// Smoothy
 	public static Item bananaSmoothy = new BananaSmoothy(5000, 6, false);
 	public static Item cherrySmoothy = new CherrySmoothy(5000, 6, false);
 	public static Item chocolateSmoothy = new ChocolateSmoothy(5000, 6, false);
+	public static Item kiwiSmoothy = new KiwiSmoothy(5000, 6, false);
 	public static Item lemonSmoothy = new LemonSmoothy(5000, 6, false);
 	public static Item strawberrySmoothy = new StrawberrySmoothy(5000, 6, false);
 
@@ -89,12 +93,14 @@ public class ModItems {
 		// Lemonade
 		GameRegistry.registerItem(lemonade, lemonade.getUnlocalizedName());
 		GameRegistry.registerItem(cherryLemonade, cherryLemonade.getUnlocalizedName());
+		GameRegistry.registerItem(kiwiLemonade, kiwiLemonade.getUnlocalizedName());
 		GameRegistry.registerItem(strawberryLemonade, strawberryLemonade.getUnlocalizedName());
 
 		// Smoothy
 		GameRegistry.registerItem(bananaSmoothy, bananaSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(cherrySmoothy, cherrySmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(chocolateSmoothy, chocolateSmoothy.getUnlocalizedName());
+		GameRegistry.registerItem(kiwiSmoothy, kiwiSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(lemonSmoothy, lemonSmoothy.getUnlocalizedName());
 		GameRegistry.registerItem(strawberrySmoothy, strawberrySmoothy.getUnlocalizedName());
 

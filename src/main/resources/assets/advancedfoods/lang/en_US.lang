@@ -20,12 +20,14 @@ item.advancedfoods:TomatoSoup.name=Tomato Soup
 // Lemonade
 item.advancedfoods:Lemonade.name=Lemonade
 item.advancedfoods:CherryLemonade.name=Cherry Lemonade
+item.advancedfoods:KiwiLemonade.name=Kiwi Lemonade
 item.advancedfoods:StrawberryLemonade.name=Strawberry Lemonade
 
 // Smoothy
 item.advancedfoods:BananaSmoothy.name=Banana Smoothy
 item.advancedfoods:CherrySmoothy.name=Cherry Smoothy
 item.advancedfoods:ChocolateSmoothy.name=Chocolate Smoothy
+item.advancedfoods:KiwiSmoothy.name=Kiwi Smoothy
 item.advancedfoods:LemonSmoothy.name=Lemon Smoothy
 item.advancedfoods:StrawberrySmoothy.name=Strawberry Smoothy
 
@@ -34,7 +36,10 @@ item.advancedfoods:IceCubes.name=Ice Cubes
 item.advancedfoods:SmoothyGlass.name=Smoothy Glass
 
 // Crops
+item.advancedfoods:BananaPlant.name=Banana Plant
+item.advancedfoods:CherryPlant.name=Cherry Plant
 tile.advancedfoods:ChilliPlant.name=Chilli Plant
+tile.advancedfoods.KiwiPlant.name=Kiwi Plant
 tile.advancedfoods:LemonPlant.name=Lemon Plant
 tile.advancedfoods:StrawberryPlant.name=Strawberry Plant
 tile.advancedfoods:TomatoPlant.name=Tomato Plant

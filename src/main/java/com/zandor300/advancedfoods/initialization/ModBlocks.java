@@ -1,6 +1,7 @@
 package com.zandor300.advancedfoods.initialization;
 
 import com.zandor300.advancedfoods.items.crop.BananaPlant;
+import com.zandor300.advancedfoods.items.crop.CherryPlant;
 import com.zandor300.advancedfoods.items.crop.ChilliPlant;
 import com.zandor300.advancedfoods.items.crop.KiwiPlant;
 import com.zandor300.advancedfoods.items.crop.LemonPlant;
@@ -15,6 +16,7 @@ import net.minecraft.block.Block;
 public class ModBlocks {
 
 	public static Block bananaPlant = new BananaPlant();
+	public static Block cherryPlant = new CherryPlant();
 	public static Block chilliPlant = new ChilliPlant();
 	public static Block kiwiPlant = new KiwiPlant();
 	public static Block lemonPlant = new LemonPlant();
@@ -23,6 +25,7 @@ public class ModBlocks {
 
 	public static void init() {
 		GameRegistry.registerBlock(bananaPlant, bananaPlant.getUnlocalizedName());
+		GameRegistry.registerBlock(cherryPlant, cherryPlant.getUnlocalizedName());
 		GameRegistry.registerBlock(chilliPlant, chilliPlant.getUnlocalizedName());
 		GameRegistry.registerBlock(kiwiPlant, kiwiPlant.getUnlocalizedName());
 		GameRegistry.registerBlock(lemonPlant, lemonPlant.getUnlocalizedName());
