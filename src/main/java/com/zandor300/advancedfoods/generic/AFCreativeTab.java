@@ -33,4 +33,16 @@ public class AFCreativeTab {
 			return "Objects";
 		}
 	};
+
+	public static final CreativeTabs ingredients = new CreativeTabs(Reference.MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.dough;
+		}
+
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Ingredients";
+		}
+	};
 }

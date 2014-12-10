@@ -32,9 +32,13 @@ import com.zandor300.advancedfoods.items.food.Toast;
 import com.zandor300.advancedfoods.items.food.ToastSandwich;
 import com.zandor300.advancedfoods.items.food.Tomato;
 import com.zandor300.advancedfoods.items.food.TomatoSoup;
+import com.zandor300.advancedfoods.items.ingredients.Dough;
+import com.zandor300.advancedfoods.items.ingredients.Flour;
 import com.zandor300.advancedfoods.items.misc.IceCubes;
 import com.zandor300.advancedfoods.items.misc.Jar;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
+import com.zandor300.advancedfoods.items.sauce.Ketchup;
+import com.zandor300.advancedfoods.items.sauce.Mustard;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -87,6 +91,14 @@ public class ModItems {
 	public static Item jar = new Jar();
 	public static Item smoothyGlass = new SmoothyGlass();
 
+	// Sauce
+	public static Item ketchup = new Ketchup();
+	public static Item mustard = new Mustard();
+
+	// Ingredients
+	public static Item dough = new Dough();
+	public static Item flour = new Flour();
+
 	public static void init() {
 		// Foods
 		GameRegistry.registerItem(banana, banana.getUnlocalizedName());
@@ -131,6 +143,14 @@ public class ModItems {
 		GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
 		GameRegistry.registerItem(jar, jar.getUnlocalizedName());
 		GameRegistry.registerItem(smoothyGlass, smoothyGlass.getUnlocalizedName());
+
+		// Sauce
+		GameRegistry.registerItem(ketchup, ketchup.getUnlocalizedName());
+		GameRegistry.registerItem(mustard, mustard.getUnlocalizedName());
+
+		// Ingredients
+		GameRegistry.registerItem(dough, dough.getUnlocalizedName());
+		GameRegistry.registerItem(flour, flour.getUnlocalizedName());
 	}
 
 }

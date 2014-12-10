@@ -18,6 +18,7 @@ public class Recipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chocolateCake), "ccc", "ses", "www", 'c', ModItems.chocolate, 's', Items.sugar, 'e', Items.egg, 'w', Items.wheat));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chocolateCupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', ModItems.chocolateCake));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.cupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', Items.cake));
+		GameRegistry.addSmelting(new ItemStack(Items.bread), new ItemStack(ModItems.toast), 5);
 
 		// Drinks
 		// Lemonade
@@ -37,8 +38,11 @@ public class Recipes {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes), new ItemStack(Items.snowball)));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), "iii", "iii", "iii", 'i', new ItemStack(ModItems.iceCubes)));
 
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), "g g", "ggg", 'g', Blocks.glass_pane));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " g ", "g g", "ggg", 'g', Blocks.glass_pane));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.smoothyGlass), "g g", " g ", 'g', Blocks.glass_pane));
+
+		// Ingredients
+		GameRegistry.addSmelting(new ItemStack(ModItems.dough), new ItemStack(Items.bread), 5);
 	}
 
 }
