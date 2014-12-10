@@ -27,6 +27,7 @@ import com.zandor300.advancedfoods.items.food.Jellybeans;
 import com.zandor300.advancedfoods.items.food.Kiwi;
 import com.zandor300.advancedfoods.items.food.Lemon;
 import com.zandor300.advancedfoods.items.food.Strawberry;
+import com.zandor300.advancedfoods.items.food.Taco;
 import com.zandor300.advancedfoods.items.food.Toast;
 import com.zandor300.advancedfoods.items.food.ToastSandwich;
 import com.zandor300.advancedfoods.items.food.Tomato;
@@ -60,6 +61,7 @@ public class ModItems {
 	public static Item kiwi = new Kiwi(4000, 4, false);
 	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
+	public static Item taco = new Taco(4000, 4, false);
 	public static Item toast = new Toast(4000, 2, false);
 	public static Item toastSandwich = new ToastSandwich(4000, 6, false);
 	public static Item tomato = new Tomato();
@@ -104,6 +106,7 @@ public class ModItems {
 		GameRegistry.registerItem(kiwi, kiwi.getUnlocalizedName());
 		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
+		GameRegistry.registerItem(taco, taco.getUnlocalizedName());
 		GameRegistry.registerItem(toast, toast.getUnlocalizedName());
 		GameRegistry.registerItem(toastSandwich, toastSandwich.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());

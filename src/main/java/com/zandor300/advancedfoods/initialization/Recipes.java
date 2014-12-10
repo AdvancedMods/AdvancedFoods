@@ -37,6 +37,7 @@ public class Recipes {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes), new ItemStack(Items.snowball)));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), "iii", "iii", "iii", 'i', new ItemStack(ModItems.iceCubes)));
 
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), "g g", "ggg", 'g', Blocks.glass_pane));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.smoothyGlass), "g g", " g ", 'g', Blocks.glass_pane));
 	}
 
