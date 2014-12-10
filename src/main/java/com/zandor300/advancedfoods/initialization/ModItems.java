@@ -15,6 +15,7 @@ import com.zandor300.advancedfoods.items.food.Butter;
 import com.zandor300.advancedfoods.items.food.Caramel;
 import com.zandor300.advancedfoods.items.food.Cheese;
 import com.zandor300.advancedfoods.items.food.Cherry;
+import com.zandor300.advancedfoods.items.food.ChickenSandwich;
 import com.zandor300.advancedfoods.items.food.Chilli;
 import com.zandor300.advancedfoods.items.food.Chocolate;
 import com.zandor300.advancedfoods.items.food.ChocolateCake;
@@ -47,6 +48,7 @@ public class ModItems {
 	public static Item caramel = new Caramel(4000, 1, false);
 	public static Item cheese = new Cheese(4001, 5, false);
 	public static Item cherry = new Cherry(4002, 4, false);
+	public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
 	public static Item chilli = new Chilli();
 	public static Item chocolate = new Chocolate(4000, 4, false);
 	public static Item chocolateCake = new ChocolateCake(4000, 10, false);
@@ -59,7 +61,7 @@ public class ModItems {
 	public static Item lemon = new Lemon();
 	public static Item strawberry = new Strawberry();
 	public static Item toast = new Toast(4000, 2, false);
-	public static Item toastSandwich = new ToastSandwich(4000, 4, false);
+	public static Item toastSandwich = new ToastSandwich(4000, 6, false);
 	public static Item tomato = new Tomato();
 	public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
 
@@ -90,6 +92,7 @@ public class ModItems {
 		GameRegistry.registerItem(caramel, caramel.getUnlocalizedName());
 		GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
 		GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
+		GameRegistry.registerItem(chickenSandwich, chickenSandwich.getUnlocalizedName());
 		GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
 		GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
 		GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
