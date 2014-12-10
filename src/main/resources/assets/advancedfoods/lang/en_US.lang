@@ -10,10 +10,12 @@ item.advancedfoods:Chocolate.name=Chocolate
 item.advancedfoods:ChocolateCake.name=Chocolate Cake
 item.advancedfoods:ChocolateCupcake.name=Chocolate Cupcake
 item.advancedfoods:Cupcake.name=Cupcake
+item.advancedfoods:Hotdog.name=Hotdog
 item.advancedfoods:Jellybeans.name=Jellybeans
 item.advancedfoods:Kiwi.name=Kiwi
 item.advancedfoods:Lemon.name=Lemon
 item.advancedfoods:Strawberry.name=Strawberry
+item.advancedfoods:Toast.name=Toast
 item.advancedfoods:Tomato.name=Tomato
 item.advancedfoods:TomatoSoup.name=Tomato Soup
 
