@@ -20,6 +20,7 @@ import com.zandor300.advancedfoods.items.food.Chocolate;
 import com.zandor300.advancedfoods.items.food.ChocolateCake;
 import com.zandor300.advancedfoods.items.food.ChocolateCupcake;
 import com.zandor300.advancedfoods.items.food.Cupcake;
+import com.zandor300.advancedfoods.items.food.FishSandwich;
 import com.zandor300.advancedfoods.items.food.Hotdog;
 import com.zandor300.advancedfoods.items.food.Jellybeans;
 import com.zandor300.advancedfoods.items.food.Kiwi;
@@ -51,6 +52,7 @@ public class ModItems {
 	public static Item chocolateCake = new ChocolateCake(4000, 10, false);
 	public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
 	public static Item cupcake = new Cupcake(4000, 6, false);
+	public static Item fishSandwich = new FishSandwich(4000, 6, false);
 	public static Item hotdog = new Hotdog(4000, 6, false);
 	public static Item jellybeans = new Jellybeans(4000, 3, false);
 	public static Item kiwi = new Kiwi(4000, 4, false);
@@ -93,6 +95,7 @@ public class ModItems {
 		GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
 		GameRegistry.registerItem(chocolateCupcake, chocolateCupcake.getUnlocalizedName());
 		GameRegistry.registerItem(cupcake, cupcake.getUnlocalizedName());
+		GameRegistry.registerItem(fishSandwich, fishSandwich.getUnlocalizedName());
 		GameRegistry.registerItem(hotdog, hotdog.getUnlocalizedName());
 		GameRegistry.registerItem(jellybeans, jellybeans.getUnlocalizedName());
 		GameRegistry.registerItem(kiwi, kiwi.getUnlocalizedName());
