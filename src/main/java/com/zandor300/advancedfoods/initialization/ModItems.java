@@ -30,6 +30,7 @@ import com.zandor300.advancedfoods.items.food.ToastSandwich;
 import com.zandor300.advancedfoods.items.food.Tomato;
 import com.zandor300.advancedfoods.items.food.TomatoSoup;
 import com.zandor300.advancedfoods.items.misc.IceCubes;
+import com.zandor300.advancedfoods.items.misc.Jar;
 import com.zandor300.advancedfoods.items.misc.SmoothyGlass;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -77,6 +78,7 @@ public class ModItems {
 
 	// Misc
 	public static Item iceCubes = new IceCubes();
+	public static Item jar = new Jar();
 	public static Item smoothyGlass = new SmoothyGlass();
 
 	public static void init() {
@@ -97,6 +99,7 @@ public class ModItems {
 		GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
 		GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
 		GameRegistry.registerItem(toast, toast.getUnlocalizedName());
+		GameRegistry.registerItem(toastSandwich, toastSandwich.getUnlocalizedName());
 		GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
 		GameRegistry.registerItem(tomatoSoup, tomatoSoup.getUnlocalizedName());
 
@@ -117,6 +120,7 @@ public class ModItems {
 
 		// Misc
 		GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
+		GameRegistry.registerItem(jar, jar.getUnlocalizedName());
 		GameRegistry.registerItem(smoothyGlass, smoothyGlass.getUnlocalizedName());
 	}
 

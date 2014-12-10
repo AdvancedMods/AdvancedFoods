@@ -37,6 +37,7 @@ item.advancedfoods:StrawberrySmoothy.name=Strawberry Smoothy
 
 // Misc
 item.advancedfoods:IceCubes.name=Ice Cubes
+item.advancedfoods:Jar.name=Jar
 item.advancedfoods:SmoothyGlass.name=Smoothy Glass
 
 // Crops
