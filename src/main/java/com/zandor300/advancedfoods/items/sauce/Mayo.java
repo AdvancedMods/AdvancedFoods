@@ -4,13 +4,13 @@ import com.zandor300.advancedfoods.generic.AFCreativeTab;
 import com.zandor300.advancedfoods.generic.AFItem;
 
 /**
- * Created by Zandor on 10-12-2014.
+ * Created by Zandor300 on 10-12-2014.
  */
-public class Mustard extends AFItem {
+public class Mayo extends AFItem {
 
-	public Mustard() {
+	public Mayo() {
 		super();
-		setUnlocalizedName("Mustard");
+		setUnlocalizedName("Mayo");
 		setCreativeTab(AFCreativeTab.sauces);
 	}
 

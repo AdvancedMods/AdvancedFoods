@@ -55,8 +55,10 @@ tile.advancedfoods:TomatoPlant.name=Tomato Plant
 
 // Sauce
 item.advancedfoods:Ketchup.name=Ketchup
+item.advancedfoods:Mayo.name=Mayo
 item.advancedfoods:Mustard.name=Mustard
 
 // Ingredients
 item.advancedfoods:Dough.name=Dough
 item.advancedfoods:Flour.name=Flour
+item.advancedfoods:Salt.name=Salt

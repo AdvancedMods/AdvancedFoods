@@ -45,4 +45,16 @@ public class AFCreativeTab {
 			return "Ingredients";
 		}
 	};
+
+	public static final CreativeTabs sauces = new CreativeTabs(Reference.MOD_ID) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.ketchup;
+		}
+
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Sauces";
+		}
+	};
 }
