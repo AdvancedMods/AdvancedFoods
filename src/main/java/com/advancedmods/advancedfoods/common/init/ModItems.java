@@ -13,6 +13,7 @@ import com.advancedmods.advancedfoods.common.items.food.Taco;
 import com.advancedmods.advancedfoods.common.items.food.Toast;
 import com.advancedmods.advancedfoods.common.items.food.Tomato;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
+import com.advancedmods.advancedfoods.common.items.ingredients.Flour;
 import com.advancedmods.advancedfoods.common.items.misc.IceCubes;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
@@ -81,7 +82,7 @@ public class ModItems {
 
     // Ingredients
     public static Item dough = new Dough();
-    //public static Item flour = new Flour();
+    public static Item flour = new Flour();
     //public static Item salt = new Salt();
 
     public static void init() {
@@ -136,7 +137,7 @@ public class ModItems {
 
         // Ingredients
         GameRegistry.registerItem(dough, dough.getUnlocalizedName());
-        //GameRegistry.registerItem(flour, flour.getUnlocalizedName());
+        GameRegistry.registerItem(flour, flour.getUnlocalizedName());
         //GameRegistry.registerItem(salt, salt.getUnlocalizedName());
     }
 
