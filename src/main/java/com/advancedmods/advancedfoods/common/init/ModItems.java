@@ -33,12 +33,14 @@ import com.advancedmods.advancedfoods.common.items.smoothies.ChocolateSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.KiwiSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.LemonSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.StrawberrySmoothie;
+import com.advancedmods.advancedfoods.core.AFProps;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
 /**
  * Created by Dennisbonke on 11-2-2015.
  */
+@GameRegistry.ObjectHolder(AFProps.modid)
 public class ModItems {
 
     // Foods
