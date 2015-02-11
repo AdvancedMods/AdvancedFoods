@@ -21,11 +21,11 @@ public class Recipes {
         //GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.strawberryLemonade), new ItemStack(ModItems.lemonade), new ItemStack(ModItems.strawberry)));
 
         // Smoothy
-        //GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.bananaSmoothy), new ItemStack(ModItems.smoothyGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.banana)));
-        //GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherrySmoothy), new ItemStack(ModItems.smoothyGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.cherry)));
-        //GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateSmoothy), new ItemStack(ModItems.smoothyGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.chocolate)));
-        //GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.lemonSmoothy), new ItemStack(ModItems.smoothyGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.lemon)));
-        //GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.strawberrySmoothy), new ItemStack(ModItems.smoothyGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.strawberry)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.bananaSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.banana)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherrySmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.cherry)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.chocolate)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.lemonSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.lemon)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.strawberrySmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.strawberry)));
 
         // Misc
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes, 9), new ItemStack(Blocks.ice)));
@@ -40,7 +40,7 @@ public class Recipes {
         // Misc
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), "iii", "iii", "iii", 'i', new ItemStack(ModItems.iceCubes)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " g ", "g g", "ggg", 'g', Blocks.glass_pane));
-        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.smoothyGlass), "g g", " g ", 'g', Blocks.glass_pane));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.smoothieGlass), "g g", " g ", 'g', Blocks.glass_pane));
 
         // Smelting
         // Foods
