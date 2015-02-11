@@ -13,6 +13,7 @@ import com.advancedmods.advancedfoods.common.items.food.Taco;
 import com.advancedmods.advancedfoods.common.items.food.Toast;
 import com.advancedmods.advancedfoods.common.items.food.Tomato;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
+import com.advancedmods.advancedfoods.common.items.misc.IceCubes;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
 import com.advancedmods.advancedfoods.common.items.smoothies.BananaSmoothie;
@@ -69,7 +70,7 @@ public class ModItems {
     public static Item strawberrySmoothie = new StrawberrySmoothie(5000, 6, false);
 
     // Misc
-    //public static Item iceCubes = new IceCubes();
+    public static Item iceCubes = new IceCubes();
     //public static Item jar = new Jar();
     public static Item smoothieGlass = new SmoothieGlass();
 
@@ -124,7 +125,7 @@ public class ModItems {
         GameRegistry.registerItem(strawberrySmoothie, strawberrySmoothie.getUnlocalizedName());
 
         // Misc
-        //GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
+        GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
         //GameRegistry.registerItem(jar, jar.getUnlocalizedName());
         GameRegistry.registerItem(smoothieGlass, smoothieGlass.getUnlocalizedName());
 
