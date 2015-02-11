@@ -3,8 +3,6 @@ package com.advancedmods.advancedfoods.client;
 import com.advancedmods.advancedfoods.common.CommonProxy;
 
 /**
- * Copyright AdvancedMods 2015. All rights reserved.
- *
  * Created by Dennisbonke on 11-2-2015.
  */
 public class ClientProxy extends CommonProxy {
