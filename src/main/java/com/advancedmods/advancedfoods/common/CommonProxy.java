@@ -9,7 +9,7 @@ import com.advancedmods.advancedfoods.common.init.ModItems;
  */
 public class CommonProxy {
 
-    public static void preInit(){
+    public static void preInit() {
 
         // ModItems
         AdvancedFoods.log.debug("Loading Items...");
@@ -22,11 +22,11 @@ public class CommonProxy {
 
     }
 
-    public static void Init(){
+    public static void Init() {
 
     }
 
-    public static void postInit(){
+    public static void postInit() {
 
     }
 

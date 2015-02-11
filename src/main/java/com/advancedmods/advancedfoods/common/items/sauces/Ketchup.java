@@ -8,8 +8,8 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
  */
 public class Ketchup extends AFItem {
 
-	public Ketchup() {
-		super(AFCreativeTab.sauces);
-		setUnlocalizedName("Ketchup");
-	}
+    public Ketchup() {
+        super(AFCreativeTab.sauces);
+        setUnlocalizedName("Ketchup");
+    }
 }

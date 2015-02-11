@@ -8,8 +8,8 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
  */
 public class Dough extends AFItem {
 
-	public Dough() {
-		super(AFCreativeTab.ingredients);
-		setUnlocalizedName("Dough");
-	}
+    public Dough() {
+        super(AFCreativeTab.ingredients);
+        setUnlocalizedName("Dough");
+    }
 }
