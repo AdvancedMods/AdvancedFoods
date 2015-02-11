@@ -3,6 +3,7 @@ package com.advancedmods.advancedfoods.common;
 import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.init.ModBlocks;
 import com.advancedmods.advancedfoods.common.init.ModItems;
+import com.advancedmods.advancedfoods.common.init.Recipes;
 import com.advancedmods.advancedfoods.core.enviroment.CheckEnv;
 
 /**
@@ -26,6 +27,11 @@ public class CommonProxy {
     }
 
     public static void Init() {
+
+        // Recipes
+        AdvancedFoods.log.info("Loading Recipes...");
+        Recipes.init();
+        AdvancedFoods.log.info("Recipes Loaded");
 
     }
 

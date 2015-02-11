@@ -13,11 +13,11 @@ public class CheckEnv {
         AdvancedFoods.log.info("Checking Mods...");
 
         if (Loader.isModLoaded("dbcore")) {
-            AdvancedFoods.log.info("Core Init successful");
+            AdvancedFoods.log.debug("Core Init successful");
         }
 
-        if (Loader.isModLoaded("CofhCore")) {
-            AdvancedFoods.log.info("CoFHCore found, good to go!");
+        if (Loader.isModLoaded("CoFHCore")) {
+            AdvancedFoods.log.debug("CoFHCore found, good to go!");
         }
 
         if (Loader.isModLoaded("harvestcraft")) {
