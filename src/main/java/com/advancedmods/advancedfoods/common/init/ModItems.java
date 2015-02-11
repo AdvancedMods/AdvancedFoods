@@ -1,6 +1,8 @@
 package com.advancedmods.advancedfoods.common.init;
 
 import com.advancedmods.advancedfoods.common.items.Strawberry;
+import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
+import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -54,12 +56,12 @@ public class ModItems {
     //public static Item smoothyGlass = new SmoothyGlass();
 
     // Sauce
-    //public static Item ketchup = new Ketchup();
+    public static Item ketchup = new Ketchup();
     //public static Item mayo = new Mayo();
     //public static Item mustard = new Mustard();
 
     // Ingredients
-    //public static Item dough = new Dough();
+    public static Item dough = new Dough();
     //public static Item flour = new Flour();
     //public static Item salt = new Salt();
 
@@ -109,12 +111,12 @@ public class ModItems {
         //GameRegistry.registerItem(smoothyGlass, smoothyGlass.getUnlocalizedName());
 
         // Sauce
-        //GameRegistry.registerItem(ketchup, ketchup.getUnlocalizedName());
+        GameRegistry.registerItem(ketchup, ketchup.getUnlocalizedName());
         //GameRegistry.registerItem(mayo, mayo.getUnlocalizedName());
         //GameRegistry.registerItem(mustard, mustard.getUnlocalizedName());
 
         // Ingredients
-        //GameRegistry.registerItem(dough, dough.getUnlocalizedName());
+        GameRegistry.registerItem(dough, dough.getUnlocalizedName());
         //GameRegistry.registerItem(flour, flour.getUnlocalizedName());
         //GameRegistry.registerItem(salt, salt.getUnlocalizedName());
     }

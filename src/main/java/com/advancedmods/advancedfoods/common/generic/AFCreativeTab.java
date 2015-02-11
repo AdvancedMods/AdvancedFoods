@@ -1,5 +1,6 @@
 package com.advancedmods.advancedfoods.common.generic;
 
+import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.core.AFProps;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -53,8 +54,7 @@ public class AFCreativeTab {
     public static final CreativeTabs sauces = new CreativeTabs(AFProps.modid) {
         @Override
         public Item getTabIconItem() {
-            //return ModItems.ketchup;
-            return null;
+            return ModItems.ketchup;
         }
 
         @Override
