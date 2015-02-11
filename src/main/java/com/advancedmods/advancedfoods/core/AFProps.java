@@ -1,6 +1,8 @@
 package com.advancedmods.advancedfoods.core;
 
 /**
+ * Copyright AdvancedMods 2015. All rights reserved.
+ *
  * Created by Dennisbonke on 10-2-2015.
  */
 public class AFProps {
