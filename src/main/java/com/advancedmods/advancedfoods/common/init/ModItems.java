@@ -2,6 +2,7 @@ package com.advancedmods.advancedfoods.common.init;
 
 import com.advancedmods.advancedfoods.common.items.Strawberry;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
+import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -53,7 +54,7 @@ public class ModItems {
     // Misc
     //public static Item iceCubes = new IceCubes();
     //public static Item jar = new Jar();
-    //public static Item smoothyGlass = new SmoothyGlass();
+    public static Item smoothieGlass = new SmoothieGlass();
 
     // Sauce
     public static Item ketchup = new Ketchup();
@@ -108,7 +109,7 @@ public class ModItems {
         // Misc
         //GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
         //GameRegistry.registerItem(jar, jar.getUnlocalizedName());
-        //GameRegistry.registerItem(smoothyGlass, smoothyGlass.getUnlocalizedName());
+        GameRegistry.registerItem(smoothieGlass, smoothieGlass.getUnlocalizedName());
 
         // Sauce
         GameRegistry.registerItem(ketchup, ketchup.getUnlocalizedName());

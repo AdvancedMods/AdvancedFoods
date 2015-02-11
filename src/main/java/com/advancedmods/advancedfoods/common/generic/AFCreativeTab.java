@@ -28,8 +28,7 @@ public class AFCreativeTab {
     public static final CreativeTabs objects = new CreativeTabs(AFProps.modid) {
         @Override
         public Item getTabIconItem() {
-            //return ModItems.smoothyGlass;
-            return Item.getItemFromBlock(Blocks.glass);
+            return ModItems.smoothieGlass;
         }
 
         @Override
