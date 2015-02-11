@@ -31,12 +31,12 @@ item.advancedfoods:KiwiLemonade.name=Kiwi Lemonade
 item.advancedfoods:StrawberryLemonade.name=Strawberry Lemonade
 
 // Smoothy
-item.advancedfoods:BananaSmoothy.name=Banana Smoothy
-item.advancedfoods:CherrySmoothy.name=Cherry Smoothy
-item.advancedfoods:ChocolateSmoothy.name=Chocolate Smoothy
-item.advancedfoods:KiwiSmoothy.name=Kiwi Smoothy
-item.advancedfoods:LemonSmoothy.name=Lemon Smoothy
-item.advancedfoods:StrawberrySmoothy.name=Strawberry Smoothy
+item.advancedfoods:BananaSmoothie.name=Banana Smoothie
+item.advancedfoods:CherrySmoothie.name=Cherry Smoothie
+item.advancedfoods:ChocolateSmoothie.name=Chocolate Smoothie
+item.advancedfoods:KiwiSmoothie.name=Kiwi Smoothie
+item.advancedfoods:LemonSmoothie.name=Lemon Smoothie
+item.advancedfoods:StrawberrySmoothie.name=Strawberry Smoothie
 
 // Misc
 item.advancedfoods:Glass.name=Glass
