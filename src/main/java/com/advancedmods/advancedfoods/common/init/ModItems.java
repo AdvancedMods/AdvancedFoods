@@ -15,6 +15,7 @@ import com.advancedmods.advancedfoods.common.items.food.FishSandwich;
 import com.advancedmods.advancedfoods.common.items.food.Hotdog;
 import com.advancedmods.advancedfoods.common.items.food.Jellybeans;
 import com.advancedmods.advancedfoods.common.items.food.Kiwi;
+import com.advancedmods.advancedfoods.common.items.food.Lemon;
 import com.advancedmods.advancedfoods.common.items.food.Strawberry;
 import com.advancedmods.advancedfoods.common.items.food.Taco;
 import com.advancedmods.advancedfoods.common.items.food.Toast;
@@ -59,7 +60,7 @@ public class ModItems {
     public static Item hotdog = new Hotdog(4000, 6, false);
     public static Item jellybeans = new Jellybeans(4000, 3, false);
     public static Item kiwi = new Kiwi(4000, 4, false);
-    //public static Item lemon = new Lemon();
+    public static Item lemon = new Lemon();
     public static Item strawberry = new Strawberry();
     public static Item taco = new Taco(4000, 4, false);
     public static Item toast = new Toast(4000, 2, false);
@@ -114,7 +115,7 @@ public class ModItems {
         GameRegistry.registerItem(hotdog, hotdog.getUnlocalizedName());
         GameRegistry.registerItem(jellybeans, jellybeans.getUnlocalizedName());
         GameRegistry.registerItem(kiwi, kiwi.getUnlocalizedName());
-        //GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
+        GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
         GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
         GameRegistry.registerItem(taco, taco.getUnlocalizedName());
         GameRegistry.registerItem(toast, toast.getUnlocalizedName());
