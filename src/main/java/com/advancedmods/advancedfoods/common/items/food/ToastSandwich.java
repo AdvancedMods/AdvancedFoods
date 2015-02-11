@@ -9,7 +9,7 @@ public class ToastSandwich extends AFItemFood {
 
 	public ToastSandwich(int id, int heal, boolean b) {
 		super(id, b);
-		this.setUnlocalizedName("Toast Sandwich");
+		this.setUnlocalizedName("ToastSandwich");
 	}
 
 }

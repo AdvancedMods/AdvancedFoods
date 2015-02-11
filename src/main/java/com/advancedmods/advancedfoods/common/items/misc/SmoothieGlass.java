@@ -10,6 +10,6 @@ public class SmoothieGlass extends AFItem {
 
     public SmoothieGlass() {
         super(AFCreativeTab.objects);
-        setUnlocalizedName("Smoothie Glass");
+        setUnlocalizedName("SmoothieGlass");
     }
 }

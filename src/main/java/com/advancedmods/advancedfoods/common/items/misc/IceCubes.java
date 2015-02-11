@@ -10,7 +10,7 @@ public class IceCubes extends AFItem {
 
     public IceCubes() {
         super(AFCreativeTab.ingredients);
-        setUnlocalizedName("Ice Cubes");
+        setUnlocalizedName("IceCubes");
     }
 
 }
