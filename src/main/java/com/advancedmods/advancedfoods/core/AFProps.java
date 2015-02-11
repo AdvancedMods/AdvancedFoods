@@ -18,7 +18,7 @@ public class AFProps {
     public static final String name = "Advanced Foods";
     public static final String modid = "advancedfoods";
     public static final String version = REQUIRED_MC_VERSION + "-" + VERSION_BASE + "-" + VERSION_IDENTIFIER;
-    public static final String dependencies = "required-after:FML@[" + FORGE_VERSION + "]" + ";" + "required-after:dbcore";
+    public static final String dependencies = "required-after:Forge@[" + FORGE_VERSION + "]" + ";" + "required-after:dbcore";
     public static final String commonproxy = "com.advancedmods.advancedfoods.common.CommonProxy";
     public static final String clientproxy = "com.advancedmods.advancedfoods.client.ClientProxy";
 
