@@ -14,6 +14,7 @@ import com.advancedmods.advancedfoods.common.items.food.Tomato;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
+import com.advancedmods.advancedfoods.common.items.smoothies.BananaSmoothie;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -54,7 +55,7 @@ public class ModItems {
     //public static Item strawberryLemonade = new StrawberryLemonade(5002, 5, false);
 
     // Smoothy
-    //public static Item bananaSmoothy = new BananaSmoothy(5000, 6, false);
+    public static Item bananaSmoothie = new BananaSmoothie(5000, 6, false);
     //public static Item cherrySmoothy = new CherrySmoothy(5000, 6, false);
     //public static Item chocolateSmoothy = new ChocolateSmoothy(5000, 6, false);
     //public static Item kiwiSmoothy = new KiwiSmoothy(5000, 6, false);
@@ -109,7 +110,7 @@ public class ModItems {
         //GameRegistry.registerItem(strawberryLemonade, strawberryLemonade.getUnlocalizedName());
 
         // Smoothy
-        //GameRegistry.registerItem(bananaSmoothy, bananaSmoothy.getUnlocalizedName());
+        GameRegistry.registerItem(bananaSmoothie, bananaSmoothie.getUnlocalizedName());
         //GameRegistry.registerItem(cherrySmoothy, cherrySmoothy.getUnlocalizedName());
         //GameRegistry.registerItem(chocolateSmoothy, chocolateSmoothy.getUnlocalizedName());
         //GameRegistry.registerItem(kiwiSmoothy, kiwiSmoothy.getUnlocalizedName());
