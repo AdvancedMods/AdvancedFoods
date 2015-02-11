@@ -15,8 +15,7 @@ public class AFCreativeTab {
     public static final CreativeTabs food = new CreativeTabs(AFProps.modid) {
         @Override
         public Item getTabIconItem() {
-            //return ModItems.strawberry;
-            return Items.cake;
+            return ModItems.strawberry;
         }
 
         @Override
