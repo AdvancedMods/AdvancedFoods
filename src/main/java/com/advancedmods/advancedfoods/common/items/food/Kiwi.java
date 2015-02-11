@@ -7,9 +7,9 @@ import com.advancedmods.advancedfoods.common.generic.AFItemFood;
  */
 public class Kiwi extends AFItemFood {
 
-	public Kiwi(int id, int heal, boolean b) {
-		super(id, b);
-		this.setUnlocalizedName("Kiwi");
-	}
+    public Kiwi(int id, int heal, boolean b) {
+        super(id, b);
+        this.setUnlocalizedName("Kiwi");
+    }
 
 }

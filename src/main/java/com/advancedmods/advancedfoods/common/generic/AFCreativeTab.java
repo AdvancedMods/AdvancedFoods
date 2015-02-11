@@ -3,7 +3,6 @@ package com.advancedmods.advancedfoods.common.generic;
 import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.core.AFProps;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
 /**

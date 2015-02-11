@@ -7,15 +7,15 @@ import com.advancedmods.advancedfoods.common.CommonProxy;
  */
 public class ClientProxy extends CommonProxy {
 
-    public static void preInit(){
+    public static void preInit() {
 
     }
 
-    public static void Init(){
+    public static void Init() {
 
     }
 
-    public static void postInit(){
+    public static void postInit() {
 
     }
 

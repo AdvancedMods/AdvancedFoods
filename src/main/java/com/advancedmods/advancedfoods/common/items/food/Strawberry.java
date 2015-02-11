@@ -8,8 +8,8 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
  */
 public class Strawberry extends AFItem {
 
-	public Strawberry() {
-		super(AFCreativeTab.food);
-		setUnlocalizedName("Strawberry");
-	}
+    public Strawberry() {
+        super(AFCreativeTab.food);
+        setUnlocalizedName("Strawberry");
+    }
 }
