@@ -2,6 +2,9 @@ package com.advancedmods.advancedfoods.common.init;
 
 import com.advancedmods.advancedfoods.common.items.food.Banana;
 import com.advancedmods.advancedfoods.common.items.food.Butter;
+import com.advancedmods.advancedfoods.common.items.food.Caramel;
+import com.advancedmods.advancedfoods.common.items.food.Cheese;
+import com.advancedmods.advancedfoods.common.items.food.Cherry;
 import com.advancedmods.advancedfoods.common.items.food.Strawberry;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
@@ -17,9 +20,9 @@ public class ModItems {
     // Foods
     public static Item banana = new Banana();
     public static Item butter = new Butter(4000, 1, false);
-    //public static Item caramel = new Caramel(4000, 1, false);
-    //public static Item cheese = new Cheese(4001, 5, false);
-    //public static Item cherry = new Cherry(4002, 4, false);
+    public static Item caramel = new Caramel(4000, 1, false);
+    public static Item cheese = new Cheese(4001, 5, false);
+    public static Item cherry = new Cherry(4002, 4, false);
     //public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
     //public static Item chilli = new Chilli();
     //public static Item chocolate = new Chocolate(4000, 4, false);
@@ -72,9 +75,9 @@ public class ModItems {
         // Foods
         GameRegistry.registerItem(banana, banana.getUnlocalizedName());
         GameRegistry.registerItem(butter, butter.getUnlocalizedName());
-        //GameRegistry.registerItem(caramel, caramel.getUnlocalizedName());
-        //GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
-        //GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
+        GameRegistry.registerItem(caramel, caramel.getUnlocalizedName());
+        GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
+        GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
         //GameRegistry.registerItem(chickenSandwich, chickenSandwich.getUnlocalizedName());
         //GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
         //GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
