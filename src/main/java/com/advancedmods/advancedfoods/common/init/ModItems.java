@@ -6,6 +6,13 @@ import com.advancedmods.advancedfoods.common.items.food.Caramel;
 import com.advancedmods.advancedfoods.common.items.food.Cheese;
 import com.advancedmods.advancedfoods.common.items.food.Cherry;
 import com.advancedmods.advancedfoods.common.items.food.ChickenSandwich;
+import com.advancedmods.advancedfoods.common.items.food.Chilli;
+import com.advancedmods.advancedfoods.common.items.food.Chocolate;
+import com.advancedmods.advancedfoods.common.items.food.ChocolateCake;
+import com.advancedmods.advancedfoods.common.items.food.ChocolateCupcake;
+import com.advancedmods.advancedfoods.common.items.food.Cupcake;
+import com.advancedmods.advancedfoods.common.items.food.FishSandwich;
+import com.advancedmods.advancedfoods.common.items.food.Hotdog;
 import com.advancedmods.advancedfoods.common.items.food.Jellybeans;
 import com.advancedmods.advancedfoods.common.items.food.Kiwi;
 import com.advancedmods.advancedfoods.common.items.food.Strawberry;
@@ -14,9 +21,12 @@ import com.advancedmods.advancedfoods.common.items.food.Toast;
 import com.advancedmods.advancedfoods.common.items.food.Tomato;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.ingredients.Flour;
+import com.advancedmods.advancedfoods.common.items.ingredients.Salt;
 import com.advancedmods.advancedfoods.common.items.misc.IceCubes;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
+import com.advancedmods.advancedfoods.common.items.sauces.Mayo;
+import com.advancedmods.advancedfoods.common.items.sauces.Mustard;
 import com.advancedmods.advancedfoods.common.items.smoothies.BananaSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.CherrySmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.ChocolateSmoothie;
@@ -40,13 +50,13 @@ public class ModItems {
     public static Item cheese = new Cheese(4001, 5, false);
     public static Item cherry = new Cherry(4002, 4, false);
     public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
-    //public static Item chilli = new Chilli();
-    //public static Item chocolate = new Chocolate(4000, 4, false);
-    //public static Item chocolateCake = new ChocolateCake(4000, 10, false);
-    //public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
-    //public static Item cupcake = new Cupcake(4000, 6, false);
-    //public static Item fishSandwich = new FishSandwich(4000, 6, false);
-    //public static Item hotdog = new Hotdog(4000, 6, false);
+    public static Item chilli = new Chilli(4000, 5, false);
+    public static Item chocolate = new Chocolate(4000, 4, false);
+    public static Item chocolateCake = new ChocolateCake(4000, 10, false);
+    public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
+    public static Item cupcake = new Cupcake(4000, 6, false);
+    public static Item fishSandwich = new FishSandwich(4000, 6, false);
+    public static Item hotdog = new Hotdog(4000, 6, false);
     public static Item jellybeans = new Jellybeans(4000, 3, false);
     public static Item kiwi = new Kiwi(4000, 4, false);
     //public static Item lemon = new Lemon();
@@ -79,13 +89,13 @@ public class ModItems {
 
     // Sauce
     public static Item ketchup = new Ketchup();
-    //public static Item mayo = new Mayo();
-    //public static Item mustard = new Mustard();
+    public static Item mayo = new Mayo();
+    public static Item mustard = new Mustard();
 
     // Ingredients
     public static Item dough = new Dough();
     public static Item flour = new Flour();
-    //public static Item salt = new Salt();
+    public static Item salt = new Salt();
 
     public static void init() {
         // Foods
@@ -95,13 +105,13 @@ public class ModItems {
         GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
         GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
         GameRegistry.registerItem(chickenSandwich, chickenSandwich.getUnlocalizedName());
-        //GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
-        //GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
-        //GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
-        //GameRegistry.registerItem(chocolateCupcake, chocolateCupcake.getUnlocalizedName());
-        //GameRegistry.registerItem(cupcake, cupcake.getUnlocalizedName());
-        //GameRegistry.registerItem(fishSandwich, fishSandwich.getUnlocalizedName());
-        //GameRegistry.registerItem(hotdog, hotdog.getUnlocalizedName());
+        GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
+        GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
+        GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
+        GameRegistry.registerItem(chocolateCupcake, chocolateCupcake.getUnlocalizedName());
+        GameRegistry.registerItem(cupcake, cupcake.getUnlocalizedName());
+        GameRegistry.registerItem(fishSandwich, fishSandwich.getUnlocalizedName());
+        GameRegistry.registerItem(hotdog, hotdog.getUnlocalizedName());
         GameRegistry.registerItem(jellybeans, jellybeans.getUnlocalizedName());
         GameRegistry.registerItem(kiwi, kiwi.getUnlocalizedName());
         //GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
@@ -134,13 +144,13 @@ public class ModItems {
 
         // Sauce
         GameRegistry.registerItem(ketchup, ketchup.getUnlocalizedName());
-        //GameRegistry.registerItem(mayo, mayo.getUnlocalizedName());
-        //GameRegistry.registerItem(mustard, mustard.getUnlocalizedName());
+        GameRegistry.registerItem(mayo, mayo.getUnlocalizedName());
+        GameRegistry.registerItem(mustard, mustard.getUnlocalizedName());
 
         // Ingredients
         GameRegistry.registerItem(dough, dough.getUnlocalizedName());
         GameRegistry.registerItem(flour, flour.getUnlocalizedName());
-        //GameRegistry.registerItem(salt, salt.getUnlocalizedName());
+        GameRegistry.registerItem(salt, salt.getUnlocalizedName());
     }
 
 }
