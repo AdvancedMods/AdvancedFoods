@@ -9,6 +9,7 @@ import com.zandor300.advancedfoods.utilities.LogHelper;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 
 /**
@@ -22,7 +23,7 @@ public class AdvancedFoods {
 	public static ServerProxy Proxy;
 
 	@Mod.EventHandler
-	public static void PreInit(FMLPostInitializationEvent event) {
+	public static void PreInit(FMLPreInitializationEvent event) {
 		ModItems.init();
 		ModBlocks.init();
 
