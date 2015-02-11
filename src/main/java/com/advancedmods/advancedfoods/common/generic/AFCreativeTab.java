@@ -4,7 +4,6 @@ import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.core.AFProps;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 /**
@@ -15,8 +14,7 @@ public class AFCreativeTab {
     public static final CreativeTabs food = new CreativeTabs(AFProps.modid) {
         @Override
         public Item getTabIconItem() {
-            //return ModItems.strawberry;
-            return Items.cake;
+            return ModItems.strawberry;
         }
 
         @Override

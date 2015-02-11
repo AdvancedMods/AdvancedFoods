@@ -1,4 +1,4 @@
-package com.advancedmods.advancedfoods.common.items;
+package com.advancedmods.advancedfoods.common.items.food;
 
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
 import com.advancedmods.advancedfoods.common.generic.AFItem;

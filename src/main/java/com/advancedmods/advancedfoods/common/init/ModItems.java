@@ -1,6 +1,8 @@
 package com.advancedmods.advancedfoods.common.init;
 
-import com.advancedmods.advancedfoods.common.items.Strawberry;
+import com.advancedmods.advancedfoods.common.items.food.Banana;
+import com.advancedmods.advancedfoods.common.items.food.Butter;
+import com.advancedmods.advancedfoods.common.items.food.Strawberry;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
@@ -13,8 +15,8 @@ import net.minecraft.item.Item;
 public class ModItems {
 
     // Foods
-    //public static Item banana = new Banana();
-    //public static Item butter = new Butter(4000, 1, false);
+    public static Item banana = new Banana();
+    public static Item butter = new Butter(4000, 1, false);
     //public static Item caramel = new Caramel(4000, 1, false);
     //public static Item cheese = new Cheese(4001, 5, false);
     //public static Item cherry = new Cherry(4002, 4, false);
@@ -68,8 +70,8 @@ public class ModItems {
 
     public static void init() {
         // Foods
-        //GameRegistry.registerItem(banana, banana.getUnlocalizedName());
-        //GameRegistry.registerItem(butter, butter.getUnlocalizedName());
+        GameRegistry.registerItem(banana, banana.getUnlocalizedName());
+        GameRegistry.registerItem(butter, butter.getUnlocalizedName());
         //GameRegistry.registerItem(caramel, caramel.getUnlocalizedName());
         //GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
         //GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
