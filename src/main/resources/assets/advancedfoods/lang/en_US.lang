@@ -6,12 +6,22 @@ item.advancedfoods:Caramel.name=Caramel
 item.advancedfoods:Cheese.name=Cheese
 item.advancedfoods:Cherry.name=Cherry
 item.advancedfoods:ChickenSandwich.name=Chicken Sandwich
+item.advancedfoods:Chilli.name=Chilli
+item.advancedfoods:Chocolate.name=Chocolate
+item.advancedfoods:ChocolateCake.name=Chocolate Cake
+item.advancedfoods:ChocolateCupcake.name=Chocolate Cupcake
+item.advancedfoods:Cupcake.name=Cupcake
+item.advancedfoods:FishSandwich.name=Fish Sandwich
+item.advancedfoods:Hotdog.name=Hotdog
 item.advancedfoods:Jellybeans.name=Jellybeans
 item.advancedfoods:Kiwi.name=Kiwi
+item.advancedfoods:Lemon.name=Lemon
 item.advancedfoods:Strawberry.name=Strawberry
 item.advancedfoods:Taco.name=Taco
 item.advancedfoods:Toast.name=Toast
+item.advancedfoods:ToastSandwich.name=Toast Sandwich
 item.advancedfoods:Tomato.name=Tomato
+item.advancedfoods:TomatoSoup.name=Tomato Soup
 
 // Drinks
 // Lemonade
@@ -34,8 +44,21 @@ item.advancedfoods:IceCubes.name=Ice Cubes
 item.advancedfoods:Jar.name=Jar
 item.advancedfoods:SmoothyGlass.name=Smoothy Glass
 
+// Crops
+tile.advancedfoods:BananaPlant.name=Banana Plant
+tile.advancedfoods:CherryPlant.name=Cherry Plant
+tile.advancedfoods:ChilliPlant.name=Chilli Plant
+tile.advancedfoods.KiwiPlant.name=Kiwi Plant
+tile.advancedfoods:LemonPlant.name=Lemon Plant
+tile.advancedfoods:StrawberryPlant.name=Strawberry Plant
+tile.advancedfoods:TomatoPlant.name=Tomato Plant
+
 // Sauce
 item.advancedfoods:Ketchup.name=Ketchup
+item.advancedfoods:Mayo.name=Mayo
+item.advancedfoods:Mustard.name=Mustard
 
 // Ingredients
 item.advancedfoods:Dough.name=Dough
+item.advancedfoods:Flour.name=Flour
+item.advancedfoods:Salt.name=Salt
