@@ -1,0 +1,23 @@
+// Items
+// Food
+item.advancedfoods:Banana.name=Banana
+item.advancedfoods:Butter.name=Butter
+item.advancedfoods:Caramel.name=Caramel
+item.advancedfoods:Cheese.name=Cheese
+item.advancedfoods:Cherry.name=Cherry
+item.advancedfoods:ChickenSandwich.name=Chicken Sandwich
+item.advancedfoods:Jellybeans.name=Jellybeans
+item.advancedfoods:Kiwi.name=Kiwi
+item.advancedfoods:Strawberry.name=Strawberry
+item.advancedfoods:Taco.name=Taco
+item.advancedfoods:Toast.name=Toast
+item.advancedfoods:Tomato.name=Tomato
+
+// Misc
+item.advancedfoods:SmoothyGlass.name=Smoothy Glass
+
+// Sauce
+item.advancedfoods:Ketchup.name=Ketchup
+
+// Ingredients
+item.advancedfoods:Dough.name=Dough
