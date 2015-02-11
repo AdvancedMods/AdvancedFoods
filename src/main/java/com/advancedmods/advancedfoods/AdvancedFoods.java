@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * Created by Dennisbonke on 10-2-2015.
  */
-@Mod(name = AFProps.name, modid = AFProps.modid, version = AFProps.version, dependencies = AFProps.dependencies, modLanguage = "java", canBeDeactivated = false, acceptedMinecraftVersions = AFProps.ACCEPTED_MC_VERSION)
+@Mod(name = AFProps.name, modid = AFProps.modid, version = AFProps.version, dependencies = AFProps.dependencies, modLanguage = "java", canBeDeactivated = false, acceptedMinecraftVersions = AFProps.ACCEPTED_MC_VERSIONS)
 public class AdvancedFoods extends BaseMod {
 
     @SidedProxy(clientSide = AFProps.clientproxy, serverSide = AFProps.commonproxy)

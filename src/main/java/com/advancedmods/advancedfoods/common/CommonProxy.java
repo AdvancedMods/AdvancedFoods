@@ -5,6 +5,8 @@ import com.advancedmods.advancedfoods.common.init.ModBlocks;
 import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.common.init.Recipes;
 import com.advancedmods.advancedfoods.core.enviroment.CheckEnv;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
 
 /**
  * Created by Dennisbonke on 11-2-2015.
@@ -36,6 +38,18 @@ public class CommonProxy {
     }
 
     public static void postInit() {
+
+    }
+
+    public World getClientWorld() {
+
+        return null;
+
+    }
+
+    public EntityPlayer getPlayer() {
+
+        return null;
 
     }
 
