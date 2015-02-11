@@ -1,8 +1,12 @@
 package com.advancedmods.advancedfoods.common.init;
 
+import com.advancedmods.advancedfoods.core.AFProps;
+import cpw.mods.fml.common.registry.GameRegistry;
+
 /**
  * Created by Dennisbonke on 11-2-2015.
  */
+@GameRegistry.ObjectHolder(AFProps.modid)
 public class ModBlocks {
 
     //public static Block bananaPlant = new BananaPlant();
