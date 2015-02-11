@@ -103,28 +103,28 @@ public class ModItems {
 
     public static void init() {
         // Foods
-        GameRegistry.registerItem(banana, banana.getUnlocalizedName());
-        GameRegistry.registerItem(butter, butter.getUnlocalizedName());
-        GameRegistry.registerItem(caramel, caramel.getUnlocalizedName());
-        GameRegistry.registerItem(cheese, cheese.getUnlocalizedName());
-        GameRegistry.registerItem(cherry, cherry.getUnlocalizedName());
-        GameRegistry.registerItem(chickenSandwich, chickenSandwich.getUnlocalizedName());
-        GameRegistry.registerItem(chilli, chilli.getUnlocalizedName());
-        GameRegistry.registerItem(chocolate, chocolate.getUnlocalizedName());
-        GameRegistry.registerItem(chocolateCake, chocolateCake.getUnlocalizedName());
-        GameRegistry.registerItem(chocolateCupcake, chocolateCupcake.getUnlocalizedName());
-        GameRegistry.registerItem(cupcake, cupcake.getUnlocalizedName());
-        GameRegistry.registerItem(fishSandwich, fishSandwich.getUnlocalizedName());
-        GameRegistry.registerItem(hotdog, hotdog.getUnlocalizedName());
-        GameRegistry.registerItem(jellybeans, jellybeans.getUnlocalizedName());
-        GameRegistry.registerItem(kiwi, kiwi.getUnlocalizedName());
-        GameRegistry.registerItem(lemon, lemon.getUnlocalizedName());
-        GameRegistry.registerItem(strawberry, strawberry.getUnlocalizedName());
-        GameRegistry.registerItem(taco, taco.getUnlocalizedName());
-        GameRegistry.registerItem(toast, toast.getUnlocalizedName());
-        GameRegistry.registerItem(toastSandwich, toastSandwich.getUnlocalizedName());
-        GameRegistry.registerItem(tomato, tomato.getUnlocalizedName());
-        GameRegistry.registerItem(tomatoSoup, tomatoSoup.getUnlocalizedName());
+        GameRegistry.registerItem(banana, "banana");
+        GameRegistry.registerItem(butter, "butter");
+        GameRegistry.registerItem(caramel, "caramel");
+        GameRegistry.registerItem(cheese, "cheese");
+        GameRegistry.registerItem(cherry, "cherry");
+        GameRegistry.registerItem(chickenSandwich, "chickensandwich");
+        GameRegistry.registerItem(chilli, "chilli");
+        GameRegistry.registerItem(chocolate, "cocolate");
+        GameRegistry.registerItem(chocolateCake, "chocolatecake");
+        GameRegistry.registerItem(chocolateCupcake, "chocolatecupcake");
+        GameRegistry.registerItem(cupcake, "cupcake");
+        GameRegistry.registerItem(fishSandwich, "fishsandwich");
+        GameRegistry.registerItem(hotdog, "hotdog");
+        GameRegistry.registerItem(jellybeans, "jellybeans");
+        GameRegistry.registerItem(kiwi, "kiwi");
+        GameRegistry.registerItem(lemon, "lemon");
+        GameRegistry.registerItem(strawberry, "strawberry");
+        GameRegistry.registerItem(taco, "taco");
+        GameRegistry.registerItem(toast, "toast");
+        GameRegistry.registerItem(toastSandwich, "toastsandwich");
+        GameRegistry.registerItem(tomato, "tomato");
+        GameRegistry.registerItem(tomatoSoup, "tomatosoup");
 
         // Drinks
         // Lemonade
@@ -134,27 +134,27 @@ public class ModItems {
         //GameRegistry.registerItem(strawberryLemonade, strawberryLemonade.getUnlocalizedName());
 
         // Smoothy
-        GameRegistry.registerItem(bananaSmoothie, bananaSmoothie.getUnlocalizedName());
-        GameRegistry.registerItem(cherrySmoothie, cherrySmoothie.getUnlocalizedName());
-        GameRegistry.registerItem(chocolateSmoothie, chocolateSmoothie.getUnlocalizedName());
-        GameRegistry.registerItem(kiwiSmoothie, kiwiSmoothie.getUnlocalizedName());
-        GameRegistry.registerItem(lemonSmoothie, lemonSmoothie.getUnlocalizedName());
-        GameRegistry.registerItem(strawberrySmoothie, strawberrySmoothie.getUnlocalizedName());
+        GameRegistry.registerItem(bananaSmoothie, "bananasmoothie");
+        GameRegistry.registerItem(cherrySmoothie, "cherrysmoothie");
+        GameRegistry.registerItem(chocolateSmoothie, "chocolatesmoothie");
+        GameRegistry.registerItem(kiwiSmoothie, "kiwismoothie");
+        GameRegistry.registerItem(lemonSmoothie, "lemonsmoothie");
+        GameRegistry.registerItem(strawberrySmoothie, "strawberrysmoothie");
 
         // Misc
-        GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
-        GameRegistry.registerItem(jar, jar.getUnlocalizedName());
-        GameRegistry.registerItem(smoothieGlass, smoothieGlass.getUnlocalizedName());
+        GameRegistry.registerItem(iceCubes, "icecubes");
+        GameRegistry.registerItem(jar, "jar");
+        GameRegistry.registerItem(smoothieGlass, "smoothieglass");
 
         // Sauce
-        GameRegistry.registerItem(ketchup, ketchup.getUnlocalizedName());
-        GameRegistry.registerItem(mayo, mayo.getUnlocalizedName());
-        GameRegistry.registerItem(mustard, mustard.getUnlocalizedName());
+        GameRegistry.registerItem(ketchup, "ketchup");
+        GameRegistry.registerItem(mayo, "mayo");
+        GameRegistry.registerItem(mustard, "mustard");
 
         // Ingredients
-        GameRegistry.registerItem(dough, dough.getUnlocalizedName());
-        GameRegistry.registerItem(flour, flour.getUnlocalizedName());
-        GameRegistry.registerItem(salt, salt.getUnlocalizedName());
+        GameRegistry.registerItem(dough, "dough");
+        GameRegistry.registerItem(flour, "flour");
+        GameRegistry.registerItem(salt, "salt");
     }
 
 }
