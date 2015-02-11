@@ -26,6 +26,7 @@ import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.ingredients.Flour;
 import com.advancedmods.advancedfoods.common.items.ingredients.Salt;
 import com.advancedmods.advancedfoods.common.items.misc.IceCubes;
+import com.advancedmods.advancedfoods.common.items.misc.Jar;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
 import com.advancedmods.advancedfoods.common.items.sauces.Mayo;
@@ -87,7 +88,7 @@ public class ModItems {
 
     // Misc
     public static Item iceCubes = new IceCubes();
-    //public static Item jar = new Jar();
+    public static Item jar = new Jar();
     public static Item smoothieGlass = new SmoothieGlass();
 
     // Sauce
@@ -142,7 +143,7 @@ public class ModItems {
 
         // Misc
         GameRegistry.registerItem(iceCubes, iceCubes.getUnlocalizedName());
-        //GameRegistry.registerItem(jar, jar.getUnlocalizedName());
+        GameRegistry.registerItem(jar, jar.getUnlocalizedName());
         GameRegistry.registerItem(smoothieGlass, smoothieGlass.getUnlocalizedName());
 
         // Sauce
