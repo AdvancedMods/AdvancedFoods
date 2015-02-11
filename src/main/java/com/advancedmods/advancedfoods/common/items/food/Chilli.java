@@ -9,7 +9,7 @@ public class Chilli extends AFItemFood {
 
 	public Chilli(int id, int heal, boolean b) {
 		super(id, b);
-		this.setUnlocalizedName("Chilli");
+		this.setUnlocalizedName("chilli");
 	}
 
 }

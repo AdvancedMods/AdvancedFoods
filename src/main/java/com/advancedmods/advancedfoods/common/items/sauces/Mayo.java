@@ -10,7 +10,7 @@ public class Mayo extends AFItem {
 
 	public Mayo() {
 		super(AFCreativeTab.sauces);
-		setUnlocalizedName("Mayo");
+		setUnlocalizedName("mayo");
 	}
 
 }

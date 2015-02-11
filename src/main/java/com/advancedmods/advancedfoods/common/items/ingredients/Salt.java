@@ -10,7 +10,7 @@ public class Salt extends AFItem {
 
 	public Salt() {
 		super(AFCreativeTab.ingredients);
-		setUnlocalizedName("Salt");
+		setUnlocalizedName("salt");
 	}
 
 }

@@ -9,7 +9,7 @@ public class Jellybeans extends AFItemFood {
 
     public Jellybeans(int id, int heal, boolean b) {
         super(id, b);
-        this.setUnlocalizedName("Jellybeans");
+        this.setUnlocalizedName("jellybeans");
     }
 
 }

@@ -10,7 +10,7 @@ public class Mustard extends AFItem {
 
 	public Mustard() {
 		super(AFCreativeTab.sauces);
-		setUnlocalizedName("Mustard");
+		setUnlocalizedName("mustard");
 	}
 
 }

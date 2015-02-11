@@ -10,7 +10,7 @@ public class Jar extends AFItem {
 
 	public Jar() {
 		super(AFCreativeTab.objects);
-		setUnlocalizedName("Jar");
+		setUnlocalizedName("jar");
 	}
 
 }

@@ -12,7 +12,7 @@ public class Lemon extends AFItemSeeds {
 	public Lemon() {
 		//super(1, 0.3F, ModBlocks.lemonPlant, Blocks.farmland);
 		super(1, 0.3F, null, Blocks.farmland);
-		setUnlocalizedName("Lemon");
+		setUnlocalizedName("lemon");
 		setCreativeTab(AFCreativeTab.food);
 	}
 

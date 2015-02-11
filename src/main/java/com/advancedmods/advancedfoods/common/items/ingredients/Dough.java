@@ -10,6 +10,6 @@ public class Dough extends AFItem {
 
     public Dough() {
         super(AFCreativeTab.ingredients);
-        setUnlocalizedName("Dough");
+        setUnlocalizedName("dough");
     }
 }

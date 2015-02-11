@@ -10,6 +10,6 @@ public class Ketchup extends AFItem {
 
     public Ketchup() {
         super(AFCreativeTab.sauces);
-        setUnlocalizedName("Ketchup");
+        setUnlocalizedName("ketchup");
     }
 }

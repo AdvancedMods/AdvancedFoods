@@ -14,7 +14,7 @@ public class Strawberry extends AFItemSeeds {
     public Strawberry() {
         //super(1, 0.3F, ModBlocks.strawberryPlant, Blocks.farmland);
         super(1, 0.3F, null, Blocks.farmland);
-        setUnlocalizedName("Strawberry");
+        setUnlocalizedName("strawberry");
         setCreativeTab(AFCreativeTab.food);
     }
 }
