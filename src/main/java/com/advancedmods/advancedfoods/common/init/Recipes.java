@@ -23,7 +23,7 @@ public class Recipes {
 		// Other
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateMilk), new ItemStack(Items.milk_bucket), new ItemStack(Blocks.cocoa)));
 
-		// Smoothy
+		// Smoothie
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.bananaSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.banana)));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherrySmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.cherry)));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.chocolate)));
@@ -33,6 +33,9 @@ public class Recipes {
 		// Misc
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes, 9), new ItemStack(Blocks.ice)));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes), new ItemStack(Items.snowball)));
+
+        // Ingredients
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.flour), new ItemStack(Items.wheat)));
 
 		// Shaped Ore Crafting
 		// Foods
