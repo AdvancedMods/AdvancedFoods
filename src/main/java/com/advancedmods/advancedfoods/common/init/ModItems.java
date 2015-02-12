@@ -3,6 +3,7 @@ package com.advancedmods.advancedfoods.common.init;
 import com.advancedmods.advancedfoods.common.items.drinks.ChocolateMilk;
 import com.advancedmods.advancedfoods.common.items.food.Banana;
 import com.advancedmods.advancedfoods.common.items.food.Fries;
+import com.advancedmods.advancedfoods.common.items.food.Hamburger;
 import com.advancedmods.advancedfoods.common.items.ingredients.Butter;
 import com.advancedmods.advancedfoods.common.items.food.Caramel;
 import com.advancedmods.advancedfoods.common.items.food.Cheese;
@@ -68,6 +69,7 @@ public class ModItems {
     public static Item cupcake = new Cupcake(4000, 6, false);
     public static Item fishSandwich = new FishSandwich(4000, 6, false);
     public static Item fries = new Fries(4000, 6, false);
+    public static Item hamburger = new Hamburger(4000, 8, false);
     public static Item hotdog = new Hotdog(4000, 6, false);
     public static Item jellybeans = new Jellybeans(4000, 3, false);
     public static Item kiwi = new Kiwi(4000, 4, false);
@@ -127,6 +129,7 @@ public class ModItems {
         GameRegistry.registerItem(cupcake, "cupcake");
         GameRegistry.registerItem(fishSandwich, "fishsandwich");
         GameRegistry.registerItem(fries, "fries");
+        GameRegistry.registerItem(hamburger, "hamburger");
         GameRegistry.registerItem(hotdog, "hotdog");
         GameRegistry.registerItem(jellybeans, "jellybeans");
         GameRegistry.registerItem(kiwi, "kiwi");
