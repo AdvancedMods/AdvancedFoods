@@ -2,7 +2,9 @@ package com.advancedmods.advancedfoods.common.init;
 
 import com.advancedmods.advancedfoods.common.items.drinks.ChocolateMilk;
 import com.advancedmods.advancedfoods.common.items.food.Banana;
-import com.advancedmods.advancedfoods.common.items.food.Butter;
+import com.advancedmods.advancedfoods.common.items.food.Fries;
+import com.advancedmods.advancedfoods.common.items.food.Hamburger;
+import com.advancedmods.advancedfoods.common.items.ingredients.Butter;
 import com.advancedmods.advancedfoods.common.items.food.Caramel;
 import com.advancedmods.advancedfoods.common.items.food.Cheese;
 import com.advancedmods.advancedfoods.common.items.food.Cherry;
@@ -55,18 +57,19 @@ public class ModItems {
 
     // Foods
     public static Item banana = new Banana();
-    public static Item butter = new Butter(4000, 1, false);
     public static Item caramel = new Caramel(4000, 1, false);
     public static Item cheese = new Cheese(4001, 5, false);
     public static Item cherry = new Cherry(4002, 4, false);
     public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
-    public static Item chilli = new Chilli(4000, 5, false);
+    public static Item chilli = new Chilli();
     public static Item chocolate = new Chocolate(4000, 4, false);
     public static Item chocolateCake = new ChocolateCake(4000, 10, false);
     public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
-    public static Item corn = new Corn(4000, 5, false);
+    public static Item corn = new Corn();
     public static Item cupcake = new Cupcake(4000, 6, false);
     public static Item fishSandwich = new FishSandwich(4000, 6, false);
+    public static Item fries = new Fries(4000, 6, false);
+    public static Item hamburger = new Hamburger(4000, 8, false);
     public static Item hotdog = new Hotdog(4000, 6, false);
     public static Item jellybeans = new Jellybeans(4000, 3, false);
     public static Item kiwi = new Kiwi(4000, 4, false);
@@ -106,6 +109,7 @@ public class ModItems {
     public static Item mustard = new Mustard();
 
     // Ingredients
+    public static Item butter = new Butter(4000, 1, false);
     public static Item dough = new Dough();
     public static Item flour = new Flour();
     public static Item salt = new Salt();
@@ -113,7 +117,6 @@ public class ModItems {
     public static void init() {
         // Foods
         GameRegistry.registerItem(banana, "banana");
-        GameRegistry.registerItem(butter, "butter");
         GameRegistry.registerItem(caramel, "caramel");
         GameRegistry.registerItem(cheese, "cheese");
         GameRegistry.registerItem(cherry, "cherry");
@@ -125,6 +128,8 @@ public class ModItems {
         GameRegistry.registerItem(corn, "corn");
         GameRegistry.registerItem(cupcake, "cupcake");
         GameRegistry.registerItem(fishSandwich, "fishsandwich");
+        GameRegistry.registerItem(fries, "fries");
+        GameRegistry.registerItem(hamburger, "hamburger");
         GameRegistry.registerItem(hotdog, "hotdog");
         GameRegistry.registerItem(jellybeans, "jellybeans");
         GameRegistry.registerItem(kiwi, "kiwi");
@@ -164,6 +169,7 @@ public class ModItems {
         GameRegistry.registerItem(mustard, "mustard");
 
         // Ingredients
+        GameRegistry.registerItem(butter, "butter");
         GameRegistry.registerItem(dough, "dough");
         GameRegistry.registerItem(flour, "flour");
         GameRegistry.registerItem(salt, "salt");
