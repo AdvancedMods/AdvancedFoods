@@ -11,6 +11,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -139,5 +140,25 @@ public class AFBlockCrop extends BlockCrops implements IGrowable {
 	                          int parZ) {
 		incrementGrowStage(parWorld, parRand, parX, parY, parZ);
 	}
+
+    @Override
+    public boolean canBeReplacedByLeaves(IBlockAccess world, int x, int y, int z) {
+        return false;
+    }
+
+    @Override
+    public boolean renderAsNormalBlock() {
+        return true;
+    }
+
+    @Override
+    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side) {
+        return false;
+    }
+
+    @Override
+    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
+        return false;
+    }
 
 }

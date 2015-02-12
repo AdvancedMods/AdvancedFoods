@@ -33,11 +33,12 @@ public class AdvancedFoods extends BaseMod {
         // Starting mod
         log.info("Starting Advanced Foods version " + AFProps.version + "...");
         log.info("Entering Pre-Init phase...");
-        // Do Pre-Init stuff
-        proxy.preInit();
         // Update manager
         log.info("Starting Update manager for Advanced Foods...");
         UpdateManager.registerUpdater(new UpdateManager(this, "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION", null));
+        log.info("Update Manager for Advanced Foods started");
+        // Do Pre-Init stuff
+        proxy.preInit();
         log.info("Pre-Init complete");
 
     }

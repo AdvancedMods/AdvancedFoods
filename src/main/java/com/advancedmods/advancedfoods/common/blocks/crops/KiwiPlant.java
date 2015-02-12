@@ -51,24 +51,4 @@ public class KiwiPlant extends AFBlockCrop {
 		iIcon[7] = parIIconRegister.registerIcon(AFProps.modid.toLowerCase() + ":kiwi_3");
 	}
 
-    @Override
-    public boolean canBeReplacedByLeaves(IBlockAccess world, int x, int y, int z) {
-        return false;
-    }
-
-    @Override
-    public boolean renderAsNormalBlock() {
-        return true;
-    }
-
-    @Override
-    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side) {
-        return false;
-    }
-
-    @Override
-    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
-        return false;
-    }
-
 }
