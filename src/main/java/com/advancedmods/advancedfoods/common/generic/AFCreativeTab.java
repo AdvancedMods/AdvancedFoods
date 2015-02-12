@@ -22,7 +22,7 @@ public class AFCreativeTab {
 		}
 	};
 
-	public static final CreativeTabs objects = new CreativeTabs(AFProps.modid) {
+	public static final CreativeTabs tools = new CreativeTabs(AFProps.modid) {
 		@Override
 		public Item getTabIconItem() {
 			return ModItems.smoothieGlass;
@@ -30,7 +30,7 @@ public class AFCreativeTab {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return "Objects";
+			return "Tools";
 		}
 	};
 

@@ -45,6 +45,7 @@ import com.advancedmods.advancedfoods.common.items.smoothies.ChocolateSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.KiwiSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.LemonSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.StrawberrySmoothie;
+import com.advancedmods.advancedfoods.common.items.tools.ItemKnife;
 import com.advancedmods.advancedfoods.core.AFProps;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -91,7 +92,7 @@ public class ModItems {
 	public static Item kiwiLemonade = new KiwiLemonade(5002, 5, false);
 	public static Item strawberryLemonade = new StrawberryLemonade(5002, 5, false);
 
-	// Smoothy
+	// Smoothie
 	public static Item bananaSmoothie = new BananaSmoothie(5000, 6, false);
 	public static Item cherrySmoothie = new CherrySmoothie(5000, 6, false);
 	public static Item chocolateSmoothie = new ChocolateSmoothie(5000, 6, false);
@@ -114,6 +115,9 @@ public class ModItems {
 	public static Item dough = new Dough();
 	public static Item flour = new Flour();
 	public static Item salt = new Salt();
+
+    // Tools
+    public static Item knife = new ItemKnife();
 
 	public static void init() {
 		// Foods
@@ -151,7 +155,7 @@ public class ModItems {
 		GameRegistry.registerItem(kiwiLemonade, "kiwilemonade");
 		GameRegistry.registerItem(strawberryLemonade, "strawberrylemonade");
 
-		// Smoothy
+		// Smoothie
 		GameRegistry.registerItem(bananaSmoothie, "bananasmoothie");
 		GameRegistry.registerItem(cherrySmoothie, "cherrysmoothie");
 		GameRegistry.registerItem(chocolateSmoothie, "chocolatesmoothie");
@@ -174,6 +178,9 @@ public class ModItems {
 		GameRegistry.registerItem(dough, "dough");
 		GameRegistry.registerItem(flour, "flour");
 		GameRegistry.registerItem(salt, "salt");
+
+        // Tools
+        GameRegistry.registerItem(knife, "knife");
 	}
 
 }
