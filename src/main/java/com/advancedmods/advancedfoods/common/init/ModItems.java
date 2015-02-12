@@ -52,6 +52,7 @@ import net.minecraft.item.Item;
 /**
  * Created by Dennisbonke on 11-2-2015.
  */
+// TODO: Maybe split seeds and crop yield?
 @GameRegistry.ObjectHolder(AFProps.modid)
 public class ModItems {
 
