@@ -45,7 +45,7 @@ import com.advancedmods.advancedfoods.common.items.smoothies.ChocolateSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.KiwiSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.LemonSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.StrawberrySmoothie;
-import com.advancedmods.advancedfoods.common.items.tools.ItemKnife;
+import com.advancedmods.advancedfoods.common.items.tools.Knife;
 import com.advancedmods.advancedfoods.core.AFProps;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -117,7 +117,7 @@ public class ModItems {
 	public static Item salt = new Salt();
 
 	// Tools
-	public static Item knife = new ItemKnife();
+	public static Item knife = new Knife();
 
 	public static void init() {
 		// Foods
