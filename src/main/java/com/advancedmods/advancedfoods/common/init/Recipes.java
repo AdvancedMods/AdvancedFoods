@@ -20,6 +20,9 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherryLemonade), new ItemStack(ModItems.lemonade), new ItemStack(ModItems.cherry)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.strawberryLemonade), new ItemStack(ModItems.lemonade), new ItemStack(ModItems.strawberry)));
 
+        // Other
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateMilk), new ItemStack(Items.milk_bucket), new ItemStack(Blocks.cocoa)));
+
         // Smoothy
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.bananaSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.banana)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherrySmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.cherry)));
