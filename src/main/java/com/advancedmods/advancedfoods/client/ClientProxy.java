@@ -10,28 +10,28 @@ import net.minecraft.world.World;
  */
 public class ClientProxy extends CommonProxy {
 
-    public static void preInit() {
+	public static void preInit() {
 
-    }
+	}
 
-    public static void Init() {
+	public static void Init() {
 
-    }
+	}
 
-    public static void postInit() {
+	public static void postInit() {
 
-    }
+	}
 
-    public World getClientWorld() {
+	public World getClientWorld() {
 
-        return FMLClientHandler.instance().getClient().theWorld;
+		return FMLClientHandler.instance().getClient().theWorld;
 
-    }
+	}
 
-    public EntityPlayer getPlayer() {
+	public EntityPlayer getPlayer() {
 
-        return FMLClientHandler.instance().getClient().thePlayer;
+		return FMLClientHandler.instance().getClient().thePlayer;
 
-    }
+	}
 
 }

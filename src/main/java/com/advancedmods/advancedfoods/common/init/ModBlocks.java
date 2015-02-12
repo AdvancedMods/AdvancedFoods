@@ -17,22 +17,22 @@ import net.minecraft.block.Block;
 @GameRegistry.ObjectHolder(AFProps.modid)
 public class ModBlocks {
 
-    public static Block bananaPlant = new BananaPlant();
-    public static Block cherryPlant = new CherryPlant();
-    public static Block chilliPlant = new ChilliPlant();
-    public static Block kiwiPlant = new KiwiPlant();
-    public static Block lemonPlant = new LemonPlant();
-    public static Block strawberryPlant = new StrawberryPlant();
-    public static Block tomatoPlant = new TomatoPlant();
+	public static Block bananaPlant = new BananaPlant();
+	public static Block cherryPlant = new CherryPlant();
+	public static Block chilliPlant = new ChilliPlant();
+	public static Block kiwiPlant = new KiwiPlant();
+	public static Block lemonPlant = new LemonPlant();
+	public static Block strawberryPlant = new StrawberryPlant();
+	public static Block tomatoPlant = new TomatoPlant();
 
-    public static void init() {
-        GameRegistry.registerBlock(bananaPlant, "bananaplant");
-        GameRegistry.registerBlock(cherryPlant, "cherryplant");
-        GameRegistry.registerBlock(chilliPlant, "chilliplant");
-        GameRegistry.registerBlock(kiwiPlant, "kiwiplant");
-        GameRegistry.registerBlock(lemonPlant, "lemonplant");
-        GameRegistry.registerBlock(strawberryPlant, "strawberryplant");
-        GameRegistry.registerBlock(tomatoPlant, "tomatoplant");
-    }
+	public static void init() {
+		GameRegistry.registerBlock(bananaPlant, "bananaplant");
+		GameRegistry.registerBlock(cherryPlant, "cherryplant");
+		GameRegistry.registerBlock(chilliPlant, "chilliplant");
+		GameRegistry.registerBlock(kiwiPlant, "kiwiplant");
+		GameRegistry.registerBlock(lemonPlant, "lemonplant");
+		GameRegistry.registerBlock(strawberryPlant, "strawberryplant");
+		GameRegistry.registerBlock(tomatoPlant, "tomatoplant");
+	}
 
 }

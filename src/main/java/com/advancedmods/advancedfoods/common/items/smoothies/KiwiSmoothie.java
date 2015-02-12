@@ -7,10 +7,10 @@ import com.advancedmods.advancedfoods.common.generic.AFItemFood;
  */
 public class KiwiSmoothie extends AFItemFood {
 
-    public KiwiSmoothie(int id, int heal, boolean b) {
-        super(id, b);
-        this.setUnlocalizedName("kiwismoothie");
-        this.setMaxStackSize(1);
-    }
+	public KiwiSmoothie(int id, int heal, boolean b) {
+		super(id, b);
+		this.setUnlocalizedName("kiwismoothie");
+		this.setMaxStackSize(1);
+	}
 
 }

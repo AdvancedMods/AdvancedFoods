@@ -8,8 +8,8 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
  */
 public class SmoothieGlass extends AFItem {
 
-    public SmoothieGlass() {
-        super(AFCreativeTab.objects);
-        setUnlocalizedName("smoothieglass");
-    }
+	public SmoothieGlass() {
+		super(AFCreativeTab.objects);
+		setUnlocalizedName("smoothieglass");
+	}
 }

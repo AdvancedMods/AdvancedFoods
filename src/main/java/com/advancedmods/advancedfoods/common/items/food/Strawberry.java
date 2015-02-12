@@ -10,9 +10,9 @@ import net.minecraft.init.Blocks;
  */
 public class Strawberry extends AFItemSeeds {
 
-    public Strawberry() {
-        super(1, 0.3F, ModBlocks.strawberryPlant, Blocks.farmland);
-        setUnlocalizedName("strawberry");
-        setCreativeTab(AFCreativeTab.food);
-    }
+	public Strawberry() {
+		super(1, 0.3F, ModBlocks.strawberryPlant, Blocks.farmland);
+		setUnlocalizedName("strawberry");
+		setCreativeTab(AFCreativeTab.food);
+	}
 }

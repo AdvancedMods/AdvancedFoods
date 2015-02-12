@@ -8,9 +8,9 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
  */
 public class IceCubes extends AFItem {
 
-    public IceCubes() {
-        super(AFCreativeTab.ingredients);
-        setUnlocalizedName("icecubes");
-    }
+	public IceCubes() {
+		super(AFCreativeTab.ingredients);
+		setUnlocalizedName("icecubes");
+	}
 
 }
