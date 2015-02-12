@@ -11,6 +11,7 @@ import com.advancedmods.advancedfoods.common.items.food.Chilli;
 import com.advancedmods.advancedfoods.common.items.food.Chocolate;
 import com.advancedmods.advancedfoods.common.items.food.ChocolateCake;
 import com.advancedmods.advancedfoods.common.items.food.ChocolateCupcake;
+import com.advancedmods.advancedfoods.common.items.food.Corn;
 import com.advancedmods.advancedfoods.common.items.food.Cupcake;
 import com.advancedmods.advancedfoods.common.items.food.FishSandwich;
 import com.advancedmods.advancedfoods.common.items.food.Hotdog;
@@ -63,6 +64,7 @@ public class ModItems {
     public static Item chocolate = new Chocolate(4000, 4, false);
     public static Item chocolateCake = new ChocolateCake(4000, 10, false);
     public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
+    public static Item corn = new Corn(4000, 5, false);
     public static Item cupcake = new Cupcake(4000, 6, false);
     public static Item fishSandwich = new FishSandwich(4000, 6, false);
     public static Item hotdog = new Hotdog(4000, 6, false);
@@ -120,6 +122,7 @@ public class ModItems {
         GameRegistry.registerItem(chocolate, "cocolate");
         GameRegistry.registerItem(chocolateCake, "chocolatecake");
         GameRegistry.registerItem(chocolateCupcake, "chocolatecupcake");
+        GameRegistry.registerItem(corn, "corn");
         GameRegistry.registerItem(cupcake, "cupcake");
         GameRegistry.registerItem(fishSandwich, "fishsandwich");
         GameRegistry.registerItem(hotdog, "hotdog");
