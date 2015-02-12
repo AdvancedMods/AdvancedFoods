@@ -62,6 +62,7 @@ public class CommonProxy {
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.banana), 5);
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.cherry), 5);
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.chilli), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.corn), 5);
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.kiwi), 5);
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.lemon), 5);
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.strawberry), 5);
