@@ -18,7 +18,7 @@ public class AFCreativeTab {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return "Foods";
+			return "AdvancedFoods:Foods";
 		}
 	};
 
@@ -30,7 +30,7 @@ public class AFCreativeTab {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return "Tools";
+			return "AdvancedFoods:Tools";
 		}
 	};
 
@@ -42,7 +42,7 @@ public class AFCreativeTab {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return "Ingredients";
+			return "AdvancedFoods:Ingredients";
 		}
 	};
 
@@ -54,7 +54,7 @@ public class AFCreativeTab {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return "Sauces";
+			return "AdvancedFoods:Sauces";
 		}
 	};
 
