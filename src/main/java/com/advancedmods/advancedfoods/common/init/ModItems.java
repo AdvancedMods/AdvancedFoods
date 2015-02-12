@@ -63,7 +63,7 @@ public class ModItems {
     public static Item chocolate = new Chocolate(4000, 4, false);
     public static Item chocolateCake = new ChocolateCake(4000, 10, false);
     public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
-    public static Item corn = new Corn(4000, 5, false);
+    public static Item corn = new Corn();
     public static Item cupcake = new Cupcake(4000, 6, false);
     public static Item fishSandwich = new FishSandwich(4000, 6, false);
     public static Item hotdog = new Hotdog(4000, 6, false);
