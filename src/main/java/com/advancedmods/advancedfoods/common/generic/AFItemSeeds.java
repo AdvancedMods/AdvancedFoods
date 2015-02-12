@@ -95,5 +95,4 @@ public class AFItemSeeds extends ItemFood implements IPlantable {
 	public Block getSoilId() {
 		return soilId;
 	}
-
 }
