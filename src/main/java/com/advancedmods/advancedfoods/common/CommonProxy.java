@@ -5,6 +5,7 @@ import com.advancedmods.advancedfoods.common.handler.CraftingHandler;
 import com.advancedmods.advancedfoods.common.init.ModBlocks;
 import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.common.init.Recipes;
+import com.advancedmods.advancedfoods.core.AFPotion;
 import com.advancedmods.advancedfoods.core.enviroment.CheckEnv;
 import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraft.entity.player.EntityPlayer;
@@ -29,6 +30,8 @@ public class CommonProxy {
 		AdvancedFoods.log.debug("Blocks loaded");
 		// Check Mods
 		CheckEnv.CheckMods();
+        // Potions init
+        AFPotion.init();
 
 	}
 
