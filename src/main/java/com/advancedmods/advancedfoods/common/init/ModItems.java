@@ -59,7 +59,7 @@ public class ModItems {
     public static Item cheese = new Cheese(4001, 5, false);
     public static Item cherry = new Cherry(4002, 4, false);
     public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
-    public static Item chilli = new Chilli(4000, 5, false);
+    public static Item chilli = new Chilli();
     public static Item chocolate = new Chocolate(4000, 4, false);
     public static Item chocolateCake = new ChocolateCake(4000, 10, false);
     public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
