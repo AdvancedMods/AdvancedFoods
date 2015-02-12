@@ -9,7 +9,7 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
 public class Jar extends AFItem {
 
 	public Jar() {
-		super(AFCreativeTab.objects);
+		super(AFCreativeTab.misc);
 		setUnlocalizedName("jar");
 	}
 

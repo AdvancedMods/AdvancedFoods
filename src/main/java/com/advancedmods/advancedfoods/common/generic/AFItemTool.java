@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 public class AFItemTool extends AFItem {
 
 	public AFItemTool() {
-		super(AFCreativeTab.tools);
+		super(AFCreativeTab.misc);
 	}
 
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack par1ItemStack) {
