@@ -30,6 +30,9 @@ item.advancedfoods:cherrylemonade.name=Cherry Lemonade
 item.advancedfoods:kiwilemonade.name=Kiwi Lemonade
 item.advancedfoods:strawberrylemonade.name=Strawberry Lemonade
 
+// Other
+item.advancedfoods:chocolatemilk.name=Chocolate Milk
+
 // Smoothy
 item.advancedfoods:bananasmoothie.name=Banana Smoothie
 item.advancedfoods:cherrysmoothie.name=Cherry Smoothie
