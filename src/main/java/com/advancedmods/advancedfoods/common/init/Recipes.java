@@ -39,6 +39,7 @@ public class Recipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chocolateCake), "ccc", "ses", "www", 'c', ModItems.chocolate, 's', Items.sugar, 'e', Items.egg, 'w', Items.wheat));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chocolateCupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', ModItems.chocolateCake));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.cupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', Items.cake));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.hamburger), " b ", " B ", " b ", 'b', Items.bread, 'B', Items.beef));
 
 		// Misc
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), "iii", "iii", "iii", 'i', new ItemStack(ModItems.iceCubes)));
