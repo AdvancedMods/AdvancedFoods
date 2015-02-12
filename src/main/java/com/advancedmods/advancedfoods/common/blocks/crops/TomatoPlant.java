@@ -8,6 +8,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 
 import java.util.Random;
 
@@ -18,8 +20,8 @@ public class TomatoPlant extends AFBlockCrop {
 
 	public TomatoPlant() {
 		// Basic block setup
-		setBlockName("TomatoPlant");
-		setBlockTextureName(AFProps.modid.toLowerCase() + ":tomato_0");
+        this.setBlockName("tomatoplant");
+        this.setBlockTextureName(AFProps.modid.toLowerCase() + ":tomato_0");
 	}
 
 	/**
@@ -49,4 +51,23 @@ public class TomatoPlant extends AFBlockCrop {
 		iIcon[7] = parIIconRegister.registerIcon(AFProps.modid.toLowerCase() + ":tomato_3");
 	}
 
+    @Override
+    public boolean canBeReplacedByLeaves(IBlockAccess world, int x, int y, int z) {
+        return false;
+    }
+
+    @Override
+    public boolean renderAsNormalBlock() {
+        return true;
+    }
+
+    @Override
+    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side) {
+        return false;
+    }
+
+    @Override
+    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
+        return false;
+    }
 }
