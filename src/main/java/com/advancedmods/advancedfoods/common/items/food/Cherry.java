@@ -7,6 +7,7 @@ import com.advancedmods.advancedfoods.common.generic.AFItemFood;
  */
 public class Cherry extends AFItemFood {
 
+    //TODO: Make seed.
     public Cherry(int id, int heal, boolean b) {
         super(id, b);
         this.setUnlocalizedName("cherry");

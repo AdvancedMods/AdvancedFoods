@@ -11,8 +11,7 @@ import net.minecraft.init.Blocks;
 public class Banana extends AFItemSeeds {
 
     public Banana() {
-        //super(1, 0.3F, ModBlocks.bananaPlant, Blocks.farmland);
-        super(1, 0.3F, null, Blocks.farmland);
+        super(1, 0.3F, ModBlocks.bananaPlant, Blocks.farmland);
         setUnlocalizedName("banana");
         setCreativeTab(AFCreativeTab.food);
     }

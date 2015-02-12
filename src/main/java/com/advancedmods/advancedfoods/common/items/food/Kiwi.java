@@ -7,6 +7,7 @@ import com.advancedmods.advancedfoods.common.generic.AFItemFood;
  */
 public class Kiwi extends AFItemFood {
 
+    // TODO: Make seed.
     public Kiwi(int id, int heal, boolean b) {
         super(id, b);
         this.setUnlocalizedName("kiwi");
