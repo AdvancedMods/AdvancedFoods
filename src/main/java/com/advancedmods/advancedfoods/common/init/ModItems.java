@@ -59,7 +59,7 @@ public class ModItems {
     public static Item banana = new Banana();
     public static Item caramel = new Caramel(4000, 1, false);
     public static Item cheese = new Cheese(4001, 5, false);
-    public static Item cherry = new Cherry(4002, 4, false);
+    public static Item cherry = new Cherry();
     public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
     public static Item chilli = new Chilli();
     public static Item chocolate = new Chocolate(4000, 4, false);
@@ -72,13 +72,13 @@ public class ModItems {
     public static Item hamburger = new Hamburger(4000, 8, false);
     public static Item hotdog = new Hotdog(4000, 6, false);
     public static Item jellybeans = new Jellybeans(4000, 3, false);
-    public static Item kiwi = new Kiwi(4000, 4, false);
+    public static Item kiwi = new Kiwi();
     public static Item lemon = new Lemon();
     public static Item strawberry = new Strawberry();
     public static Item taco = new Taco(4000, 4, false);
     public static Item toast = new Toast(4000, 2, false);
     public static Item toastSandwich = new ToastSandwich(4000, 6, false);
-    public static Item tomato = new Tomato(4000, 3, false);
+    public static Item tomato = new Tomato();
     public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
 
     // Drinks
