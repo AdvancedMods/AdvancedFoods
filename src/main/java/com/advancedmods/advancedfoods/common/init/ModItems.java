@@ -2,7 +2,7 @@ package com.advancedmods.advancedfoods.common.init;
 
 import com.advancedmods.advancedfoods.common.items.drinks.ChocolateMilk;
 import com.advancedmods.advancedfoods.common.items.food.Banana;
-import com.advancedmods.advancedfoods.common.items.food.Butter;
+import com.advancedmods.advancedfoods.common.items.ingredients.Butter;
 import com.advancedmods.advancedfoods.common.items.food.Caramel;
 import com.advancedmods.advancedfoods.common.items.food.Cheese;
 import com.advancedmods.advancedfoods.common.items.food.Cherry;
@@ -55,7 +55,6 @@ public class ModItems {
 
     // Foods
     public static Item banana = new Banana();
-    public static Item butter = new Butter(4000, 1, false);
     public static Item caramel = new Caramel(4000, 1, false);
     public static Item cheese = new Cheese(4001, 5, false);
     public static Item cherry = new Cherry(4002, 4, false);
@@ -106,6 +105,7 @@ public class ModItems {
     public static Item mustard = new Mustard();
 
     // Ingredients
+    public static Item butter = new Butter(4000, 1, false);
     public static Item dough = new Dough();
     public static Item flour = new Flour();
     public static Item salt = new Salt();
@@ -113,7 +113,6 @@ public class ModItems {
     public static void init() {
         // Foods
         GameRegistry.registerItem(banana, "banana");
-        GameRegistry.registerItem(butter, "butter");
         GameRegistry.registerItem(caramel, "caramel");
         GameRegistry.registerItem(cheese, "cheese");
         GameRegistry.registerItem(cherry, "cherry");
@@ -164,6 +163,7 @@ public class ModItems {
         GameRegistry.registerItem(mustard, "mustard");
 
         // Ingredients
+        GameRegistry.registerItem(butter, "butter");
         GameRegistry.registerItem(dough, "dough");
         GameRegistry.registerItem(flour, "flour");
         GameRegistry.registerItem(salt, "salt");
