@@ -10,6 +10,7 @@ public class StrawberrySmoothie extends AFItemFood {
     public StrawberrySmoothie(int id, int heal, boolean b) {
         super(id, b);
         this.setUnlocalizedName("strawberrysmoothie");
+        this.setMaxStackSize(1);
     }
 
 }

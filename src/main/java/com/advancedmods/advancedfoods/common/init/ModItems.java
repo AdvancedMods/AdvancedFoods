@@ -25,6 +25,10 @@ import com.advancedmods.advancedfoods.common.items.food.TomatoSoup;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.ingredients.Flour;
 import com.advancedmods.advancedfoods.common.items.ingredients.Salt;
+import com.advancedmods.advancedfoods.common.items.lemonade.CherryLemonade;
+import com.advancedmods.advancedfoods.common.items.lemonade.KiwiLemonade;
+import com.advancedmods.advancedfoods.common.items.lemonade.Lemonade;
+import com.advancedmods.advancedfoods.common.items.lemonade.StrawberryLemonade;
 import com.advancedmods.advancedfoods.common.items.misc.IceCubes;
 import com.advancedmods.advancedfoods.common.items.misc.Jar;
 import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
@@ -73,10 +77,10 @@ public class ModItems {
 
     // Drinks
     // Lemonade
-    //public static Item lemonade = new Lemonade(5000, 4, false);
-    //public static Item cherryLemonade = new CherryLemonade(5001, 5, false);
-    //public static Item kiwiLemonade = new KiwiLemonade(5002, 5, false);
-    //public static Item strawberryLemonade = new StrawberryLemonade(5002, 5, false);
+    public static Item lemonade = new Lemonade(5000, 4, false);
+    public static Item cherryLemonade = new CherryLemonade(5001, 5, false);
+    public static Item kiwiLemonade = new KiwiLemonade(5002, 5, false);
+    public static Item strawberryLemonade = new StrawberryLemonade(5002, 5, false);
 
     // Smoothy
     public static Item bananaSmoothie = new BananaSmoothie(5000, 6, false);
@@ -128,10 +132,10 @@ public class ModItems {
 
         // Drinks
         // Lemonade
-        //GameRegistry.registerItem(lemonade, lemonade.getUnlocalizedName());
-        //GameRegistry.registerItem(cherryLemonade, cherryLemonade.getUnlocalizedName());
-        //GameRegistry.registerItem(kiwiLemonade, kiwiLemonade.getUnlocalizedName());
-        //GameRegistry.registerItem(strawberryLemonade, strawberryLemonade.getUnlocalizedName());
+        GameRegistry.registerItem(lemonade, "lemonade");
+        GameRegistry.registerItem(cherryLemonade, "cherrylemonade");
+        GameRegistry.registerItem(kiwiLemonade, "kiwilemonade");
+        GameRegistry.registerItem(strawberryLemonade, "strawberrylemonade");
 
         // Smoothy
         GameRegistry.registerItem(bananaSmoothie, "bananasmoothie");
