@@ -1,5 +1,6 @@
 package com.advancedmods.advancedfoods.common.init;
 
+import com.advancedmods.advancedfoods.common.items.drinks.ChocolateMilk;
 import com.advancedmods.advancedfoods.common.items.food.Banana;
 import com.advancedmods.advancedfoods.common.items.food.Butter;
 import com.advancedmods.advancedfoods.common.items.food.Caramel;
@@ -76,6 +77,8 @@ public class ModItems {
     public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
 
     // Drinks
+    public static Item chocolateMilk = new ChocolateMilk(5000, 6, false);
+
     // Lemonade
     public static Item lemonade = new Lemonade(5000, 4, false);
     public static Item cherryLemonade = new CherryLemonade(5001, 5, false);
@@ -131,6 +134,8 @@ public class ModItems {
         GameRegistry.registerItem(tomatoSoup, "tomatosoup");
 
         // Drinks
+        GameRegistry.registerItem(chocolateMilk, "chocolatemilk");
+
         // Lemonade
         GameRegistry.registerItem(lemonade, "lemonade");
         GameRegistry.registerItem(cherryLemonade, "cherrylemonade");
