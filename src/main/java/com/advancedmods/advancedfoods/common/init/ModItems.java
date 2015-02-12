@@ -39,6 +39,7 @@ import com.advancedmods.advancedfoods.common.items.misc.SmoothieGlass;
 import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
 import com.advancedmods.advancedfoods.common.items.sauces.Mayo;
 import com.advancedmods.advancedfoods.common.items.sauces.Mustard;
+import com.advancedmods.advancedfoods.common.items.sauces.Wasabi;
 import com.advancedmods.advancedfoods.common.items.smoothies.BananaSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.CherrySmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.ChocolateSmoothie;
@@ -109,6 +110,7 @@ public class ModItems {
 	public static Item ketchup = new Ketchup();
 	public static Item mayo = new Mayo();
 	public static Item mustard = new Mustard();
+	public static Item wasabi = new Wasabi();
 
 	// Ingredients
 	public static Item butter = new Butter(4000, 1, false);
@@ -172,6 +174,7 @@ public class ModItems {
 		GameRegistry.registerItem(ketchup, "ketchup");
 		GameRegistry.registerItem(mayo, "mayo");
 		GameRegistry.registerItem(mustard, "mustard");
+		GameRegistry.registerItem(wasabi, "wasabi");
 
 		// Ingredients
 		GameRegistry.registerItem(butter, "butter");
