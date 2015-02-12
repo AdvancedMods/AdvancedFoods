@@ -25,6 +25,7 @@ import com.advancedmods.advancedfoods.common.items.food.Toast;
 import com.advancedmods.advancedfoods.common.items.food.ToastSandwich;
 import com.advancedmods.advancedfoods.common.items.food.Tomato;
 import com.advancedmods.advancedfoods.common.items.food.TomatoSoup;
+import com.advancedmods.advancedfoods.common.items.food.UncookedFries;
 import com.advancedmods.advancedfoods.common.items.ingredients.Butter;
 import com.advancedmods.advancedfoods.common.items.ingredients.Dough;
 import com.advancedmods.advancedfoods.common.items.ingredients.Flour;
@@ -83,6 +84,7 @@ public class ModItems {
 	public static Item toastSandwich = new ToastSandwich(4000, 6, false);
 	public static Item tomato = new Tomato();
 	public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
+	public static Item uncoockedFries = new UncookedFries(4000, 1, false);
 
 	// Drinks
 	public static Item chocolateMilk = new ChocolateMilk(5000, 6, false);
@@ -147,6 +149,7 @@ public class ModItems {
 		GameRegistry.registerItem(toastSandwich, "toastsandwich");
 		GameRegistry.registerItem(tomato, "tomato");
 		GameRegistry.registerItem(tomatoSoup, "tomatosoup");
+		GameRegistry.registerItem(uncoockedFries, "uncookedfries");
 
 		// Drinks
 		GameRegistry.registerItem(chocolateMilk, "chocolatemilk");
