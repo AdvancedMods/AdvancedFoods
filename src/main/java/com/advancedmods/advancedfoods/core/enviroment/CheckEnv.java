@@ -8,26 +8,26 @@ import cpw.mods.fml.common.Loader;
  */
 public class CheckEnv {
 
-    public static void CheckMods() {
+	public static void CheckMods() {
 
-        AdvancedFoods.log.info("Checking Mods...");
+		AdvancedFoods.log.info("Checking Mods...");
 
-        if (Loader.isModLoaded("dbcore")) {
-            AdvancedFoods.log.debug("Core Init successful");
-        }
+		if (Loader.isModLoaded("dbcore")) {
+			AdvancedFoods.log.debug("Core Init successful");
+		}
 
-        if (Loader.isModLoaded("CoFHCore")) {
-            AdvancedFoods.log.debug("CoFHCore found, good to go!");
-        }
+		if (Loader.isModLoaded("CoFHCore")) {
+			AdvancedFoods.log.debug("CoFHCore found, good to go!");
+		}
 
-        if (Loader.isModLoaded("harvestcraft")) {
-            AdvancedFoods.log.info("Pam's Harvestcraft found, hello buddy");
-        }
+		if (Loader.isModLoaded("harvestcraft")) {
+			AdvancedFoods.log.info("Pam's Harvestcraft found, hello buddy");
+		}
 
-        if (Loader.isModLoaded("Natura")) {
-            AdvancedFoods.log.info("Natura found, hello buddy");
-        }
+		if (Loader.isModLoaded("Natura")) {
+			AdvancedFoods.log.info("Natura found, hello buddy");
+		}
 
-    }
+	}
 
 }

@@ -8,10 +8,10 @@ import com.advancedmods.advancedfoods.common.generic.AFItemFood;
  */
 public class Butter extends AFItemFood {
 
-    public Butter(int id, int heal, boolean b) {
-        super(id, b);
-        this.setUnlocalizedName("butter");
-        this.setCreativeTab(AFCreativeTab.ingredients);
-    }
+	public Butter(int id, int heal, boolean b) {
+		super(id, b);
+		this.setUnlocalizedName("butter");
+		this.setCreativeTab(AFCreativeTab.ingredients);
+	}
 
 }

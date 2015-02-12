@@ -13,29 +13,29 @@ import net.minecraft.item.ItemStack;
  */
 public class AFItem extends Item {
 
-    public AFItem(CreativeTabs tab) {
-        super();
-        this.setCreativeTab(tab);
-    }
+	public AFItem(CreativeTabs tab) {
+		super();
+		this.setCreativeTab(tab);
+	}
 
-    @Override
-    public String getUnlocalizedName() {
-        return String.format("item.%s%s", AFProps.modid.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
+	@Override
+	public String getUnlocalizedName() {
+		return String.format("item.%s%s", AFProps.modid.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+	}
 
-    @Override
-    public String getUnlocalizedName(ItemStack itemStack) {
-        return String.format("item.%s%s", AFProps.modid.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
+	@Override
+	public String getUnlocalizedName(ItemStack itemStack) {
+		return String.format("item.%s%s", AFProps.modid.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister iconRegister) {
-        itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IIconRegister iconRegister) {
+		itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+	}
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
+	protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+		return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+	}
 
 }

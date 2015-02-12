@@ -15,45 +15,45 @@ import net.minecraftforge.common.MinecraftForge;
  */
 public class CommonProxy {
 
-    public static void preInit() {
+	public static void preInit() {
 
-        // ModItems
-        AdvancedFoods.log.debug("Loading Items...");
-        ModItems.init();
-        AdvancedFoods.log.debug("Items loaded");
-        // ModBlocks
-        AdvancedFoods.log.debug("Loading Blocks...");
-        ModBlocks.init();
-        AdvancedFoods.log.debug("Blocks loaded");
-        // Check Mods
-        CheckEnv.CheckMods();
+		// ModItems
+		AdvancedFoods.log.debug("Loading Items...");
+		ModItems.init();
+		AdvancedFoods.log.debug("Items loaded");
+		// ModBlocks
+		AdvancedFoods.log.debug("Loading Blocks...");
+		ModBlocks.init();
+		AdvancedFoods.log.debug("Blocks loaded");
+		// Check Mods
+		CheckEnv.CheckMods();
 
-    }
+	}
 
-    public static void Init() {
+	public static void Init() {
 
-        // Recipes
-        AdvancedFoods.log.info("Loading Recipes...");
-        Recipes.init();
-        AdvancedFoods.log.info("Recipes Loaded");
+		// Recipes
+		AdvancedFoods.log.info("Loading Recipes...");
+		Recipes.init();
+		AdvancedFoods.log.info("Recipes Loaded");
 
-    }
+	}
 
-    public static void postInit() {
+	public static void postInit() {
 
-    }
+	}
 
-    public World getClientWorld() {
+	public World getClientWorld() {
 
-        return null;
+		return null;
 
-    }
+	}
 
-    public EntityPlayer getPlayer() {
+	public EntityPlayer getPlayer() {
 
-        return null;
+		return null;
 
-    }
+	}
 
     public static void addGrassSeedsHooks() {
 

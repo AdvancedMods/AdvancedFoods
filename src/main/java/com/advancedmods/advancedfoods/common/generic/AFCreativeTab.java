@@ -10,52 +10,52 @@ import net.minecraft.item.Item;
  */
 public class AFCreativeTab {
 
-    public static final CreativeTabs food = new CreativeTabs(AFProps.modid) {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.strawberry;
-        }
+	public static final CreativeTabs food = new CreativeTabs(AFProps.modid) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.strawberry;
+		}
 
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Foods";
-        }
-    };
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Foods";
+		}
+	};
 
-    public static final CreativeTabs objects = new CreativeTabs(AFProps.modid) {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.smoothieGlass;
-        }
+	public static final CreativeTabs objects = new CreativeTabs(AFProps.modid) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.smoothieGlass;
+		}
 
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Objects";
-        }
-    };
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Objects";
+		}
+	};
 
-    public static final CreativeTabs ingredients = new CreativeTabs(AFProps.modid) {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.dough;
-        }
+	public static final CreativeTabs ingredients = new CreativeTabs(AFProps.modid) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.dough;
+		}
 
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Ingredients";
-        }
-    };
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Ingredients";
+		}
+	};
 
-    public static final CreativeTabs sauces = new CreativeTabs(AFProps.modid) {
-        @Override
-        public Item getTabIconItem() {
-            return ModItems.ketchup;
-        }
+	public static final CreativeTabs sauces = new CreativeTabs(AFProps.modid) {
+		@Override
+		public Item getTabIconItem() {
+			return ModItems.ketchup;
+		}
 
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Sauces";
-        }
-    };
+		@Override
+		public String getTranslatedTabLabel() {
+			return "Sauces";
+		}
+	};
 
 }
