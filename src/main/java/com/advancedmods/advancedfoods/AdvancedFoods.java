@@ -48,6 +48,9 @@ public class AdvancedFoods extends BaseMod {
         log.info("Entering Init phase...");
         // Do Init stuff
         proxy.Init();
+        log.info("Adding Grass Seed Hooks...");
+        proxy.addGrassSeedsHooks();
+        log.info("Grass Seed Hooks added");
         log.info("Init complete");
 
     }
