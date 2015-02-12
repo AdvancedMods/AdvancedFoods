@@ -49,6 +49,9 @@ public class Recipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " g ", "g g", "ggg", 'g', Blocks.glass_pane));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.smoothieGlass), "g g", " g ", 'g', Blocks.glass_pane));
 
+        // Tools
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.knife), "i  ", " s ", "   ", 'i', Items.iron_ingot, 's', Items.stick));
+
 		// Smelting
 		// Foods
 		GameRegistry.addSmelting(new ItemStack(Items.sugar), new ItemStack(ModItems.caramel, 3), 5);

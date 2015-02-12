@@ -46,11 +46,15 @@ public class AdvancedFoods extends BaseMod {
     public void Init(FMLInitializationEvent event) {
 
         log.info("Entering Init phase...");
-        // Do Init stuff
-        proxy.Init();
+        // Init handlers
+        log.info("Registering Handlers...");
+        proxy.initHandlers();
+        log.info("Handlers registered");
         log.info("Adding Grass Seed Hooks...");
         proxy.addGrassSeedsHooks();
         log.info("Grass Seed Hooks added");
+        // Do Init stuff
+        proxy.Init();
         log.info("Init complete");
 
     }

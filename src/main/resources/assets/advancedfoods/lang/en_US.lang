@@ -33,7 +33,7 @@ item.advancedfoods:strawberrylemonade.name=Strawberry Lemonade
 // Other
 item.advancedfoods:chocolatemilk.name=Chocolate Milk
 
-// Smoothy
+// Smoothie
 item.advancedfoods:bananasmoothie.name=Banana Smoothie
 item.advancedfoods:cherrysmoothie.name=Cherry Smoothie
 item.advancedfoods:chocolatesmoothie.name=Chocolate Smoothie
@@ -65,3 +65,6 @@ item.advancedfoods:mustard.name=Mustard
 item.advancedfoods:dough.name=Dough
 item.advancedfoods:flour.name=Flour
 item.advancedfoods:salt.name=Salt
+
+// Tools
+item.advancedfoods:knife.name=Iron Knife

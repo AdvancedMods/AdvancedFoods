@@ -1,10 +1,12 @@
 package com.advancedmods.advancedfoods.common;
 
 import com.advancedmods.advancedfoods.AdvancedFoods;
+import com.advancedmods.advancedfoods.common.handler.CraftingHandler;
 import com.advancedmods.advancedfoods.common.init.ModBlocks;
 import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.common.init.Recipes;
 import com.advancedmods.advancedfoods.core.enviroment.CheckEnv;
+import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -64,6 +66,12 @@ public class CommonProxy {
         MinecraftForge.addGrassSeed(new ItemStack(ModItems.lemon), 5);
         MinecraftForge.addGrassSeed(new ItemStack(ModItems.strawberry), 5);
         MinecraftForge.addGrassSeed(new ItemStack(ModItems.tomato), 5);
+
+    }
+
+    public static void initHandlers() {
+
+        FMLCommonHandler.instance().bus().register(new CraftingHandler());
 
     }
 
