@@ -34,12 +34,12 @@ public class ClientProxy extends CommonProxy {
 
 	}
 
-    public static void addGrassSeedsHooks() {
+	public static void addGrassSeedsHooks() {
 
-    }
+	}
 
-    public static void initHandlers() {
+	public static void initHandlers() {
 
-    }
+	}
 
 }

@@ -8,8 +8,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
 
 import java.util.Random;
 
@@ -20,8 +18,8 @@ public class LemonPlant extends AFBlockCrop {
 
 	public LemonPlant() {
 		// Basic block setup
-        this.setBlockName("lemonplant");
-        this.setBlockTextureName(AFProps.modid.toLowerCase() + ":lemon_0");
+		this.setBlockName("lemonplant");
+		this.setBlockTextureName(AFProps.modid.toLowerCase() + ":lemon_0");
 	}
 
 	/**

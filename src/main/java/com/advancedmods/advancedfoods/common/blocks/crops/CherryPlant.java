@@ -18,8 +18,8 @@ public class CherryPlant extends AFBlockCrop {
 
 	public CherryPlant() {
 		super();
-        this.setBlockName("cherryplant");
-        this.setBlockTextureName(AFProps.modid.toLowerCase() + ":cherry_0");
+		this.setBlockName("cherryplant");
+		this.setBlockTextureName(AFProps.modid.toLowerCase() + ":cherry_0");
 	}
 
 	/**

@@ -8,8 +8,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
 
 import java.util.Random;
 
@@ -20,8 +18,8 @@ public class KiwiPlant extends AFBlockCrop {
 
 	public KiwiPlant() {
 		super();
-        this.setBlockName("kiwiplant");
-        this.setBlockTextureName(AFProps.modid.toLowerCase() + ":kiwi_0");
+		this.setBlockName("kiwiplant");
+		this.setBlockTextureName(AFProps.modid.toLowerCase() + ":kiwi_0");
 	}
 
 	/**

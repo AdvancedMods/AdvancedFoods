@@ -7,11 +7,11 @@ import com.advancedmods.advancedfoods.common.generic.AFItemTool;
  */
 public class ItemKnife extends AFItemTool {
 
-    public ItemKnife() {
-        this.setUnlocalizedName("knife");
-        this.setMaxStackSize(1);
-        this.setMaxDamage(255);
-        this.setNoRepair();
-    }
+	public ItemKnife() {
+		this.setUnlocalizedName("knife");
+		this.setMaxStackSize(1);
+		this.setMaxDamage(255);
+		this.setNoRepair();
+	}
 
 }

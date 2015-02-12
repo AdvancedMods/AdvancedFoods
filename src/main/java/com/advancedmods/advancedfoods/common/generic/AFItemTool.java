@@ -7,14 +7,12 @@ import net.minecraft.item.ItemStack;
  */
 public class AFItemTool extends AFItem {
 
-    public AFItemTool()
-    {
-        super(AFCreativeTab.tools);
-    }
+	public AFItemTool() {
+		super(AFCreativeTab.tools);
+	}
 
-    public boolean doesContainerItemLeaveCraftingGrid(ItemStack par1ItemStack)
-    {
-        return false;
-    }
+	public boolean doesContainerItemLeaveCraftingGrid(ItemStack par1ItemStack) {
+		return false;
+	}
 
 }

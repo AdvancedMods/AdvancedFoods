@@ -18,8 +18,8 @@ public class TomatoPlant extends AFBlockCrop {
 
 	public TomatoPlant() {
 		// Basic block setup
-        this.setBlockName("tomatoplant");
-        this.setBlockTextureName(AFProps.modid.toLowerCase() + ":tomato_0");
+		this.setBlockName("tomatoplant");
+		this.setBlockTextureName(AFProps.modid.toLowerCase() + ":tomato_0");
 	}
 
 	/**

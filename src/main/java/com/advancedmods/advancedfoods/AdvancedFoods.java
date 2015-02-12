@@ -20,70 +20,70 @@ import org.apache.logging.log4j.Logger;
 @Mod(name = AFProps.name, modid = AFProps.modid, version = AFProps.version, dependencies = AFProps.dependencies, modLanguage = "java", canBeDeactivated = false, acceptedMinecraftVersions = AFProps.ACCEPTED_MC_VERSIONS)
 public class AdvancedFoods extends BaseMod {
 
-    @SidedProxy(clientSide = AFProps.clientproxy, serverSide = AFProps.commonproxy)
-    public static CommonProxy proxy;
-    @Instance(AFProps.modid)
-    public static AdvancedFoods instance;
-    public static Logger log = LogManager.getLogger("AdvancedFoods");
-    public static final String releaseURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
+	@SidedProxy(clientSide = AFProps.clientproxy, serverSide = AFProps.commonproxy)
+	public static CommonProxy proxy;
+	@Instance(AFProps.modid)
+	public static AdvancedFoods instance;
+	public static Logger log = LogManager.getLogger("AdvancedFoods");
+	public static final String releaseURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
 
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
 
-        // Starting mod
-        log.info("Starting Advanced Foods version " + AFProps.version + "...");
-        log.info("Entering Pre-Init phase...");
-        // Update manager
-        log.info("Starting Update manager for Advanced Foods...");
-        UpdateManager.registerUpdater(new UpdateManager(this, "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION", null));
-        log.info("Update Manager for Advanced Foods started");
-        // Do Pre-Init stuff
-        proxy.preInit();
-        log.info("Pre-Init complete");
+		// Starting mod
+		log.info("Starting Advanced Foods version " + AFProps.version + "...");
+		log.info("Entering Pre-Init phase...");
+		// Update manager
+		log.info("Starting Update manager for Advanced Foods...");
+		UpdateManager.registerUpdater(new UpdateManager(this, "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION", null));
+		log.info("Update Manager for Advanced Foods started");
+		// Do Pre-Init stuff
+		proxy.preInit();
+		log.info("Pre-Init complete");
 
-    }
+	}
 
-    @EventHandler
-    public void Init(FMLInitializationEvent event) {
+	@EventHandler
+	public void Init(FMLInitializationEvent event) {
 
-        log.info("Entering Init phase...");
-        // Init handlers
-        log.info("Registering Handlers...");
-        proxy.initHandlers();
-        log.info("Handlers registered");
-        log.info("Adding Grass Seed Hooks...");
-        proxy.addGrassSeedsHooks();
-        log.info("Grass Seed Hooks added");
-        // Do Init stuff
-        proxy.Init();
-        log.info("Init complete");
+		log.info("Entering Init phase...");
+		// Init handlers
+		log.info("Registering Handlers...");
+		proxy.initHandlers();
+		log.info("Handlers registered");
+		log.info("Adding Grass Seed Hooks...");
+		proxy.addGrassSeedsHooks();
+		log.info("Grass Seed Hooks added");
+		// Do Init stuff
+		proxy.Init();
+		log.info("Init complete");
 
-    }
+	}
 
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
 
-        log.info("Entering Post-Init phase...");
-        // Do Post-Init stuff
-        proxy.postInit();
-        log.info("Post-Init complete");
-        log.info("Mod loaded");
+		log.info("Entering Post-Init phase...");
+		// Do Post-Init stuff
+		proxy.postInit();
+		log.info("Post-Init complete");
+		log.info("Mod loaded");
 
-    }
+	}
 
-    @Override
-    public String getModId() {
-        return AFProps.modid;
-    }
+	@Override
+	public String getModId() {
+		return AFProps.modid;
+	}
 
-    @Override
-    public String getModName() {
-        return AFProps.name;
-    }
+	@Override
+	public String getModName() {
+		return AFProps.name;
+	}
 
-    @Override
-    public String getModVersion() {
-        return AFProps.version;
-    }
+	@Override
+	public String getModVersion() {
+		return AFProps.version;
+	}
 
 }

@@ -18,8 +18,8 @@ public class ChilliPlant extends AFBlockCrop {
 
 	public ChilliPlant() {
 		// Basic block setup
-        this.setBlockName("chilliplant");
-        this.setBlockTextureName(AFProps.modid.toLowerCase() + ":chilli_0");
+		this.setBlockName("chilliplant");
+		this.setBlockTextureName(AFProps.modid.toLowerCase() + ":chilli_0");
 	}
 
 	/**

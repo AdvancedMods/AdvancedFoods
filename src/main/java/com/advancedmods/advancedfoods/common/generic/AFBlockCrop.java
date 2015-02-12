@@ -29,12 +29,12 @@ public class AFBlockCrop extends BlockCrops implements IGrowable {
 
 	public AFBlockCrop() {
 		// Basic block setup
-        this.setTickRandomly(true);
+		this.setTickRandomly(true);
 		float f = 0.5F;
-        this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, 0.25F, 0.5F + f);
-        this.setCreativeTab((CreativeTabs) null);
-        this.setHardness(0.0F);
-        this.setStepSound(soundTypeGrass);
+		this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, 0.25F, 0.5F + f);
+		this.setCreativeTab((CreativeTabs) null);
+		this.setHardness(0.0F);
+		this.setStepSound(soundTypeGrass);
 		this.disableStats();
 	}
 
@@ -141,24 +141,24 @@ public class AFBlockCrop extends BlockCrops implements IGrowable {
 		incrementGrowStage(parWorld, parRand, parX, parY, parZ);
 	}
 
-    @Override
-    public boolean canBeReplacedByLeaves(IBlockAccess world, int x, int y, int z) {
-        return false;
-    }
+	@Override
+	public boolean canBeReplacedByLeaves(IBlockAccess world, int x, int y, int z) {
+		return false;
+	}
 
-    @Override
-    public boolean renderAsNormalBlock() {
-        return true;
-    }
+	@Override
+	public boolean renderAsNormalBlock() {
+		return true;
+	}
 
-    @Override
-    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side) {
-        return false;
-    }
+	@Override
+	public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side) {
+		return false;
+	}
 
-    @Override
-    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
-        return false;
-    }
+	@Override
+	public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
+		return false;
+	}
 
 }

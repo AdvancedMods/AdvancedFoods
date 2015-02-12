@@ -116,8 +116,8 @@ public class ModItems {
 	public static Item flour = new Flour();
 	public static Item salt = new Salt();
 
-    // Tools
-    public static Item knife = new ItemKnife();
+	// Tools
+	public static Item knife = new ItemKnife();
 
 	public static void init() {
 		// Foods
@@ -179,8 +179,8 @@ public class ModItems {
 		GameRegistry.registerItem(flour, "flour");
 		GameRegistry.registerItem(salt, "salt");
 
-        // Tools
-        GameRegistry.registerItem(knife, "knife");
+		// Tools
+		GameRegistry.registerItem(knife, "knife");
 	}
 
 }
