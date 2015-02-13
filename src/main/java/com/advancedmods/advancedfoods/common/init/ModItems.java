@@ -41,6 +41,14 @@ import com.advancedmods.advancedfoods.common.items.sauces.Ketchup;
 import com.advancedmods.advancedfoods.common.items.sauces.Mayo;
 import com.advancedmods.advancedfoods.common.items.sauces.Mustard;
 import com.advancedmods.advancedfoods.common.items.sauces.Wasabi;
+import com.advancedmods.advancedfoods.common.items.seeds.BananaSeed;
+import com.advancedmods.advancedfoods.common.items.seeds.CherrySeed;
+import com.advancedmods.advancedfoods.common.items.seeds.ChilliSeed;
+import com.advancedmods.advancedfoods.common.items.seeds.CornSeed;
+import com.advancedmods.advancedfoods.common.items.seeds.KiwiSeed;
+import com.advancedmods.advancedfoods.common.items.seeds.LemonSeed;
+import com.advancedmods.advancedfoods.common.items.seeds.StrawberrySeed;
+import com.advancedmods.advancedfoods.common.items.seeds.TomatoSeed;
 import com.advancedmods.advancedfoods.common.items.smoothies.BananaSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.CherrySmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.ChocolateSmoothie;
@@ -60,29 +68,29 @@ import net.minecraft.item.Item;
 public class ModItems {
 
 	// Foods
-	public static Item banana = new Banana();
+	public static Item banana = new Banana(4000, 2, false);
 	public static Item caramel = new Caramel(4000, 1, false);
 	public static Item cheese = new Cheese(4001, 5, false);
-	public static Item cherry = new Cherry();
+	public static Item cherry = new Cherry(4000, 2, false);
 	public static Item chickenSandwich = new ChickenSandwich(4000, 6, false);
-	public static Item chilli = new Chilli();
+	public static Item chilli = new Chilli(4000, 2, false);
 	public static Item chocolate = new Chocolate(4000, 4, false);
 	public static Item chocolateCake = new ChocolateCake(4000, 10, false);
 	public static Item chocolateCupcake = new ChocolateCupcake(4000, 6, false);
-	public static Item corn = new Corn();
+	public static Item corn = new Corn(4000, 2, false);
 	public static Item cupcake = new Cupcake(4000, 6, false);
 	public static Item fishSandwich = new FishSandwich(4000, 6, false);
 	public static Item fries = new Fries(4000, 6, false);
 	public static Item hamburger = new Hamburger(4000, 8, false);
 	public static Item hotdog = new Hotdog(4000, 6, false);
 	public static Item jellybeans = new Jellybeans(4000, 3, false);
-	public static Item kiwi = new Kiwi();
-	public static Item lemon = new Lemon();
-	public static Item strawberry = new Strawberry();
+	public static Item kiwi = new Kiwi(4000, 2, false);
+	public static Item lemon = new Lemon(4000, 2, false);
+	public static Item strawberry = new Strawberry(4000, 2, false);
 	public static Item taco = new Taco(4000, 4, false);
 	public static Item toast = new Toast(4000, 2, false);
 	public static Item toastSandwich = new ToastSandwich(4000, 6, false);
-	public static Item tomato = new Tomato();
+	public static Item tomato = new Tomato(4000, 2, false);
 	public static Item tomatoSoup = new TomatoSoup(4000, 6, false);
 	public static Item uncoockedFries = new UncookedFries(4000, 1, false);
 
@@ -122,6 +130,16 @@ public class ModItems {
 
 	// Tools
 	public static Item knife = new Knife();
+
+    // Seeds
+    public static Item bananaSeed = new BananaSeed();
+    public static Item cherrySeed = new CherrySeed();
+    public static Item chilliSeed = new ChilliSeed();
+    public static Item cornSeed = new CornSeed();
+    public static Item kiwiSeed = new KiwiSeed();
+    public static Item lemonSeed = new LemonSeed();
+    public static Item strawberrySeed = new StrawberrySeed();
+    public static Item tomatoSeed = new TomatoSeed();
 
 	public static void init() {
 		// Foods
@@ -187,6 +205,17 @@ public class ModItems {
 
 		// Tools
 		GameRegistry.registerItem(knife, "knife");
+
+        // Seeds
+        GameRegistry.registerItem(bananaSeed, "bananaseed");
+        GameRegistry.registerItem(cherrySeed, "cherryseed");
+        GameRegistry.registerItem(chilliSeed, "chilliseed");
+        GameRegistry.registerItem(cornSeed, "cornseed");
+        GameRegistry.registerItem(kiwiSeed, "kiwiseed");
+        GameRegistry.registerItem(lemonSeed, "lemonseed");
+        GameRegistry.registerItem(strawberrySeed, "strawberryseed");
+        GameRegistry.registerItem(tomatoSeed, "tomatoseed");
+
 	}
 
 }

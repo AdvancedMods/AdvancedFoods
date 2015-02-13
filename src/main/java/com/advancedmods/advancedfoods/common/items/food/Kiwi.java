@@ -1,18 +1,16 @@
 package com.advancedmods.advancedfoods.common.items.food;
 
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
-import com.advancedmods.advancedfoods.common.generic.AFItemSeeds;
-import com.advancedmods.advancedfoods.common.init.ModBlocks;
-import net.minecraft.init.Blocks;
+import com.advancedmods.advancedfoods.common.generic.AFItemFood;
 
 /**
  * Created by Zandor on 11-2-2015.
  */
-public class Kiwi extends AFItemSeeds {
+public class Kiwi extends AFItemFood {
 
-	public Kiwi() {
-		super(1, 0.3F, ModBlocks.kiwiPlant, Blocks.farmland);
-		setUnlocalizedName("kiwi");
+	public Kiwi(int id, int heal, boolean b) {
+        super(id, b);
+        setUnlocalizedName("kiwi");
 		setCreativeTab(AFCreativeTab.food);
 	}
 

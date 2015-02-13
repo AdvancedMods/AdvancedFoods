@@ -1,18 +1,16 @@
 package com.advancedmods.advancedfoods.common.items.food;
 
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
-import com.advancedmods.advancedfoods.common.generic.AFItemSeeds;
-import com.advancedmods.advancedfoods.common.init.ModBlocks;
-import net.minecraft.init.Blocks;
+import com.advancedmods.advancedfoods.common.generic.AFItemFood;
 
 /**
  * Created by Dennisbonke on 11-2-2015.
  */
-public class Cherry extends AFItemSeeds {
+public class Cherry extends AFItemFood {
 
-	public Cherry() {
-		super(1, 0.3F, ModBlocks.cherryPlant, Blocks.farmland);
-		setUnlocalizedName("cherry");
+	public Cherry(int id, int heal, boolean b) {
+        super(id, b);
+        setUnlocalizedName("cherry");
 		setCreativeTab(AFCreativeTab.food);
 	}
 

@@ -1,18 +1,16 @@
 package com.advancedmods.advancedfoods.common.items.food;
 
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
-import com.advancedmods.advancedfoods.common.generic.AFItemSeeds;
-import com.advancedmods.advancedfoods.common.init.ModBlocks;
-import net.minecraft.init.Blocks;
+import com.advancedmods.advancedfoods.common.generic.AFItemFood;
 
 /**
  * Created by Zandor on 12-2-2015.
  */
-public class Corn extends AFItemSeeds {
+public class Corn extends AFItemFood {
 
-	public Corn() {
-		super(1, 0.3F, ModBlocks.cornPlant, Blocks.farmland);
-		setUnlocalizedName("corn");
+	public Corn(int id, int heal, boolean b) {
+        super(id, b);
+        setUnlocalizedName("corn");
 		setCreativeTab(AFCreativeTab.food);
 	}
 

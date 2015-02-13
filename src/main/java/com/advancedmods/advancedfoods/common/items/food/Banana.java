@@ -1,18 +1,16 @@
 package com.advancedmods.advancedfoods.common.items.food;
 
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
-import com.advancedmods.advancedfoods.common.generic.AFItemSeeds;
-import com.advancedmods.advancedfoods.common.init.ModBlocks;
-import net.minecraft.init.Blocks;
+import com.advancedmods.advancedfoods.common.generic.AFItemFood;
 
 /**
  * Created by Dennisbonke on 11-2-2015.
  */
-public class Banana extends AFItemSeeds {
+public class Banana extends AFItemFood {
 
-	public Banana() {
-		super(1, 0.3F, ModBlocks.bananaPlant, Blocks.farmland);
-		setUnlocalizedName("banana");
+	public Banana(int id, int heal, boolean b) {
+        super(id, b);
+        setUnlocalizedName("banana");
 		setCreativeTab(AFCreativeTab.food);
 	}
 
