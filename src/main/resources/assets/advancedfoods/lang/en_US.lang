@@ -47,15 +47,6 @@ item.advancedfoods:icecubes.name=Ice Cubes
 item.advancedfoods:jar.name=Jar
 item.advancedfoods:smoothieglass.name=Smoothie Glass
 
-// Crops
-tile.advancedfoods:bananaplant.name=Banana Plant
-tile.advancedfoods:cherryplant.name=Cherry Plant
-tile.advancedfoods:chilliplant.name=Chilli Plant
-tile.advancedfoods.kiwiplant.name=Kiwi Plant
-tile.advancedfoods:lemonplant.name=Lemon Plant
-tile.advancedfoods:strawberryplant.name=Strawberry Plant
-tile.advancedfoods:tomatoplant.name=Tomato Plant
-
 // Sauce
 item.advancedfoods:ketchup.name=Ketchup
 item.advancedfoods:mayo.name=Mayo
@@ -68,3 +59,24 @@ item.advancedfoods:salt.name=Salt
 
 // Tools
 item.advancedfoods:knife.name=Iron Knife
+
+// Seeds
+item.advancedfoods:bananaseed.name=Banana Seed
+item.advancedfoods:cherryseed.name=Cherry Seed
+item.advancedfoods:chillliseed.name=Chilli Seed
+item.advancedfoods:cornseed.name=Corn Seed
+item.advancedfoods:kiwiseed.name=Kiwi Seed
+item.advancedfoods:lemonseed.name=Lemon Seed
+item.advancedfoods:strawberryseed.name=Strawberry Seed
+item.advancedfoods:tomatoseed.name=Tomato Seed
+
+// Blocks
+// Crops
+tile.advancedfoods:bananaplant.name=Banana Plant
+tile.advancedfoods:cherryplant.name=Cherry Plant
+tile.advancedfoods:chilliplant.name=Chilli Plant
+tile.advancedfoods:cornplant.name=Corn Plant
+tile.advancedfoods.kiwiplant.name=Kiwi Plant
+tile.advancedfoods:lemonplant.name=Lemon Plant
+tile.advancedfoods:strawberryplant.name=Strawberry Plant
+tile.advancedfoods:tomatoplant.name=Tomato Plant
