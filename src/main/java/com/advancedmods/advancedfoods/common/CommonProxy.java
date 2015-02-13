@@ -62,14 +62,14 @@ public class CommonProxy {
 
 	public static void addGrassSeedsHooks() {
 
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.banana), 5);
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.cherry), 5);
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.chilli), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.corn), 5);
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.kiwi), 5);
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.lemon), 5);
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.strawberry), 5);
-		MinecraftForge.addGrassSeed(new ItemStack(ModItems.tomato), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.bananaSeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.cherrySeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.chilliSeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.cornSeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.kiwiSeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.lemonSeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.strawberrySeed), 5);
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.tomatoSeed), 5);
 
 	}
 
