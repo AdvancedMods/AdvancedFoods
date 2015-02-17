@@ -75,6 +75,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
@@ -257,7 +258,6 @@ public class AdvancedFoods extends BaseMod {
 		UpdateManager.registerUpdater(new UpdateManager(this, "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION", null));
 		log.info("Update Manager for Advanced Foods started");
 		// Do Pre-Init stuff
-		proxy.preInit();
         log.info("Setting up configs...");
         setupConfigs(event.getSuggestedConfigurationFile());
         log.info("Configs setup");
@@ -271,13 +271,11 @@ public class AdvancedFoods extends BaseMod {
 		log.info("Entering Init phase...");
 		// Init handlers
 		log.info("Registering Handlers...");
-		proxy.initHandlers();
+
 		log.info("Handlers registered");
 		log.info("Adding Grass Seed Hooks...");
-		proxy.addGrassSeedsHooks();
+
 		log.info("Grass Seed Hooks added");
-		// Do Init stuff
-		proxy.Init();
 		log.info("Init complete");
 
 	}
@@ -286,8 +284,6 @@ public class AdvancedFoods extends BaseMod {
 	public void postInit(FMLPostInitializationEvent event) {
 
 		log.info("Entering Post-Init phase...");
-		// Do Post-Init stuff
-		proxy.postInit();
 		log.info("Post-Init complete");
 		log.info("Mod loaded");
 
@@ -402,8 +398,85 @@ public class AdvancedFoods extends BaseMod {
 
     public void registerStuff() {
 
+        if (bananaEnabled) {
+            GameRegistry.registerItem(banana, "banana");
+            if (bananaSeedEnabled) {
+                GameRegistry.registerItem(bananaSeed, "bananaseed");
+                GameRegistry.registerBlock(bananaPlant, "bananaplant");
+            }
+            if (bananaSmoothieEnabled) {
+                GameRegistry.registerItem(bananaSmoothie, "bananasmoothie");
+            }
+        }
+        if (butterEnabled) {
+            GameRegistry.registerItem(butter, "butter");
+        }
+        if (caramelEnabled) {
+            GameRegistry.registerItem(caramel, "caramel");
+        }
+        if (cheeseEnabled) {
+            GameRegistry.registerItem(cheese, "cheese");
+        }
+        if (cherryEnabled) {
+            GameRegistry.registerItem(cherry, "cherry");
+            if (cherryLemonadeEnabled) {
+                GameRegistry.registerItem(cherryLemonade, "cherrylemonade");
+            }
+            if (cherrySeedEnabled) {
+                GameRegistry.registerBlock(cherryPlant, "cherryplant");
+                GameRegistry.registerItem(cherrySeed, "cherryseed");
+            }
+            if (cherrySmoothieEnabled) {
+                GameRegistry.registerItem(cherrySmoothie, "cherrysmoothie");
+            }
+        }
+        if (chickenSandwichEnabled) {
+            GameRegistry.registerItem(chickenSandwich, "chickensandwich");
+        }
+        if (chilliEnabled) {
+            GameRegistry.registerItem(chilli, "chilli");
+            if (chilliSeedEnabled) {
+                GameRegistry.registerItem(chilliSeed, "chilliseed");
+                GameRegistry.registerBlock(chilliPlant, "chilliplant");
+            }
+        }
+        if (chocolateEnabled) {
+            GameRegistry.registerItem(chocolate, "cocolate");
+            if (chocolateCakeEnabled) {
+                GameRegistry.registerItem(chocolateCake, "chocolatecake");
+            }
+            if (chocolateCupCakeEnabled && cupcakeEnabled) {
+                GameRegistry.registerItem(chocolateCupcake, "chocolatecupcake");
+            }
+            if (chocolateMilkEnabled) {
+                GameRegistry.registerItem(chocolateMilk, "chocolatemilk");
+            }
+            if (chocolateSmoothieEnabled) {
+                GameRegistry.registerItem(chocolateSmoothie, "chocolatesmoothie");
+            }
+        }
+        if (cornEnabled) {
+            GameRegistry.registerItem(corn, "corn");
+            if (cornSeedEnabled) {
+                GameRegistry.registerItem(cornSeed, "cornseed");
+                GameRegistry.registerBlock(cornPlant, "cornplant");
+            }
+        }
+        if (cupcakeEnabled) {
 
+        }
+        if (doughEnabled) {
 
+        }
+        if (fishSandwichEnabled) {
+
+        }
+        if (flourEnabled) {
+
+        }
+        if (friesEnabled && uncookedFriesEnabled) {
+
+        }
     }
 
 }
