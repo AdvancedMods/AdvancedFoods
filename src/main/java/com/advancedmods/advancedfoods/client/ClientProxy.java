@@ -10,18 +10,6 @@ import net.minecraft.world.World;
  */
 public class ClientProxy extends CommonProxy {
 
-	public static void preInit() {
-
-	}
-
-	public static void Init() {
-
-	}
-
-	public static void postInit() {
-
-	}
-
 	public World getClientWorld() {
 
 		return FMLClientHandler.instance().getClient().theWorld;
@@ -31,14 +19,6 @@ public class ClientProxy extends CommonProxy {
 	public EntityPlayer getPlayer() {
 
 		return FMLClientHandler.instance().getClient().thePlayer;
-
-	}
-
-	public static void addGrassSeedsHooks() {
-
-	}
-
-	public static void initHandlers() {
 
 	}
 

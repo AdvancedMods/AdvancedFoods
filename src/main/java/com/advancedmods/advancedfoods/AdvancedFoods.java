@@ -67,8 +67,8 @@ import com.advancedmods.advancedfoods.common.items.smoothies.LemonSmoothie;
 import com.advancedmods.advancedfoods.common.items.smoothies.StrawberrySmoothie;
 import com.advancedmods.advancedfoods.common.items.tools.Knife;
 import com.advancedmods.advancedfoods.core.AFProps;
-import com.dennisbonke.dbcore.core.mod.BaseMod;
-import com.dennisbonke.dbcore.core.mod.updater.UpdateManager;
+import com.advancedmods.amcore.core.mod.BaseMod;
+import com.advancedmods.amcore.core.mod.updater.UpdateManager;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -589,28 +589,28 @@ public class AdvancedFoods extends BaseMod {
 
     public void addGrassSeedsHooks() {
 
-        if (bananaSeedDropEnabled) {
+        if (bananaSeedEnabled && bananaSeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(bananaSeed), 5);
         }
-        if (cherrySeedDropEnabled) {
+        if (cherrySeedEnabled && cherrySeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(cherrySeed), 5);
         }
-        if (chilliSeedDropEnabled) {
+        if (cherrySeedEnabled && chilliSeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(chilliSeed), 5);
         }
-        if (cornSeedDropEnabled) {
+        if (cornSeedEnabled && cornSeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(cornSeed), 5);
         }
-        if (kiwiSeedDropEnabled) {
+        if (kiwiSeedEnabled && kiwiSeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(kiwiSeed), 5);
         }
-        if (lemonSeedDropEnabled) {
+        if (lemonSeedEnabled && lemonSeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(lemonSeed), 5);
         }
-        if (strawberrySeedDropEnabled) {
+        if (strawberrySeedEnabled && strawberrySeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(strawberrySeed), 5);
         }
-        if (tomatoSeedDropEnabled) {
+        if (tomatoSeedEnabled && tomatoSeedDropEnabled) {
             MinecraftForge.addGrassSeed(new ItemStack(tomatoSeed), 5);
         }
 

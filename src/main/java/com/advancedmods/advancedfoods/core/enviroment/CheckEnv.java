@@ -12,7 +12,7 @@ public class CheckEnv {
 
 		AdvancedFoods.log.info("Checking Mods...");
 
-		if (Loader.isModLoaded("dbcore")) {
+		if (Loader.isModLoaded("AMCore")) {
 			AdvancedFoods.log.debug("Core Init successful");
 		}
 

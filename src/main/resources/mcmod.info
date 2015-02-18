@@ -8,9 +8,9 @@
   "url": "",
   "updateUrl": "",
   "authorList": ["Zandor300", "Dennisbonke"],
-  "credits": "...",
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": ["DBCore", "CoFHCore", "FML", "Forge"]
+  "dependencies": ["AMCore", "CoFHCore", "FML", "Forge"]
 }
 ]
