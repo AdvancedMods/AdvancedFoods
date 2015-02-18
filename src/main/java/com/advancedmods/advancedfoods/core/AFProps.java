@@ -8,7 +8,7 @@ public class AFProps {
 	// Versioning
 	public static final String REQUIRED_MC_VERSION = "1.7.10";
 	public static final String ACCEPTED_MC_VERSIONS = REQUIRED_MC_VERSION + "," + "1.7.2";
-	public static final String VERSION_COMPLETE = "1.7.10R0.2.0A5";
+	public static final String VERSION_COMPLETE = "1.7.10R0.2.0B1";
 	public static final String FORGE_BASE = "10.13.2.";
 	public static final String FORGE_BUILD = "1240";
 	public static final String FORGE_VERSION = "[" + FORGE_BASE + FORGE_BUILD + "]";
