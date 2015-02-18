@@ -1,7 +1,7 @@
 package com.advancedmods.advancedfoods.common.blocks.crops;
 
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFBlockCrop;
-import com.advancedmods.advancedfoods.common.init.ModItems;
 import com.advancedmods.advancedfoods.core.AFProps;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -32,7 +32,7 @@ public class KiwiPlant extends AFBlockCrop {
 
 	@Override
 	public Item getItemDropped(int parMetadata, Random parRand, int parFortune) {
-		return (ModItems.kiwi);
+		return (AdvancedFoods.kiwi);
 	}
 
 	@Override

@@ -9,6 +9,7 @@ import com.advancedmods.advancedfoods.common.blocks.crops.KiwiPlant;
 import com.advancedmods.advancedfoods.common.blocks.crops.LemonPlant;
 import com.advancedmods.advancedfoods.common.blocks.crops.StrawberryPlant;
 import com.advancedmods.advancedfoods.common.blocks.crops.TomatoPlant;
+import com.advancedmods.advancedfoods.common.handler.CraftingHandler;
 import com.advancedmods.advancedfoods.common.items.drinks.ChocolateMilk;
 import com.advancedmods.advancedfoods.common.items.food.Banana;
 import com.advancedmods.advancedfoods.common.items.food.Caramel;
@@ -68,6 +69,7 @@ import com.advancedmods.advancedfoods.common.items.tools.Knife;
 import com.advancedmods.advancedfoods.core.AFProps;
 import com.dennisbonke.dbcore.core.mod.BaseMod;
 import com.dennisbonke.dbcore.core.mod.updater.UpdateManager;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -78,6 +80,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -142,6 +146,7 @@ public class AdvancedFoods extends BaseMod {
     public static boolean lemonEnabled;
     public static boolean lemonSeedEnabled;
     public static boolean lemonSeedDropEnabled;
+    public static boolean lemonSmoothieEnabled;
     public static boolean lemonadeEnabled;
     public static boolean mayoEnabled;
     public static boolean mustardEnabled;
@@ -159,6 +164,7 @@ public class AdvancedFoods extends BaseMod {
     public static boolean tomatoSeedEnabled;
     public static boolean tomatoSeedDropEnabled;
     public static boolean tomatoSoupEnabled;
+    public static boolean wasabiEnabled;
     public static boolean uncookedFriesEnabled;
 
     // Item declarations
@@ -261,6 +267,9 @@ public class AdvancedFoods extends BaseMod {
         log.info("Setting up configs...");
         setupConfigs(event.getSuggestedConfigurationFile());
         log.info("Configs setup");
+        log.info("Registering Items and Blocks...");
+        registerStuff();
+        log.info("Items and Blocks registered");
 		log.info("Pre-Init complete");
 
 	}
@@ -271,10 +280,10 @@ public class AdvancedFoods extends BaseMod {
 		log.info("Entering Init phase...");
 		// Init handlers
 		log.info("Registering Handlers...");
-
+        initHandlers();
 		log.info("Handlers registered");
 		log.info("Adding Grass Seed Hooks...");
-
+        addGrassSeedsHooks();
 		log.info("Grass Seed Hooks added");
 		log.info("Init complete");
 
@@ -352,6 +361,7 @@ public class AdvancedFoods extends BaseMod {
         lemonEnabled = getItem(config, "lemonEnabled");
         lemonSeedEnabled = getItem(config, "lemonSeedEnabled");
         lemonSeedDropEnabled = config.get("options", "lemonSeedDropEnabled", true).getBoolean(true);
+        lemonSmoothieEnabled = getItem(config, "lemonSmoothieEnabled");
         lemonadeEnabled = getItem(config, "lemonadeEnabled");
         mayoEnabled = getItem(config, "mayoEnabled");
         mustardEnabled = getItem(config, "mustardEnabled");
@@ -369,6 +379,7 @@ public class AdvancedFoods extends BaseMod {
         tomatoSeedEnabled = getItem(config, "tomatoSeedEnabled");
         tomatoSeedDropEnabled = config.get("options", "tomatoSeedDropEnabled", true).getBoolean(true);
         tomatoSoupEnabled = getItem(config, "tomatoSoupEnabled");
+        wasabiEnabled = getItem(config, "wasabiEnabled");
         uncookedFriesEnabled = getItem(config, "uncookedFriesEnabled");
         config.save();
 
@@ -463,20 +474,152 @@ public class AdvancedFoods extends BaseMod {
             }
         }
         if (cupcakeEnabled) {
-
+            GameRegistry.registerItem(cupcake, "cupcake");
         }
         if (doughEnabled) {
-
+            GameRegistry.registerItem(dough, "dough");
         }
         if (fishSandwichEnabled) {
-
+            GameRegistry.registerItem(fishSandwich, "fishsandwich");
         }
         if (flourEnabled) {
-
+            GameRegistry.registerItem(flour, "flour");
         }
         if (friesEnabled && uncookedFriesEnabled) {
-
+            GameRegistry.registerItem(fries, "fries");
         }
+        if (hamburgerEnabled) {
+            GameRegistry.registerItem(hamburger, "hamburger");
+        }
+        if (hotdogEnabled) {
+            GameRegistry.registerItem(hotdog, "hotdog");
+        }
+        if (iceCubesEnabled) {
+            GameRegistry.registerItem(iceCubes, "icecubes");
+        }
+        if (jarEnabled) {
+            GameRegistry.registerItem(jar, "jar");
+        }
+        if (jellybeansEnabled) {
+            GameRegistry.registerItem(jellybeans, "jellybeans");
+        }
+        if (ketchupEnabled) {
+            GameRegistry.registerItem(ketchup, "ketchup");
+        }
+        if (kiwiEnabled) {
+            GameRegistry.registerItem(kiwi, "kiwi");
+            if (kiwiLemonadeEnabled) {
+                GameRegistry.registerItem(kiwiLemonade, "kiwilemonade");
+            }
+            if (kiwiSeedEnabled) {
+                GameRegistry.registerItem(kiwiSeed, "kiwiseed");
+                GameRegistry.registerBlock(kiwiPlant, "kiwiplant");
+            }
+            if (kiwiSmoothieEnabled) {
+                GameRegistry.registerItem(kiwiSmoothie, "kiwismoothie");
+            }
+        }
+        if (knifeEnabled) {
+            GameRegistry.registerItem(knife, "knife");
+        }
+        if (lemonEnabled) {
+            GameRegistry.registerItem(lemon, "lemon");
+            if (lemonSeedEnabled) {
+                GameRegistry.registerItem(lemonSeed, "lemonseed");
+                GameRegistry.registerBlock(lemonPlant, "lemonplant");
+            }
+            if (lemonSmoothieEnabled) {
+                GameRegistry.registerItem(lemonSmoothie, "lemonsmoothie");
+            }
+        }
+        if (lemonadeEnabled) {
+            GameRegistry.registerItem(lemonade, "lemonade");
+        }
+        if (mayoEnabled) {
+            GameRegistry.registerItem(mayo, "mayo");
+        }
+        if (mustardEnabled) {
+            GameRegistry.registerItem(mustard, "mustard");
+        }
+        if (saltEnabled) {
+            GameRegistry.registerItem(salt, "salt");
+        }
+        if (smoothieGlassEnabled) {
+            GameRegistry.registerItem(smoothieGlass, "smoothieglass");
+        }
+        if (strawberryEnabled) {
+            GameRegistry.registerItem(strawberry, "strawberry");
+            if (strawberryLemonadeEnabled) {
+                GameRegistry.registerItem(strawberryLemonade, "strawberrylemonade");
+            }
+            if (strawberrySeedEnabled) {
+                GameRegistry.registerItem(strawberrySeed, "strawberryseed");
+                GameRegistry.registerBlock(strawberryPlant, "strawberryplant");
+            }
+            if (strawberrySmoothieEnabled) {
+                GameRegistry.registerItem(strawberrySmoothie, "strawberrysmoothie");
+            }
+        }
+        if (tacoEnabled) {
+            GameRegistry.registerItem(taco, "taco");
+        }
+        if (toastEnabled) {
+            GameRegistry.registerItem(toast, "toast");
+        }
+        if (toastSandwichEnabled && toastEnabled) {
+            GameRegistry.registerItem(toastSandwich, "toastsandwich");
+        }
+        if (tomatoEnabled) {
+            GameRegistry.registerItem(tomato, "tomato");
+            if (tomatoSeedEnabled) {
+                GameRegistry.registerItem(tomatoSeed, "tomatoseed");
+                GameRegistry.registerBlock(tomatoPlant, "tomatoplant");
+            }
+            if (tomatoSoupEnabled) {
+                GameRegistry.registerItem(tomatoSoup, "tomatosoup");
+            }
+        }
+        if (wasabiEnabled) {
+            GameRegistry.registerItem(wasabi, "wasabi");
+        }
+        if (uncookedFriesEnabled) {
+            GameRegistry.registerItem(uncoockedFries, "uncookedfries");
+        }
+    }
+
+    public void addGrassSeedsHooks() {
+
+        if (bananaSeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(bananaSeed), 5);
+        }
+        if (cherrySeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(cherrySeed), 5);
+        }
+        if (chilliSeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(chilliSeed), 5);
+        }
+        if (cornSeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(cornSeed), 5);
+        }
+        if (kiwiSeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(kiwiSeed), 5);
+        }
+        if (lemonSeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(lemonSeed), 5);
+        }
+        if (strawberrySeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(strawberrySeed), 5);
+        }
+        if (tomatoSeedDropEnabled) {
+            MinecraftForge.addGrassSeed(new ItemStack(tomatoSeed), 5);
+        }
+
+	}
+
+    public void initHandlers() {
+
+        FMLCommonHandler.instance().bus().register(new CraftingHandler());
+
     }
 
 }

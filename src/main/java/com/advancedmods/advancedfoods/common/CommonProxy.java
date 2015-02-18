@@ -1,17 +1,10 @@
 package com.advancedmods.advancedfoods.common;
 
 import com.advancedmods.advancedfoods.AdvancedFoods;
-import com.advancedmods.advancedfoods.common.handler.CraftingHandler;
-import com.advancedmods.advancedfoods.common.init.ModBlocks;
-import com.advancedmods.advancedfoods.common.init.ModItems;
-import com.advancedmods.advancedfoods.common.init.Recipes;
 import com.advancedmods.advancedfoods.core.AFPotion;
 import com.advancedmods.advancedfoods.core.enviroment.CheckEnv;
-import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
 
 /**
  * Created by Dennisbonke on 11-2-2015.
@@ -22,11 +15,11 @@ public class CommonProxy {
 
 		// ModItems
 		AdvancedFoods.log.debug("Loading Items...");
-		ModItems.init();
+		//ModItems.init();
 		AdvancedFoods.log.debug("Items loaded");
 		// ModBlocks
 		AdvancedFoods.log.debug("Loading Blocks...");
-		ModBlocks.init();
+		//ModBlocks.init();
 		AdvancedFoods.log.debug("Blocks loaded");
 		// Check Mods
 		CheckEnv.CheckMods();
@@ -39,7 +32,7 @@ public class CommonProxy {
 
 		// Recipes
 		AdvancedFoods.log.info("Loading Recipes...");
-		Recipes.init();
+		//Recipes.init();
 		AdvancedFoods.log.info("Recipes Loaded");
 
 	}
@@ -57,25 +50,6 @@ public class CommonProxy {
 	public EntityPlayer getPlayer() {
 
 		return null;
-
-	}
-
-	public static void addGrassSeedsHooks() {
-
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.bananaSeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.cherrySeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.chilliSeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.cornSeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.kiwiSeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.lemonSeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.strawberrySeed), 5);
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.tomatoSeed), 5);
-
-	}
-
-	public static void initHandlers() {
-
-		FMLCommonHandler.instance().bus().register(new CraftingHandler());
 
 	}
 

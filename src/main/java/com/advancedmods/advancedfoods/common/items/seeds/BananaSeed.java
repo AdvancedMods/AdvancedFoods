@@ -1,8 +1,8 @@
 package com.advancedmods.advancedfoods.common.items.seeds;
 
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
 import com.advancedmods.advancedfoods.common.generic.AFItemSeeds;
-import com.advancedmods.advancedfoods.common.init.ModBlocks;
 import net.minecraft.init.Blocks;
 
 /**
@@ -11,7 +11,7 @@ import net.minecraft.init.Blocks;
 public class BananaSeed extends AFItemSeeds {
 
     public BananaSeed() {
-        super(1, 0.3F, ModBlocks.bananaPlant, Blocks.farmland);
+        super(1, 0.3F, AdvancedFoods.bananaPlant, Blocks.farmland);
         setUnlocalizedName("bananaseed");
         setCreativeTab(AFCreativeTab.food);
     }
