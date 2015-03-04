@@ -1,58 +1,67 @@
 package com.advancedmods.advancedfoods.common.init;
 
+import com.advancedmods.advancedfoods.AdvancedFoods;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
+
 /**
  * Created by Dennisbonke on 11-2-2015.
  */
 public class Recipes {
 
-	/*public static void init() {
+	public static void init() {
 		// Shapeless Ore Crafting
 		// Drinks
 		// Lemonade
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.lemonade), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.lemon)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherryLemonade), new ItemStack(ModItems.lemonade), new ItemStack(ModItems.cherry)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.strawberryLemonade), new ItemStack(ModItems.lemonade), new ItemStack(ModItems.strawberry)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.lemonade), new ItemStack(AdvancedFoods.smoothieGlass), new ItemStack(AdvancedFoods.lemon)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.cherryLemonade), new ItemStack(AdvancedFoods.lemonade), new ItemStack(AdvancedFoods.cherry)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.strawberryLemonade), new ItemStack(AdvancedFoods.lemonade), new ItemStack(AdvancedFoods.strawberry)));
 
 		// Other
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateMilk), new ItemStack(Items.milk_bucket), new ItemStack(Blocks.cocoa)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.chocolateMilk), new ItemStack(Items.milk_bucket), new ItemStack(Blocks.cocoa)));
 
 		// Smoothie
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.bananaSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.banana)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.cherrySmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.cherry)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.chocolateSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.chocolate)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.lemonSmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.lemon)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.strawberrySmoothie), new ItemStack(ModItems.smoothieGlass), new ItemStack(ModItems.iceCubes), new ItemStack(ModItems.strawberry)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.bananaSmoothie), new ItemStack(AdvancedFoods.smoothieGlass), new ItemStack(AdvancedFoods.iceCubes), new ItemStack(AdvancedFoods.banana)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.cherrySmoothie), new ItemStack(AdvancedFoods.smoothieGlass), new ItemStack(AdvancedFoods.iceCubes), new ItemStack(AdvancedFoods.cherry)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.chocolateSmoothie), new ItemStack(AdvancedFoods.smoothieGlass), new ItemStack(AdvancedFoods.iceCubes), new ItemStack(AdvancedFoods.chocolate)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.lemonSmoothie), new ItemStack(AdvancedFoods.smoothieGlass), new ItemStack(AdvancedFoods.iceCubes), new ItemStack(AdvancedFoods.lemon)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.strawberrySmoothie), new ItemStack(AdvancedFoods.smoothieGlass), new ItemStack(AdvancedFoods.iceCubes), new ItemStack(AdvancedFoods.strawberry)));
 
 		// Misc
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes, 9), new ItemStack(Blocks.ice)));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.iceCubes), new ItemStack(Items.snowball)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.iceCubes, 9), new ItemStack(Blocks.ice)));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.iceCubes), new ItemStack(Items.snowball)));
 
 		// Ingredients
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.flour), new ItemStack(Items.wheat)));
-        GameRegistry.addRecipe(new ItemStack(ModItems.uncoockedFries), new Object[]{"pk", 'p', Items.potato, 'k', new ItemStack(ModItems.knife, 1, OreDictionary.WILDCARD_VALUE)});
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(AdvancedFoods.flour), new ItemStack(Items.wheat)));
+        GameRegistry.addRecipe(new ItemStack(AdvancedFoods.uncoockedFries), new Object[]{"pk", 'p', Items.potato, 'k', new ItemStack(AdvancedFoods.knife, 1, OreDictionary.WILDCARD_VALUE)});
 
 		// Shaped Ore Crafting
 		// Foods
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chocolateCake), "ccc", "ses", "www", 'c', ModItems.chocolate, 's', Items.sugar, 'e', Items.egg, 'w', Items.wheat));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chocolateCupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', ModItems.chocolateCake));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.cupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', Items.cake));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.hamburger), " b ", " B ", " b ", 'b', Items.bread, 'B', Items.beef));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.chocolateCake), "ccc", "ses", "www", 'c', AdvancedFoods.chocolate, 's', Items.sugar, 'e', Items.egg, 'w', Items.wheat));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.chocolateCupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', AdvancedFoods.chocolateCake));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.cupcake, 5), "pcp", " p ", 'p', Items.paper, 'c', Items.cake));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.hamburger), " b ", " B ", " b ", 'b', Items.bread, 'B', Items.beef));
 
 		// Misc
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), "iii", "iii", "iii", 'i', new ItemStack(ModItems.iceCubes)));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " g ", "g g", "ggg", 'g', Blocks.glass_pane));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.smoothieGlass), "g g", " g ", 'g', Blocks.glass_pane));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), "iii", "iii", "iii", 'i', new ItemStack(AdvancedFoods.iceCubes)));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.jar), " g ", "g g", "ggg", 'g', Blocks.glass_pane));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.smoothieGlass), "g g", " g ", 'g', Blocks.glass_pane));
 
 		// Tools
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.knife), "i  ", " s ", "   ", 'i', Items.iron_ingot, 's', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AdvancedFoods.knife), "i  ", " s ", "   ", 'i', Items.iron_ingot, 's', Items.stick));
 
 		// Smelting
 		// Foods
-		GameRegistry.addSmelting(new ItemStack(Items.sugar), new ItemStack(ModItems.caramel, 3), 5);
-		GameRegistry.addSmelting(new ItemStack(Items.bread), new ItemStack(ModItems.toast), 5);
+		GameRegistry.addSmelting(new ItemStack(Items.sugar), new ItemStack(AdvancedFoods.caramel, 3), 5);
+		GameRegistry.addSmelting(new ItemStack(Items.bread), new ItemStack(AdvancedFoods.toast), 5);
 
 		// Ingredients
-		GameRegistry.addSmelting(new ItemStack(ModItems.dough), new ItemStack(Items.bread), 5);
-	}*/
+		GameRegistry.addSmelting(new ItemStack(AdvancedFoods.dough), new ItemStack(Items.bread), 5);
+	}
 
 }

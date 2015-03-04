@@ -10,6 +10,7 @@ import com.advancedmods.advancedfoods.common.blocks.crops.LemonPlant;
 import com.advancedmods.advancedfoods.common.blocks.crops.StrawberryPlant;
 import com.advancedmods.advancedfoods.common.blocks.crops.TomatoPlant;
 import com.advancedmods.advancedfoods.common.handler.CraftingHandler;
+import com.advancedmods.advancedfoods.common.init.Recipes;
 import com.advancedmods.advancedfoods.common.items.drinks.ChocolateMilk;
 import com.advancedmods.advancedfoods.common.items.food.Banana;
 import com.advancedmods.advancedfoods.common.items.food.Caramel;
@@ -258,7 +259,7 @@ public class AdvancedFoods extends BaseMod {
 
 		// Starting mod
 		log.info("Starting Advanced Foods version " + AFProps.version + "...");
-		log.info("Entering Pre-Init phase...");
+		log.info("Entering Pre-Init ...");
 		// Update manager
 		log.info("Starting Update manager for Advanced Foods...");
 		UpdateManager.registerUpdater(new UpdateManager(this, "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION", null));
@@ -277,7 +278,7 @@ public class AdvancedFoods extends BaseMod {
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
 
-		log.info("Entering Init phase...");
+		log.info("Entering Init ...");
 		// Init handlers
 		log.info("Registering Handlers...");
         initHandlers();
@@ -285,16 +286,19 @@ public class AdvancedFoods extends BaseMod {
 		log.info("Adding Grass Seed Hooks...");
         addGrassSeedsHooks();
 		log.info("Grass Seed Hooks added");
-		log.info("Init complete");
+        log.info("Registering Recipes...");
+        Recipes.init();
+        log.info("Recipes Registered");
+        log.info("Init complete");
+        log.info("Mod loaded");
 
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 
-		log.info("Entering Post-Init phase...");
+		log.info("Entering Post-Init ...");
 		log.info("Post-Init complete");
-		log.info("Mod loaded");
 
 	}
 
