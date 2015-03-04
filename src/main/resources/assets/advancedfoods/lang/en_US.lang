@@ -10,8 +10,11 @@ item.advancedfoods:chilli.name=Chilli
 item.advancedfoods:chocolate.name=Chocolate
 item.advancedfoods:chocolatecake.name=Chocolate Cake
 item.advancedfoods:chocolatecupcake.name=Chocolate Cupcake
+item.advancedfoods:corn.name=Corn
 item.advancedfoods:cupcake.name=Cupcake
 item.advancedfoods:fishsandwich.name=Fish Sandwich
+item.advancedfoods:fries.name=Fries (Cooked)
+item.advancedfoods:hamburger.name=Hamburger
 item.advancedfoods:hotdog.name=Hotdog
 item.advancedfoods:jellybeans.name=Jellybeans
 item.advancedfoods:kiwi.name=Kiwi
@@ -22,6 +25,13 @@ item.advancedfoods:toast.name=Toast
 item.advancedfoods:toastsandwich.name=Toast Sandwich
 item.advancedfoods:tomato.name=Tomato
 item.advancedfoods:tomatosoup.name=Tomato Soup
+item.advancedfoods:uncookedfries.name=Fries (Uncooked)
+
+// Ingredients
+item.advancedfoods:butter.name=Butter
+item.advancedfoods:dough.name=Dough
+item.advancedfoods:flour.name=Flour
+item.advancedfoods:salt.name=Salt
 
 // Drinks
 // Lemonade
@@ -42,7 +52,7 @@ item.advancedfoods:lemonsmoothie.name=Lemon Smoothie
 item.advancedfoods:strawberrysmoothie.name=Strawberry Smoothie
 
 // Misc
-item.advancedfoods:glass.name=Glass
+// item.advancedfoods:glass.name=Glass
 item.advancedfoods:icecubes.name=Ice Cubes
 item.advancedfoods:jar.name=Jar
 item.advancedfoods:smoothieglass.name=Smoothie Glass
@@ -51,11 +61,7 @@ item.advancedfoods:smoothieglass.name=Smoothie Glass
 item.advancedfoods:ketchup.name=Ketchup
 item.advancedfoods:mayo.name=Mayo
 item.advancedfoods:mustard.name=Mustard
-
-// Ingredients
-item.advancedfoods:dough.name=Dough
-item.advancedfoods:flour.name=Flour
-item.advancedfoods:salt.name=Salt
+item.advancedfoods:wasabi.name=Wasabi
 
 // Tools
 item.advancedfoods:knife.name=Iron Knife
