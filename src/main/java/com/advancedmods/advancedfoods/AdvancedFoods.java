@@ -28,7 +28,8 @@ public class AdvancedFoods extends BaseMod {
 	@Instance(AFProps.modid)
 	public static AdvancedFoods instance;
 	public static Logger log = LogManager.getLogger("AdvancedFoods");
-	public static final String releaseURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
+	public static final String updateURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
+    public static final String releaseURL = "http://ci.zsinfo.nl/job/AdvancedFoods/lastSuccessfulBuild";
     public static ConfigurationHandler config;
 
 	@EventHandler
@@ -50,7 +51,7 @@ public class AdvancedFoods extends BaseMod {
         if (config.checkUpdates) {
             try {
                 log.info("Starting Update manager for Advanced Foods...");
-                UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, null));
+                UpdateManager.registerUpdater(new UpdateManager(this, updateURL, releaseURL));
                 log.info("Update Manager for Advanced Foods started");
             } catch (Exception e) {
                 log.error("Error starting update checker, printing stacktrace...");
@@ -60,7 +61,7 @@ public class AdvancedFoods extends BaseMod {
             log.warn("Update checker disabled");
         } else {
             FMLLog.bigWarning("Error reading config, enabling Update checker and using default values");
-            UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, null));
+            UpdateManager.registerUpdater(new UpdateManager(this, updateURL, releaseURL));
         }
         // Registry Items and Blocks
         log.info("Registering Items and Blocks...");
