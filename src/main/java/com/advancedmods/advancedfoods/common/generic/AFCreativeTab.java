@@ -1,7 +1,7 @@
 package com.advancedmods.advancedfoods.common.generic;
 
-import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.core.AFProps;
+import com.advancedmods.advancedfoods.core.AFRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,7 +13,7 @@ public class AFCreativeTab {
 	public static final CreativeTabs food = new CreativeTabs(AFProps.modid) {
 		@Override
 		public Item getTabIconItem() {
-			return AdvancedFoods.strawberry;
+			return AFRegistry.strawberry;
 		}
 
 		@Override
@@ -25,7 +25,7 @@ public class AFCreativeTab {
 	public static final CreativeTabs misc = new CreativeTabs(AFProps.modid) {
 		@Override
 		public Item getTabIconItem() {
-			return AdvancedFoods.smoothieGlass;
+			return AFRegistry.smoothieGlass;
 		}
 
 		@Override
@@ -37,7 +37,7 @@ public class AFCreativeTab {
 	public static final CreativeTabs ingredients = new CreativeTabs(AFProps.modid) {
 		@Override
 		public Item getTabIconItem() {
-			return AdvancedFoods.dough;
+			return AFRegistry.dough;
 		}
 
 		@Override
@@ -49,7 +49,7 @@ public class AFCreativeTab {
 	public static final CreativeTabs sauces = new CreativeTabs(AFProps.modid) {
 		@Override
 		public Item getTabIconItem() {
-			return AdvancedFoods.ketchup;
+			return AFRegistry.ketchup;
 		}
 
 		@Override

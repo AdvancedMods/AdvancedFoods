@@ -3,6 +3,7 @@ package com.advancedmods.advancedfoods.common.blocks.crops;
 import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFBlockCrop;
 import com.advancedmods.advancedfoods.core.AFProps;
+import com.advancedmods.advancedfoods.core.AFRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -32,7 +33,7 @@ public class TomatoPlant extends AFBlockCrop {
 
 	@Override
 	public Item getItemDropped(int parMetadata, Random parRand, int parFortune) {
-		return (AdvancedFoods.tomato);
+		return (AFRegistry.tomato);
 	}
 
 	@Override

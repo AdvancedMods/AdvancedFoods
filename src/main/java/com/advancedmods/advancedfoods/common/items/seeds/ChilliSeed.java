@@ -1,8 +1,8 @@
 package com.advancedmods.advancedfoods.common.items.seeds;
 
-import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
 import com.advancedmods.advancedfoods.common.generic.AFItemSeeds;
+import com.advancedmods.advancedfoods.core.AFRegistry;
 import net.minecraft.init.Blocks;
 
 /**
@@ -11,7 +11,7 @@ import net.minecraft.init.Blocks;
 public class ChilliSeed extends AFItemSeeds {
 
     public ChilliSeed() {
-        super(1, 0.3F, AdvancedFoods.chilliPlant, Blocks.farmland);
+        super(1, 0.3F, AFRegistry.chilliPlant, Blocks.farmland);
         setUnlocalizedName("chilliseed");
         setCreativeTab(AFCreativeTab.food);
     }
