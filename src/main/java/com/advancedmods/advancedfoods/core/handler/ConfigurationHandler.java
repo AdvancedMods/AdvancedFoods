@@ -25,6 +25,7 @@ public class ConfigurationHandler {
     public static boolean bananaSmoothieEnabled = true;
     public static boolean butterEnabled = true;
     public static boolean caramelEnabled = true;
+    public static boolean checkUpdates = true;
     public static boolean cheeseEnabled = true;
     public static boolean cherryEnabled = true;
     public static boolean cherryLemonadeEnabled = true;
@@ -107,6 +108,7 @@ public class ConfigurationHandler {
         bananaSmoothieEnabled = config.getBoolean("bananaSmoothieEnabled", Configuration.CATEGORY_GENERAL, true, "");
         butterEnabled = config.getBoolean("butterEnabled", Configuration.CATEGORY_GENERAL, true, "");
         caramelEnabled = config.getBoolean("caramelEnabled", Configuration.CATEGORY_GENERAL, true, "");
+        checkUpdates = config.getBoolean("checkUpdates", Configuration.CATEGORY_GENERAL, true, "Set this to false to disable the update checker");
         cheeseEnabled = config.getBoolean("cheeseEnabled", Configuration.CATEGORY_GENERAL, true, "");
         cherryEnabled = config.getBoolean("cherryEnabled", Configuration.CATEGORY_GENERAL, true, "");
         cherryLemonadeEnabled = config.getBoolean("cherryLemonadeEnabled", Configuration.CATEGORY_GENERAL, true, "");

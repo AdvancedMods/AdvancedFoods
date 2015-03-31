@@ -6,6 +6,7 @@ import com.advancedmods.advancedfoods.core.AFRegistry;
 import com.advancedmods.advancedfoods.core.handler.ConfigurationHandler;
 import com.advancedmods.amcore.core.mod.BaseMod;
 import com.advancedmods.amcore.core.mod.updater.UpdateManager;
+import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -28,6 +29,7 @@ public class AdvancedFoods extends BaseMod {
 	public static AdvancedFoods instance;
 	public static Logger log = LogManager.getLogger("AdvancedFoods");
 	public static final String releaseURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
+    public static ConfigurationHandler config;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -35,14 +37,32 @@ public class AdvancedFoods extends BaseMod {
 		// Starting mod
 		log.info("Starting Advanced Foods version " + AFProps.version + "...");
 		log.info("Entering Pre-Init ...");
-		// Update manager
-		log.info("Starting Update manager for Advanced Foods...");
-		UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, null));
-		log.info("Update Manager for Advanced Foods started");
 		// Do Pre-Init stuff
+        // Configs
         log.info("Setting up configs...");
-        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
-        log.info("Configs setup");
+        try {
+            ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+            log.info("Configs setup");
+        } catch (Exception e) {
+            log.error("Could not load or create config, using default values");
+        }
+        // Update manager
+        if (config.checkUpdates) {
+            try {
+                log.info("Starting Update manager for Advanced Foods...");
+                UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, null));
+                log.info("Update Manager for Advanced Foods started");
+            } catch (Exception e) {
+                log.error("Error starting update checker, printing stacktrace...");
+                e.printStackTrace();
+            }
+        } else if (!config.checkUpdates) {
+            log.warn("Update checker disabled");
+        } else {
+            FMLLog.bigWarning("Error reading config, enabling Update checker and using default values");
+            UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, null));
+        }
+        // Registry Items and Blocks
         log.info("Registering Items and Blocks...");
         AFRegistry.registerItemsAndBlocks();
         log.info("Items and Blocks registered");
@@ -58,9 +78,11 @@ public class AdvancedFoods extends BaseMod {
 		log.info("Registering Handlers...");
         AFRegistry.initHandlers();
 		log.info("Handlers registered");
+        // Grass seed hooks
 		log.info("Adding Grass Seed Hooks...");
         AFRegistry.addGrassSeedsHooks();
 		log.info("Grass Seed Hooks added");
+        // Recipes
         log.info("Registering Recipes...");
         AFRegistry.registerRecipes();
         log.info("Recipes Registered");
