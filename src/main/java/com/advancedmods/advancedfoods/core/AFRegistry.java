@@ -457,12 +457,12 @@ public class AFRegistry {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(jar), " g ", "g g", "ggg", 'g', Blocks.glass_pane));
         }
         if (config.smoothieGlassEnabled) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(smoothieGlass), "  ", "g g", " g ", 'g', Blocks.glass_pane));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(smoothieGlass), "g g", " g ", 'g', Blocks.glass_pane));
         }
 
         // Tools
         if (config.knifeEnabled) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(knife), "i  ", " s ", "   ", 'i', Items.iron_ingot, 's', Items.stick));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(knife), "i  ", " s ", 'i', Items.iron_ingot, 's', Items.stick));
         }
 
         // Smelting
