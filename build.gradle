@@ -48,7 +48,6 @@ minecraft {
 
     replace "@VERSION@", project.version
     replaceIn "AFProps.java"
-    replaceIn "mcmod.info"
 }
 
 dependencies {
@@ -60,7 +59,7 @@ dependencies {
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-    compile 'com.advancedmods:AMCore:1.7.10-0.2.1-B1-571:dev'
+    compile 'com.advancedmods:AMCore:1.7.10-0.2.1-B1-576:dev'
 
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
