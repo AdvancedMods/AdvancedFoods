@@ -1,6 +1,5 @@
 package com.advancedmods.advancedfoods.common.items.food;
 
-import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
 import com.advancedmods.advancedfoods.common.generic.AFItemFood;
 
 /**
@@ -10,8 +9,7 @@ public class Cherry extends AFItemFood {
 
 	public Cherry(int id, int heal, boolean b) {
         super(id, b);
-        setUnlocalizedName("cherry");
-		setCreativeTab(AFCreativeTab.food);
+        this.setUnlocalizedName("cherry");
 	}
 
 }

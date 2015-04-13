@@ -1,6 +1,6 @@
 package com.advancedmods.advancedfoods.common.items.sauces;
 
-import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFItem;
 
 /**
@@ -9,7 +9,7 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
 public class Ketchup extends AFItem {
 
 	public Ketchup() {
-		super(AFCreativeTab.sauces);
-		setUnlocalizedName("ketchup");
+		super(AdvancedFoods.sauces);
+		this.setUnlocalizedName("ketchup");
 	}
 }

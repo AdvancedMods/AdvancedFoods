@@ -1,6 +1,10 @@
 package com.advancedmods.advancedfoods;
 
 import com.advancedmods.advancedfoods.common.CommonProxy;
+import com.advancedmods.advancedfoods.common.generic.AFCreativeTabFood;
+import com.advancedmods.advancedfoods.common.generic.AFCreativeTabIngredients;
+import com.advancedmods.advancedfoods.common.generic.AFCreativeTabMisc;
+import com.advancedmods.advancedfoods.common.generic.AFCreativeTabSauces;
 import com.advancedmods.advancedfoods.core.AFProps;
 import com.advancedmods.advancedfoods.core.AFRegistry;
 import com.advancedmods.advancedfoods.core.handler.ConfigurationHandler;
@@ -14,13 +18,14 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
  * Created by Dennisbonke on 10-2-2015.
  */
-@Mod(name = AFProps.name, modid = AFProps.modid, version = AFProps.version, dependencies = AFProps.dependencies, modLanguage = "java", canBeDeactivated = false, acceptedMinecraftVersions = AFProps.REQUIRED_MC_VERSION)
+@Mod(name = AFProps.name, modid = AFProps.modid, version = AFProps.version, dependencies = AFProps.dependencies, modLanguage = "java", canBeDeactivated = false, acceptedMinecraftVersions = AFProps.MC_VERSION)
 public class AdvancedFoods extends BaseMod {
 
 	@SidedProxy(clientSide = AFProps.clientproxy, serverSide = AFProps.commonproxy)
@@ -31,6 +36,11 @@ public class AdvancedFoods extends BaseMod {
 	public static final String updateURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
     public static final String releaseURL = "http://ci.zsinfo.nl/job/AdvancedFoods/lastSuccessfulBuild";
     public static ConfigurationHandler config;
+    // Creative Tabs
+    public static CreativeTabs food = new AFCreativeTabFood("Food");
+    public static CreativeTabs misc = new AFCreativeTabMisc("Misc");
+    public static CreativeTabs ingredients = new AFCreativeTabIngredients("Ingredients");
+    public static CreativeTabs sauces = new AFCreativeTabSauces("Sauces");
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

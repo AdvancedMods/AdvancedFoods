@@ -1,6 +1,6 @@
 package com.advancedmods.advancedfoods.common.items.ingredients;
 
-import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFItemFood;
 
 /**
@@ -11,7 +11,7 @@ public class Butter extends AFItemFood {
 	public Butter(int id, int heal, boolean b) {
 		super(id, b);
 		this.setUnlocalizedName("butter");
-		this.setCreativeTab(AFCreativeTab.ingredients);
+		this.setCreativeTab(AdvancedFoods.ingredients);
 	}
 
 }

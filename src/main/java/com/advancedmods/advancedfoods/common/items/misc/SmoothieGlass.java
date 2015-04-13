@@ -1,6 +1,6 @@
 package com.advancedmods.advancedfoods.common.items.misc;
 
-import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFItem;
 
 /**
@@ -9,7 +9,7 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
 public class SmoothieGlass extends AFItem {
 
 	public SmoothieGlass() {
-		super(AFCreativeTab.misc);
-		setUnlocalizedName("smoothieglass");
+		super(AdvancedFoods.misc);
+		this.setUnlocalizedName("smoothieglass");
 	}
 }

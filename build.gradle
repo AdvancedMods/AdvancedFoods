@@ -45,9 +45,6 @@ archivesBaseName = "AdvancedFoods"
 minecraft {
     version = "1.7.10-10.13.2.1240"
     runDir = "eclipse"
-
-    replace "@VERSION@", project.version
-    replaceIn "AFProps.java"
 }
 
 dependencies {

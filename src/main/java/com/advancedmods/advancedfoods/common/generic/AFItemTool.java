@@ -1,5 +1,6 @@
 package com.advancedmods.advancedfoods.common.generic;
 
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -8,7 +9,7 @@ import net.minecraft.item.ItemStack;
 public class AFItemTool extends AFItem {
 
 	public AFItemTool() {
-		super(AFCreativeTab.misc);
+		super(AdvancedFoods.misc);
 	}
 
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack par1ItemStack) {

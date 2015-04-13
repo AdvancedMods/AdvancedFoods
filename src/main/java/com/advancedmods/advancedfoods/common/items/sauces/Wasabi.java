@@ -1,6 +1,6 @@
 package com.advancedmods.advancedfoods.common.items.sauces;
 
-import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFItem;
 
 /**
@@ -9,8 +9,8 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
 public class Wasabi extends AFItem {
 
 	public Wasabi() {
-		super(AFCreativeTab.sauces);
-		setUnlocalizedName("wasabi");
+		super(AdvancedFoods.sauces);
+		this.setUnlocalizedName("wasabi");
 	}
 
 }

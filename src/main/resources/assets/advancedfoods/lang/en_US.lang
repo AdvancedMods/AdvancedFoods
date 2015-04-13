@@ -86,3 +86,9 @@ tile.advancedfoods.kiwiplant.name=Kiwi Plant
 tile.advancedfoods:lemonplant.name=Lemon Plant
 tile.advancedfoods:strawberryplant.name=Strawberry Plant
 tile.advancedfoods:tomatoplant.name=Tomato Plant
+
+// Creative Tabs
+itemGroup.Food=AdvancedFoods:Foods
+itemGroup.Ingredients=AdvancedFoods:Ingredients
+itemGroup.Misc=AdvancedFoods:Misc
+itemGroup.Sauces=AdvancedFoods:Sauces

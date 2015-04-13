@@ -1,5 +1,6 @@
 package com.advancedmods.advancedfoods.common.generic;
 
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.core.AFProps;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,7 +15,7 @@ public class AFItemFood extends ItemFood {
 
 	public AFItemFood(int id, boolean b) {
 		super(id, b);
-		this.setCreativeTab(AFCreativeTab.food);
+		this.setCreativeTab(AdvancedFoods.food);
 	}
 
 	@Override

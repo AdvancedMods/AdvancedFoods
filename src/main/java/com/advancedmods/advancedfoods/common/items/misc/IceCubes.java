@@ -1,6 +1,6 @@
 package com.advancedmods.advancedfoods.common.items.misc;
 
-import com.advancedmods.advancedfoods.common.generic.AFCreativeTab;
+import com.advancedmods.advancedfoods.AdvancedFoods;
 import com.advancedmods.advancedfoods.common.generic.AFItem;
 
 /**
@@ -9,8 +9,8 @@ import com.advancedmods.advancedfoods.common.generic.AFItem;
 public class IceCubes extends AFItem {
 
 	public IceCubes() {
-		super(AFCreativeTab.ingredients);
-		setUnlocalizedName("icecubes");
+		super(AdvancedFoods.ingredients);
+		this.setUnlocalizedName("icecubes");
 	}
 
 }
