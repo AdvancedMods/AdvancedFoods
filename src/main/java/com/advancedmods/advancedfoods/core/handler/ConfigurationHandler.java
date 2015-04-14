@@ -52,6 +52,7 @@ public class ConfigurationHandler {
     public static boolean hamburgerEnabled = true;
     public static boolean hotdogEnabled = true;
     public static boolean iceCubesEnabled = true;
+    public static boolean isDeveloper = false;
     public static boolean jarEnabled = true;
     public static boolean jellybeansEnabled = true;
     public static boolean ketchupEnabled = true;
@@ -135,6 +136,7 @@ public class ConfigurationHandler {
         hamburgerEnabled = config.getBoolean("hamburgerEnabled", Configuration.CATEGORY_GENERAL, true, "");
         hotdogEnabled = config.getBoolean("hotdogEnabled", Configuration.CATEGORY_GENERAL, true, "");
         iceCubesEnabled = config.getBoolean("iceCubesEnabled", Configuration.CATEGORY_GENERAL, true, "");
+        isDeveloper = config.getBoolean("isDeveloper", Configuration.CATEGORY_GENERAL, false, "If true, Simulate a Dev Env, should be let to false unless you know what you are doing!!");
         jarEnabled = config.getBoolean("jarEnabled", Configuration.CATEGORY_GENERAL, true, "");
         jellybeansEnabled = config.getBoolean("jellybeansEnabled", Configuration.CATEGORY_GENERAL, true, "");
         ketchupEnabled = config.getBoolean("ketchupEnabled", Configuration.CATEGORY_GENERAL, true, "");
