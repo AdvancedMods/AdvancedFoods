@@ -10,7 +10,7 @@ import com.advancedmods.advancedfoods.core.AFRegistry;
 import com.advancedmods.advancedfoods.core.handler.ConfigurationHandler;
 import com.advancedmods.amcore.core.mod.BaseMod;
 import com.advancedmods.amcore.core.mod.updater.UpdateManager;
-import cpw.mods.fml.common.FMLLog;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -19,6 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.MinecraftError;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,12 +36,15 @@ public class AdvancedFoods extends BaseMod {
 	public static Logger log = LogManager.getLogger("AdvancedFoods");
 	public static final String updateURL = "https://raw.github.com/AdvancedMods/AdvancedFoods/master/VERSION";
     public static final String releaseURL = "http://ci.zsinfo.nl/job/AdvancedFoods/lastSuccessfulBuild";
-    public static ConfigurationHandler config;
+    public static final String issueURL = "https://www.github.com/AdvancedMods/AdvancedFoods/issues";
+    private static ConfigurationHandler config;
+    private static boolean craftingHandlerInit;
     // Creative Tabs
     public static CreativeTabs food = new AFCreativeTabFood("Food");
     public static CreativeTabs misc = new AFCreativeTabMisc("Misc");
     public static CreativeTabs ingredients = new AFCreativeTabIngredients("Ingredients");
     public static CreativeTabs sauces = new AFCreativeTabSauces("Sauces");
+    private static MinecraftError error = new MinecraftError();
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -56,6 +60,9 @@ public class AdvancedFoods extends BaseMod {
             log.info("Configs setup");
         } catch (Exception e) {
             log.error("Could not load or create config, using default values");
+            log.error("This is NOT something you should see, even on the first run. Either I messed it up, or Minecraft is acting strange");
+            log.fatal("Please report this as a bug report with the minecraft log, the stacktrace, a possible crash report and a list of mods + versions to: " + issueURL);
+            e.printStackTrace();
         }
         // Update manager
         if (config.checkUpdates) {
@@ -65,20 +72,30 @@ public class AdvancedFoods extends BaseMod {
                 log.info("Update Manager for Advanced Foods started");
             } catch (Exception e) {
                 log.error("Error starting update checker, printing stacktrace...");
+                log.fatal("Please report this as a bug report with the minecraft log, the stacktrace, a possible crash report and a list of mods + versions to: " + issueURL);
                 e.printStackTrace();
             }
         } else if (!config.checkUpdates) {
-            log.warn("Update checker disabled");
+            log.info("Update checker disabled :(");
         } else {
-            FMLLog.bigWarning("Error reading config, enabling Update checker and using default values");
+            log.warn("Error reading config, enabling Update checker and using default values");
+            log.error("Please check if the configs even exist, and if not file a bugreport");
             UpdateManager.registerUpdater(new UpdateManager(this, updateURL, releaseURL));
         }
         // Registry Items and Blocks
-        log.info("Registering Items and Blocks...");
-        AFRegistry.registerItemsAndBlocks();
-        log.info("Items and Blocks registered");
+        try {
+            log.info("Registering Items and Blocks...");
+            AFRegistry.registerItemsAndBlocks();
+            log.info("Items and Blocks registered");
+        } catch (Exception e) {
+            log.fatal("Failed to register items and blocks, printing stacktrace...");
+            log.fatal("This should never happen, and this is here for aiding me in fixing stuff");
+            log.fatal("Please report this as a bug report with the minecraft log, the stacktrace, a possible crash report and a list of mods + versions to: " + issueURL);
+            log.fatal("Halting the game, as this error means there is probably a severe error with either a mod or the Minecraft base game");
+            FMLCommonHandler.instance().raiseException(error, "Error initializing items and blocks, See stacktrace and minecraft log for details.", true);
+            e.printStackTrace();
+        }
 		log.info("Pre-Init complete");
-
 	}
 
 	@EventHandler
@@ -86,17 +103,42 @@ public class AdvancedFoods extends BaseMod {
 
 		log.info("Entering Init ...");
 		// Init handlers
-		log.info("Registering Handlers...");
-        AFRegistry.initHandlers();
-		log.info("Handlers registered");
+        try {
+            log.info("Registering Handlers...");
+            AFRegistry.initHandlers();
+            log.info("Handlers registered");
+            craftingHandlerInit = true;
+        } catch (Exception e) {
+            log.fatal("Failed to register Handlers, printing stacktrace...");
+            log.fatal("Please report this as a bug report with the minecraft log, the stacktrace, a possible crash report and a list of mods + versions to: " + issueURL);
+            log.fatal("Skipping recipes as the crafting handler has not been initialized.");
+            e.printStackTrace();
+            craftingHandlerInit = false;
+        }
         // Grass seed hooks
-		log.info("Adding Grass Seed Hooks...");
-        AFRegistry.addGrassSeedsHooks();
-		log.info("Grass Seed Hooks added");
+        try {
+            log.info("Adding Grass Seed Hooks...");
+            AFRegistry.addGrassSeedsHooks();
+            log.info("Grass Seed Hooks added");
+        } catch (Exception e) {
+            log.fatal("Failed to register Grass Seed Hooks, printing stacktrace...");
+            log.fatal("Please report this as a bug report with the minecraft log, the stacktrace, a possible crash report and a list of mods + versions to: " + issueURL);
+            e.printStackTrace();
+        }
         // Recipes
-        log.info("Registering Recipes...");
-        AFRegistry.registerRecipes();
-        log.info("Recipes Registered");
+        if (craftingHandlerInit) {
+            try {
+                log.info("Registering Recipes...");
+                AFRegistry.registerRecipes();
+                log.info("Recipes Registered");
+            } catch (Exception e) {
+                log.fatal("Failed to register Recipes, printing stacktrace...");
+                log.fatal("Please report this as a bug report with the minecraft log, the stacktrace, a possible crash report and a list of mods + versions to: " + issueURL);
+                e.printStackTrace();
+            }
+        } else {
+            log.error("Crafting Handler wasn't initialized, skipping recipes...");
+        }
         log.info("Init complete");
         log.info("Mod loaded");
 

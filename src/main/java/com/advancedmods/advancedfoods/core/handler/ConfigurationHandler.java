@@ -102,12 +102,12 @@ public class ConfigurationHandler {
 
     private static void loadConfig() {
         // Name, Category, Default value Description
-        bananaEnabled = config.getBoolean("bananaEnabled", Configuration.CATEGORY_GENERAL, true, "");
-        bananaSeedDropEnabled = config.getBoolean("bananaSeedDropEnabled", Configuration.CATEGORY_GENERAL, true, "");
-        bananaSeedEnabled = config.getBoolean("bananaSeedEnabled", Configuration.CATEGORY_GENERAL, true, "");
-        bananaSmoothieEnabled = config.getBoolean("bananaSmoothieEnabled", Configuration.CATEGORY_GENERAL, true, "");
-        butterEnabled = config.getBoolean("butterEnabled", Configuration.CATEGORY_GENERAL, true, "");
-        caramelEnabled = config.getBoolean("caramelEnabled", Configuration.CATEGORY_GENERAL, true, "");
+        bananaEnabled = config.getBoolean("bananaEnabled", Configuration.CATEGORY_GENERAL, true, "If false, disable banana's");
+        bananaSeedDropEnabled = config.getBoolean("bananaSeedDropEnabled", Configuration.CATEGORY_GENERAL, true, "If false, disable banana seed drop");
+        bananaSeedEnabled = config.getBoolean("bananaSeedEnabled", Configuration.CATEGORY_GENERAL, true, "If false, disable banana seed");
+        bananaSmoothieEnabled = config.getBoolean("bananaSmoothieEnabled", Configuration.CATEGORY_GENERAL, true, "If false, disable banana smoothie");
+        butterEnabled = config.getBoolean("butterEnabled", Configuration.CATEGORY_GENERAL, true, "If false, disable butter");
+        caramelEnabled = config.getBoolean("caramelEnabled", Configuration.CATEGORY_GENERAL, true, "If false, disable caramel");
         checkUpdates = config.getBoolean("checkUpdates", Configuration.CATEGORY_GENERAL, true, "Set this to false to disable the update checker");
         cheeseEnabled = config.getBoolean("cheeseEnabled", Configuration.CATEGORY_GENERAL, true, "");
         cherryEnabled = config.getBoolean("cherryEnabled", Configuration.CATEGORY_GENERAL, true, "");

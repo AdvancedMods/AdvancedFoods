@@ -11,15 +11,11 @@ import net.minecraft.world.World;
 public class ClientProxy extends CommonProxy {
 
 	public World getClientWorld() {
-
 		return FMLClientHandler.instance().getClient().theWorld;
-
 	}
 
 	public EntityPlayer getPlayer() {
-
 		return FMLClientHandler.instance().getClient().thePlayer;
-
 	}
 
 }
