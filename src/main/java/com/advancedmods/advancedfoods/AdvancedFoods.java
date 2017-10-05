@@ -47,7 +47,7 @@ public class AdvancedFoods extends BaseMod {
     public static CreativeTabs sauces = new AFCreativeTabSauces("Sauces");
     private static MinecraftError error = new MinecraftError();
 
-	@EventHandler
+    @EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 
 		// Starting mod
@@ -97,10 +97,10 @@ public class AdvancedFoods extends BaseMod {
         } else if (!config.checkUpdates) {
             log.info("Update checker disabled :(");
         } else {
-            log.error("====================WARNING!====================");
-            log.error("Error reading config, enabling Update checker and using default values");
-            log.error("Please check the configs and file a bugreport if there are any errors");
-            log.error("====================WARNING!====================");
+            log.warn("====================WARNING!====================");
+            log.warn("Error reading config, enabling Update checker and using default values");
+            log.warn("Please check the configs and file a bugreport if there are any errors");
+            log.warn("====================WARNING!====================");
             UpdateManager.registerUpdater(new UpdateManager(this, updateURL, releaseURL));
         }
         // Items and Blocks Registry

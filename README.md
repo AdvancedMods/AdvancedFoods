@@ -5,3 +5,6 @@ AdvancedFoods
 
 Adds more foods to the game.<br>
 For Minecraft version 1.7.10.
+
+<h2>Credits</h2>
+Some of the textures come from pam's harvestcraft, this is temporarily, as we are making our own textures.
